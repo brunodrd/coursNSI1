@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[francais,bloc,completemulti]{automultiplechoice}
+\begin{document}
+
+\exemplaire{10}{
+
+%%% debut de l’en-tête des copies :
+
+\noindent{\bf QCM \hfill SPECIALIT\'E NSI}
+
+\vspace*{.5cm}
+\begin{minipage}{.4\linewidth}
+\centering\large\bf Travailler en base 2, 10 ou 16\\ Octobre 2019\end{minipage}
+\champnom{\fbox{
+				\begin{minipage}{.5\linewidth}
+					Nom et prénom :
+				
+					\vspace*{.5cm}\dotfill
+					\vspace*{1mm}
+				\end{minipage}
+		}}
+		
+\begin{center}\em
+Durée : 10 minutes.
+
+L’usage de la calculatrice est autorisé.
+
+Les questions ont une unique bonne réponse.
+
+Des points négatifs pourront être affectés à de \emph{très
+mauvaises} réponses.
+\end{center}
+\vspace{1ex}
+%%% fin de l’en-tête
+
+
+\begin{question}{base}
+Soit un nombre $N_1=1000\ 1100_2$. Dans quelle base $N_1$ est-il écrit?
+	\begin{reponses}
+		\bonne{$N_1$ est écrit en base 2}
+		\mauvaise{$N_1$ est écrit en base 10}
+		\mauvaise{$N_1$ est écrit en base 16}
+		\mauvaise{$N_1$ est écrit en base 0 et 1}
+	\end{reponses}
+\end{question}
+
+\begin{question}{vocab}
+Le nombre $N_1=1000\ 1100_2$ est formé de:
+	\begin{reponses}
+		\bonne{8 bits}
+		\mauvaise{8 octets}
+		\mauvaise{8 bytes}
+		\mauvaise{4 doubles mots}
+	\end{reponses}
+\end{question}
+
+\begin{question}{bin2dec}
+Le nombre $N_1=1000\ 1100_2$ s'écrit décimal:
+	\begin{reponses}
+		\bonne{$140_{10}$}
+		\mauvaise{$280_{10}$}
+		\mauvaise{$136_{10}$}
+		\mauvaise{$77_{10}$}
+	\end{reponses}
+\end{question}
+
+\begin{question}{hex2bin}
+Le nombre $N_{2}=80A_{16}$ s'écrit en binaire:
+	\begin{reponses}
+		\bonne{$1000\ 0000\ 1010_{2}$}
+		\mauvaise{$1000\ 0000\ 1011_{2}$}
+		\mauvaise{$1010\ 0000\ 1000_{2}$}
+		\mauvaise{$1000\ 0000\ 1_{2}$}
+	\end{reponses}
+\end{question}
+
+\begin{question}{dec2hex}
+Le nombre $N_3=777_{10}$ s'écrit en hexadécimal:
+	\begin{reponses}
+		\bonne{$309_{16}$}
+		\mauvaise{$0011\ 0011\ 0011_{16}$}
+		\mauvaise{$3090_{16}$}
+		\mauvaise{$0011\ 0000\ 1001_{16}$}
+	\end{reponses}
+\end{question}
+
+% \AMCaddpagesto{3}
+
+}
+
+\end{document}

@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+%\usepackage[linesnumbered,ruled,vlined,french,onelanguage]{algorithm2e}
+\usepackage[ruled,vlined,french,onelanguage]{algorithm2e}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\title{Algorithmique}
+\author{Bruno Darid}
+
+%%% Coloring the comment as blue
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\SetKwInput{KwInput}{Input}                % Set the Input
+\SetKwInput{KwOutput}{Output}              % set the Output
+
+\begin{document}
+%\maketitle
+%\section{Terminaison des algorithmes}
+%\subsection*{Recherche séquentielle - ex.4}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+
+  \KwData{$n$ entier naturel}
+  \KwResult{chaine correspondant à la conversion binaire de $n$}
+  $resultat: chaine \gets ""$\;
+  $quotient: entier \gets n$\;
+  \If{$n=0$}{$resultat \gets "0"$}
+  \Else{
+  \While{$quotient \ne 0$}{
+		$resultat \gets "$reste division quotient par 2$" + resultat$  \;
+		$quotient \gets quotient//2$\;		
+  		}
+  }
+  \Return {$resultat$}
+
+\caption{Conversion binaire}
+\end{algorithm}
+
+
+\end{document}

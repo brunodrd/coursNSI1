@@ -1,0 +1,167 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[linesnumbered,ruled,vlined,french,onelanguage]{algorithm2e}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+
+\title{DiU EIL - Algorithmique}
+\author{Bruno Darid}
+
+%%% Coloring the comment as blue
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+\SetKwInput{KwInput}{Input}                % Set the Input
+\SetKwInput{KwOutput}{Output}              % set the Output
+
+\begin{document}
+\maketitle
+\section{Terminaison des algorithmes}
+\subsection*{Recherche séquentielle - ex.4}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+
+  \KwData{$L[0 \ldots n-1]$ tableau de $n$ entiers, 
+  $n_0$: un entier}
+  \KwResult{un booléen}
+  $r: bool\acute{e}en \gets Faux$\;
+  $n: entier \gets len(L)$\;
+  $dernier: entier \gets L[n-1]$\;
+  $i: entier \gets 0$\;
+  $L[n-1] \gets n_0 $ \tcp*{Placement d'une valeur sentinelle dans le tableau}
+  \While{$L[i] \ne n_0$}{
+  	$i \gets i+1$}
+  $L[n-1] \gets dernier$\;
+  \If{$i < n-1$}{ 
+  	$r \gets Vrai$\tcp*{$n_0$ présent avant la fin de tableau}
+  }
+  \ElseIf{$L[n-1]=n_0$}{
+	$r \gets Vrai$  \tcp*{$n_0$ présent en dernière position.}
+  }
+  \Return {$r$}
+
+\caption{Ex.4 Recherche séquentielle}
+\end{algorithm}
+
+\subsection*{Somme double - ex. 5}
+On donne la somme double $\sum\limits_{1\le i,j\le n} min(i,j)$. On présente un algorithme naïf
+correspondant à cette somme (\textit{qui se calcule aisément} ).
+
+$\sum\limits_{1\le i,j\le n}min(i,j) = \sum\limits_{i=1}^{n}\left(\sum\limits_{j=1}^{n}min(i,j)\right)$.
+Or,
+$
+min(i,j)=\left\{ 
+	\begin{array}{ll}
+		j & \mbox{pour } 1\le j\le i\\
+		i & \mbox{pour } i+1\le j\le n
+	\end{array}
+\right.
+$
+\begin{align*}
+\sum\limits_{1\le i,j\le n}min(i,j) &= \sum\limits_{i=1}^{n}\left(\sum\limits_{j=1}^{i}j +\sum\limits_{j=i+1}^{n}i\right)\\
+&= \sum\limits_{i=1}^{n}\left[\frac{i(i+1)}{2} + i(n-i)\right]\\
+&= \sum\limits_{i=1}^{n}\left[\frac{i(i+1)+2i(n-i)}{2}\right] \\
+&= \sum\limits_{i=1}^{n}\left[ \frac{i[i+1+2(n-i)]}{2} \right] \\
+&= \sum\limits_{i=1}^{n}\left(i\times\frac{2n-i+1}{2}\right)\\
+&= n\times\sum\limits_{i=1}^{n}i + \sum\limits_{i=1}^{n}\frac{i(1-i)}{2}\\
+&= n\times\sum\limits_{i=1}^{n}i + \frac{1}{2}\times \left[\sum\limits_{i=1}^{n}i
+											-\sum\limits_{i=1}^{n}i^{2}\right]\\
+&= n\times\frac{n(n+1)}{2} + \frac{1}{2}\left[\frac{n(n+1)}{2}-\frac{n(n+1)(2n+1)}{6}\right]\\
+&= \frac{n(n+1)(2n+1)}{6}
+\end{align*}
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwData{n: un entier}
+\KwResult{un entier}
+$S: entier \gets 0$\;
+$s_1: entier$\;
+$s_2: entier$\;
+\For{$i \gets 1$ \KwTo $n$}{
+	$s_1 \gets 0$\;
+	$s_2 \gets 0$\;
+	\For{$j \gets 1$ \KwTo $i$}{
+		$s_1 \gets s_1+j$	
+	}
+	\For{$j \gets i+1$ \KwTo $n$}{
+		$s_2 \gets s_2+i$	
+	}
+	$S \gets S+s_1+s_2$
+}
+\Return $S$
+\caption{Ex.5 Somme double - algorithme naïf}
+\end{algorithm}
+
+\subsection*{Terminaison et type d'instruction - ex. 6}
+La boucle \texttt{for} termine toujours (\textit{attention aux modifications du compteur de boucle}), le nombre de tour de boucle étant défini.
+L'instruction problématique est la boucle \texttt{tant que}.\\
+
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\KwData{n: un programme $P$}
+\KwResult{un booléen}
+$r: bool\acute{e}en$\;
+\If{$P$ termine}{
+$r \gets Vrai$
+}
+\Else{
+$r \gets Faux$
+}
+\Return $r$
+\caption{Ex.6 Terminaison $Programme\ Terminator$}
+\end{algorithm}
+
+\subsection*{Problème de l'arrêt - ex. 7}
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\While{$Terminator(SarahConnor)$}{
+rien
+}
+\caption{Ex. Arrêt - SarahConnor}
+\end{algorithm}
+Supposons que $SarahConnor$ termine. Dans ce cas, $Terminator(SarahConnor)$ renvoie \textbf{Vrai} et $SarahConnor$ boucle: on a une contradiction.
+
+\subsection*{Fonction de Syracuse - ex. 8 et 9}
+Au point (*), pour $n=15$ on a (15 46 23 70 35 106 53 160 80 40 20 10 5 16 8 4 2 1) et pour $n=16$, on a
+(16 8 4 2 1).\\
+L'algorithme retourne 1.
+
+\subsection*{Exercice 10}
+$i$ est un entier qui vaut initialement $0$ et qui est incrémenté à chaque tour de boucle.
+Il est évident que la condition $i<5$ ne sera plus satisfaite après 5 tours de boucle.
+
+\subsection*{Exercice 11}
+On pose $f(i)=5-i$. La suite $(f(i_n))_{n \in \mathbb{N}}$ est décroissante.
+
+\subsection*{Exercice 12}
+Un minorant de $f$ tant qu'on est dans la boucle ($i<5$) est $0$.
+
+\subsection*{Exercice 13}
+La fonction $\rho(i)=i,\ \forall i \in \mathbb{N}$ convient. Vérification:
+\begin{itemize}
+\item $\rho(i)$ est entier avant l'entrée dans la boucle;
+\item $\rho(i)$ est entier dans la boucle;
+\item $\rho(i)$ est strictement décroissante.
+\end{itemize}
+
+\subsection*{Exercice 14}
+Si $n$ est pair: $\exists q \in \mathbb{N^*}$ tel que $n=2q$. On a donc:
+$$ n=2q > q= n\ \mbox{div}\ 2$$
+Si $n$ est impair: $\exists q \in \mathbb{N^*}$ tel que $n=2q+1$. On a donc:
+$$n=2q+1>q= n\ \mbox{div}\ 2 $$
+La fonction $\rho(i)=i\ \mbox{div}\ 2$ convient. C'est une fonction à valeur entière à l'entrée et dans la boucle. De plus $\rho(i)$ est strictement décroissante.
+
+\subsection*{Exercice 15}
+Le problème de terminaison se pose pour les valeurs de $0<n\le 5$. En effet, si $n>5$ on ne passe qu'une fois dans la boucle, où $x$ devient négatif.\\
+\begin{tabular}{lllll}
+$n=1$&$n=2$&$n=3$&$n=4$&$n=5$\\
+$\rho(1)=2$&$\rho(2)=2$&$\rho(3)=4$&$\rho(4)=3$&$\rho(5)=1$\\
+$\rho(8)=1$&$\rho(6)=1$&$\rho(4)=3$&$\rho(2)=2$&\\
+&&$\rho(2)=2$&$\rho(6)=1$&\\
+&&$\rho(6)=1$&&\\
+\end{tabular}
+\\
+La fonction $\rho(x)$ est entière avant et dans la boucle. De plus, elle est strictement décroissante. Par ailleurs, $\rho(n)$ donne le nombre de passage dans la boucle quand $x$ est initialisé avec la valeur $n$.
+\end{document}
