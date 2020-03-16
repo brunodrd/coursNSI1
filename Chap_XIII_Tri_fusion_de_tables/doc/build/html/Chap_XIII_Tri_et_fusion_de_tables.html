@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tri &amp; fusion de tables &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tri &amp; fusion de tables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tri-dune-table-en-python">Tri d’une table en python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quels-objets-peuvent-etre-compares">Quels objets peuvent être comparés ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-utiliser-la-fonction-sorted-de-la-librairie-standard">Comment utiliser la fonction ‘sorted’ de la librairie standard?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#application-directe">Application directe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#fusion">Fusion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#comment-fusionner-des-tables-ayant-les-memes-attributs">Comment fusionner des tables ayant les mêmes attributs?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-fusionner-des-tables-ayant-des-attributs-differents">Comment fusionner des tables ayant des attributs différents?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resume">Résumé</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tri &amp; fusion de tables</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_XIII_Tri_et_fusion_de_tables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tri-fusion-de-tables">
+<h1>Tri &amp; fusion de tables<a class="headerlink" href="#tri-fusion-de-tables" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="tri-dune-table-en-python">
+<h2>Tri d’une table en python<a class="headerlink" href="#tri-dune-table-en-python" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Lorsqu’on manipule des données en tables, il est fréquent de vouloir les
+trier. Le langage python offre quelques possibilités de tri: méthode
+<code class="docutils literal notranslate"><span class="pre">sort</span></code> des tableaux, fonction <code class="docutils literal notranslate"><span class="pre">sorted</span></code> de la librairie standard
+-<em>qui sera privilégiée ici</em>-.</p>
+<div class="section" id="quels-objets-peuvent-etre-compares">
+<h3>Quels objets peuvent être comparés ?<a class="headerlink" href="#quels-objets-peuvent-etre-compares" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Python sait comparer évidemment des nombres et des chaines de
+caractères, mais aussi des p-uplets. Voici quelques exemples:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;abc&#39; &gt; &#39;aac&#39;: &quot;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span> <span class="o">&gt;</span> <span class="s1">&#39;aac&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(5,4) &gt; (5,3): &#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(5,4,6) &gt; (5,4,8): &#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(6, &#39;c&#39;) &lt; (5, &#39;c&#39;): &quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(6, &#39;c&#39;) &lt; (6, &#39;e&#39;): &quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;abc&#39;</span> <span class="o">&gt;</span> <span class="s1">&#39;aac&#39;</span><span class="p">:</span>  <span class="kc">True</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>  <span class="kc">True</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">):</span>  <span class="kc">False</span>
+<span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">):</span>  <span class="kc">False</span>
+<span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">):</span>  <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Qu’en est-il des dictionnaires?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">e1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;ia&#39;</span><span class="p">}</span>
+<span class="n">e2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;algorithmique&#39;</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;e1 &lt; e2: &#39;</span><span class="p">,</span> <span class="n">e1</span> <span class="o">&lt;</span> <span class="n">e2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+
+<span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">39</span><span class="o">-</span><span class="n">f4ee3bfa9ab9</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+      <span class="mi">1</span> <span class="n">e1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;ia&#39;</span><span class="p">}</span>
+      <span class="mi">2</span> <span class="n">e2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;algorithmique&#39;</span><span class="p">}</span>
+<span class="o">----&gt;</span> <span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;e1 &lt; e2: &#39;</span><span class="p">,</span> <span class="n">e1</span> <span class="o">&lt;</span> <span class="n">e2</span><span class="p">)</span>
+
+
+<span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;&lt;&#39;</span> <span class="ow">not</span> <span class="n">supported</span> <span class="n">between</span> <span class="n">instances</span> <span class="n">of</span> <span class="s1">&#39;dict&#39;</span> <span class="ow">and</span> <span class="s1">&#39;dict&#39;</span>
+</pre></div>
+</div>
+<p><strong>Les p-uplets nommés implémentés en 1ère par des dictionnaires ne
+peuvent pas être comparés</strong>.</p>
+</div>
+<div class="section" id="comment-utiliser-la-fonction-sorted-de-la-librairie-standard">
+<h3>Comment utiliser la fonction ‘sorted’ de la librairie standard?<a class="headerlink" href="#comment-utiliser-la-fonction-sorted-de-la-librairie-standard" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">sorted</span><span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block">Help on built-in function sorted in module builtins:
+
+sorted(iterable, /, *, key=None, reverse=False)
+    Return a new list containing all items from the iterable in ascending order.
+
+    A custom key function can be supplied to customize the sort order, and the
+    reverse flag can be set to request the result in descending order.</pre>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">sorted</span></code> prend en paramètre obligatoire un <em>itérable</em>,
+comme un tableau par exemple, et renvoie un nouveau tableau trié par
+<strong>ordre croissant</strong>.</p>
+<div class="section" id="application-directe">
+<h4>Application directe<a class="headerlink" href="#application-directe" title="Lien permanent vers ce titre">¶</a></h4>
+<p>L’une des deux instructions suivantes provoque une erreur. Laquelle et
+pourquoi?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t1</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">((</span><span class="mi">8</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Que renvoie l’instruction correcte?</p>
+<p>La fonction ‘sorted’ possède un paramètre optionnel <code class="docutils literal notranslate"><span class="pre">key</span></code> qui est
+utile lorsque python ne sait pas comparer des objets comme les
+dictionnaires. On affecte à ce paramètre le nom de la fonction chargée
+d’indiquer la clé suivant laquelle on trie.</p>
+<div class="section" id="exemple">
+<h5>Exemple<a class="headerlink" href="#exemple" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Soit à ranger le tableau <code class="docutils literal notranslate"><span class="pre">t</span></code> suivant par ordre croissant d’âge:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;IA&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alex&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;sara&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;algorithmique&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;lisa&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;robotique&#39;</span><span class="p">}]</span>
+
+<span class="c1">#On définit une fonction qui retourne le critère de tri</span>
+<span class="k">def</span> <span class="nf">suivant_age</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span>
+
+<span class="c1">#On appelle &#39;sorted&#39; en affectant à &#39;key&#39; le nom de la fonction de tri</span>
+<span class="n">t_trie</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">suivant_age</span><span class="p">)</span>
+<span class="c1">#Affichage</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">t_trie</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;IA&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;sara&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;web&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;alex&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;web&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;algorithmique&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;lisa&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;robotique&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>On peut vouloir rajouter un deuxième critère de tri, en cas d’égalité
+par exemple. Il suffit alors de placer ce deuxième critère dans un tuple
+(que python sait trier!) retourné par la fonction.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;IA&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alex&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;sara&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;algorithmique&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;lisa&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;robotique&#39;</span><span class="p">}]</span>
+
+<span class="c1">#On définit une fonction qui retourne le critère de tri</span>
+<span class="k">def</span> <span class="nf">suivant_age_puis_nom</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">])</span>
+
+<span class="c1">#On appelle &#39;sorted&#39; en affectant à &#39;key&#39; le nom de la fonction de tri</span>
+<span class="n">t_trie</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">suivant_age_puis_nom</span><span class="p">)</span>
+<span class="c1">#Affichage</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">t_trie</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;IA&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;sara&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;web&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;alex&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;web&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;algorithmique&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span> <span class="s1">&#39;lisa&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span> <span class="s1">&#39;robotique&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">sorted</span></code> possède un dernier paramètre optionnel:
+<code class="docutils literal notranslate"><span class="pre">reverse</span></code>. On lui donnera la valeur <code class="docutils literal notranslate"><span class="pre">True</span></code> si on veut un classement
+décroissant.</p>
+</div>
+<div class="section" id="id1">
+<h5>Application directe<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Modifier le code précédent pour trier <code class="docutils literal notranslate"><span class="pre">t</span></code> par domaine, puis par nom en
+cas d’égalité.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;bob&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;IA&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alex&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;sara&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">21</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;web&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;alice&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;algorithmique&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;lisa&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;domaine&#39;</span><span class="p">:</span><span class="s1">&#39;robotique&#39;</span><span class="p">}]</span>
+
+<span class="k">def</span> <span class="nf">suivant_domaine_puis_nom</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="c1">#######A compléter#########</span>
+
+<span class="c1">#Décommentez la ligne ci-dessous et complétez!</span>
+<span class="c1">#t_trie =</span>
+
+<span class="c1">#Affichage</span>
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">t_trie</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fusion">
+<h2>Fusion<a class="headerlink" href="#fusion" title="Lien permanent vers ce titre">¶</a></h2>
+<p>La cellule suivante prépare les tables de données utiles pour la suite.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1">#**********Préparation des tables de travail*************#</span>
+<span class="c1">#</span>
+<span class="n">FILE1</span> <span class="o">=</span> <span class="s1">&#39;./data/note_g1.csv&#39;</span>
+<span class="n">FILE2</span> <span class="o">=</span> <span class="s1">&#39;./data/note_g2.csv&#39;</span>
+<span class="n">FILE3</span> <span class="o">=</span> <span class="s1">&#39;./data/note_TS2.csv&#39;</span>
+<span class="n">FILE4</span> <span class="o">=</span> <span class="s1">&#39;./data/Orientation.csv&#39;</span>
+
+<span class="k">def</span> <span class="nf">conversion</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span><span class="nb">float</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Exercice 1&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span><span class="nb">float</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Exercice 2&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span><span class="nb">float</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Exercice 3&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Note&#39;</span><span class="p">:</span><span class="nb">float</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;Note&#39;</span><span class="p">])}</span>
+<span class="c1">#table de notes du groupe 1</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">FILE1</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">t_1</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f1</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+<span class="n">t_1</span> <span class="o">=</span> <span class="p">[</span><span class="n">conversion</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">t_1</span><span class="p">]</span>
+
+<span class="c1">#table de notes du groupe 2</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">FILE2</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">t_2</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+<span class="n">t_2</span> <span class="o">=</span> <span class="p">[</span><span class="n">conversion</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">t_2</span><span class="p">]</span>
+
+<span class="c1">#table de notes de la classe entière</span>
+<span class="n">f3</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">FILE3</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">t_3</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f3</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+<span class="n">t_3</span> <span class="o">=</span> <span class="p">[</span><span class="n">conversion</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">t_3</span><span class="p">]</span>
+
+<span class="c1">#table des orientations post bac des élèves</span>
+<span class="n">f4</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">FILE4</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">t_4</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f4</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="section" id="comment-fusionner-des-tables-ayant-les-memes-attributs">
+<h3>Comment fusionner des tables ayant les mêmes attributs?<a class="headerlink" href="#comment-fusionner-des-tables-ayant-les-memes-attributs" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Lorsque des tables possèdent les mêmes attributs, leur fusion ne pose
+aucun problème. Par exemple, on souhaiterait fusionner les notes des
+deux groupes d’une classe en une seule table.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_fin</span> <span class="o">=</span> <span class="n">t_1</span> <span class="o">+</span> <span class="n">t_2</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t_1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t_2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t_fin</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">15</span>
+<span class="mi">15</span>
+<span class="mi">30</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comment-fusionner-des-tables-ayant-des-attributs-differents">
+<h3>Comment fusionner des tables ayant des attributs différents?<a class="headerlink" href="#comment-fusionner-des-tables-ayant-des-attributs-differents" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">On se limite au cas simple où les deux tables ont un attribut en
+commun. L’opération de fusion de table de données est appelée aussi
+<strong>jointure</strong>.</div>
+<div class="line">On souhaite fusionner la table de notes des TS avec la table
+d’orientation. Les structures de ces tables sont les suivantes:</div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Affichage de la table des notes puis orientation</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t_3</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*******************************************************************************************&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t_4</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<pre class="literal-block">{'Nom': 'Nayagom', 'Exercice 1': 2.5, 'Exercice 2': 2.0, 'Exercice 3': 5.0, 'Note': 9.5}
+{'Nom': 'Payet Nativel', 'Exercice 1': 3.0, 'Exercice 2': 3.5, 'Exercice 3': 2.0, 'Note': 8.5}
+<strong>***************************************************************************************</strong>
+{'Nom': 'Metayer', 'Orientation': 'PACES', 'Lieu': 'Métropole'}
+{'Nom': 'Bravin', 'Orientation': 'Ecole de Commerce', 'Lieu': 'Réunion'}</pre>
+<p>Les deux tables partagent l’attribut ‘Nom’. L’algorithme de fusion est
+le suivant:</p>
+<p><em>Pour chaque ligne de la table note, parcourir chaque ligne de la table
+orientation. Si les attributs ‘Nom’ sont les mêmes, fusionner les lignes
+et sauver le résultat</em>.</p>
+<p>Ecrivons d’abord une fonction qui permet de fusionner deux lignes des
+deux tables précédentes.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fusionner_lignes</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">o</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne un dictionnaire, résultat de la fusion des deux lignes e et o;</span>
+<span class="sd">    e: ligne de la table note (dictionnaire);</span>
+<span class="sd">    o: ligne de la table orientation (dictionnaire);</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">],</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;Exercice 1&#39;</span><span class="p">],</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;Exercice 2&#39;</span><span class="p">],</span>
+            <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;Exercice 3&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;Note&#39;</span><span class="p">:</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;Note&#39;</span><span class="p">],</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;Orientation&#39;</span><span class="p">],</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span><span class="n">o</span><span class="p">[</span><span class="s1">&#39;Lieu&#39;</span><span class="p">]}</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fusionner_lignes</span><span class="p">({</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Metayer&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">},</span>
+                <span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Metayer&#39;</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Métropole&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span>
+ <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
+ <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span>
+ <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Métropole&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Metayer&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">,</span>
+ <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Une premier code possible pour la fusion des tables de note <code class="docutils literal notranslate"><span class="pre">t_3</span></code> et
+d’orientation <code class="docutils literal notranslate"><span class="pre">t_4</span></code> utilise deux boucles <code class="docutils literal notranslate"><span class="pre">for</span></code> imbriquées ainsi que
+la méthode <code class="docutils literal notranslate"><span class="pre">append</span></code> qui permet d’ajouter un élément à un tableau.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">jointure1</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">t2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne une table (tableau de dictionnaires) résultant de la fusion des deux tables t1 et t2.</span>
+<span class="sd">    t1, t2: tables de données (tableaux de dictionnaires)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">t_fin</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">eleve</span> <span class="ow">in</span> <span class="n">t_3</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">orientation</span> <span class="ow">in</span> <span class="n">t_4</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">eleve</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">orientation</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">]:</span>
+                <span class="n">t_fin</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fusionner_lignes</span><span class="p">(</span><span class="n">eleve</span><span class="p">,</span> <span class="n">orientation</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">t_fin</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">jointure1</span><span class="p">(</span><span class="n">t_3</span><span class="p">,</span> <span class="n">t_4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Rescourio&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Dubard&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">13.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;IUT&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Reunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Ribollet&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">11.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;Licence STAPS&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Pajinadon&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">8.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;ESIROI&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Catambara&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39; Licence Anglais&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Metayer&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Métropole&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Salvado&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">17.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;CPGE BCPST&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Bravin&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">8.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;Ecole de Commerce&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Darnon&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">15.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;CPGE BCPST&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Une solution plus élégante qui utilise une compréhension de tableau (qui
+permet de nous affranchir de la méthode <code class="docutils literal notranslate"><span class="pre">append</span></code>) est donnée ci-après:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">jointure2</span><span class="p">(</span><span class="n">t1</span><span class="p">,</span> <span class="n">t2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne une table (tableau de dictionnaire) résultant de la fusion des deux tables t1 et t2.</span>
+<span class="sd">    t1, t2: tables de données (tableaux de dictionnaires)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">fusionner_lignes</span><span class="p">(</span><span class="n">eleve</span><span class="p">,</span> <span class="n">orientation</span><span class="p">)</span> <span class="k">for</span> <span class="n">eleve</span> <span class="ow">in</span> <span class="n">t1</span>\
+            <span class="k">for</span> <span class="n">orientation</span> <span class="ow">in</span> <span class="n">t2</span> <span class="k">if</span> <span class="n">eleve</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">orientation</span><span class="p">[</span><span class="s1">&#39;Nom&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">jointure2</span><span class="p">(</span><span class="n">t_3</span><span class="p">,</span> <span class="n">t_4</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Rescourio&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Dubard&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">4.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">13.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;IUT&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Reunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Ribollet&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">11.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;Licence STAPS&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Pajinadon&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">2.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">8.5</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;ESIROI&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Catambara&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39; Licence Anglais&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Metayer&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">12.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;PACES&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Métropole&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Salvado&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">17.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;CPGE BCPST&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Bravin&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">8.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;Ecole de Commerce&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Nom&#39;</span><span class="p">:</span> <span class="s1">&#39;Darnon&#39;</span><span class="p">,</span> <span class="s1">&#39;Exercice 1&#39;</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 2&#39;</span><span class="p">:</span> <span class="mf">4.0</span><span class="p">,</span> <span class="s1">&#39;Exercice 3&#39;</span><span class="p">:</span> <span class="mf">6.0</span><span class="p">,</span> <span class="s1">&#39;Note&#39;</span><span class="p">:</span> <span class="mf">15.0</span><span class="p">,</span> <span class="s1">&#39;Orientation&#39;</span><span class="p">:</span> <span class="s1">&#39;CPGE BCPST&#39;</span><span class="p">,</span> <span class="s1">&#39;Lieu&#39;</span><span class="p">:</span> <span class="s1">&#39;Réunion&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="resume">
+<h2>Résumé<a class="headerlink" href="#resume" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Python possède une fonction de tri <code class="docutils literal notranslate"><span class="pre">sorted</span></code> qui retourne un tableau
+trié, par défaut par ordre croissant. Pour trier un tableau de
+dictionnaires, on doit utiliser le paramètre <code class="docutils literal notranslate"><span class="pre">key</span></code> qui indique à la
+fonction <code class="docutils literal notranslate"><span class="pre">sorted</span></code> le nom d’une fonction qui retournera un ou des
+critères de tri.</p>
+<p>Pour fusionner deux tables ayant les mêmes attributs on utilise
+simplement la concaténation (+) de tableaux. Si on a un attribut en
+commun, on utilise un algorithme adapté pour réaliser la jointure</p>
+<hr class="docutils" />
+<ol class="upperalpha simple" start="2">
+<li><p>DARID <img alt="licence" src="_images/licence.png" /></p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

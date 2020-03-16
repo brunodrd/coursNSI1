@@ -1,0 +1,9 @@
+1) tri d'une table
+1.1 Le tri en python
+    - quels objets peuvent être comparés?
+    - la fonction 'sorted'
+1.2 Quelques exemples de tri
+
+2) Fusion
+2.1 Cas simple: tables ayant les mêmes attributs
+2.2 Cas de tables avec des attributs différents
