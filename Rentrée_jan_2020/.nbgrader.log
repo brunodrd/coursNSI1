@@ -1,0 +1,20 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Rentrée_jan_2020
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8889/?token=f5179218df1bdecbd16def6ad6469d9ab1b79261cf0aa96d
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-5809-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=f5179218df1bdecbd16def6ad6469d9ab1b79261cf0aa96d
+[NotebookApp | WARNING] Notebook Langage_de_commande.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: cce84e1d-39cb-4935-a5c7-221527dd0cc1
+[NotebookApp | INFO] 302 GET /notebooks/144493.png (::1) 4.65ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel cce84e1d-39cb-4935-a5c7-221527dd0cc1
+[NotebookApp | INFO] Saving file at /Langage_de_commande.ipynb
+[NotebookApp | INFO] Shutting down on /api/shutdown request.
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: cce84e1d-39cb-4935-a5c7-221527dd0cc1
