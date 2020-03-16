@@ -1,0 +1,2145 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=latex 2018.7.23)  10 DEC 2019 15:46
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tex_de_base.tex
+(./tex_de_base.tex
+LaTeX2e <2018-04-01> patch level 4
+Babel <3.20> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen103
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen106
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen107
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip10
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks19
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks20
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texmf/tex/latex/AMC/automultiplechoice.sty
+AMC version: 2018/07/16 v1.4.0~rc1+git2018-07-16d r:a1767dd
+Package: automultiplechoice 2018/07/16 v1.4.0~rc1+git2018-07-16d r:a1767dd
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip46
+\f@nch@O@elh=\skip47
+\f@nch@O@erh=\skip48
+\f@nch@O@olh=\skip49
+\f@nch@O@orh=\skip50
+\f@nch@O@elf=\skip51
+\f@nch@O@erf=\skip52
+\f@nch@O@olf=\skip53
+\f@nch@O@orf=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bophook/bophook.sty
+Package: bophook 2001/03/29 v0.02 beginning-of-page hook, K. Tinnefeld
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks23
+\XKV@tempa@toks=\toks24
+)
+\XKV@depth=\count108
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+)
+\Gin@req@height=\dimen116
+\Gin@req@width=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count109
+\rotFPtop=\skip55
+\rotFPbot=\skip56
+\rot@float@box=\box30
+\rot@mess@toks=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box31
+\shadowsize=\dimen118
+\@Sbox=\box32
+\do@VerbBox=\toks26
+\the@fancyput=\toks27
+\this@fancyput=\toks28
+\EndVerbatimTokens=\toks29
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018-04-30 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018-04-30 L3 programming layer (code)
+\c_max_int=\count110
+\l_tmpa_int=\count111
+\l_tmpb_int=\count112
+\g_tmpa_int=\count113
+\g_tmpb_int=\count114
+\g__kernel_prg_map_int=\count115
+\c_log_iow=\count116
+\l_iow_line_count_int=\count117
+\l__iow_line_target_int=\count118
+\l__iow_one_indent_int=\count119
+\l__iow_indent_int=\count120
+\c_zero_dim=\dimen119
+\c_max_dim=\dimen120
+\l_tmpa_dim=\dimen121
+\l_tmpb_dim=\dimen122
+\g_tmpa_dim=\dimen123
+\g_tmpb_dim=\dimen124
+\c_zero_skip=\skip57
+\c_max_skip=\skip58
+\l_tmpa_skip=\skip59
+\l_tmpb_skip=\skip60
+\g_tmpa_skip=\skip61
+\g_tmpb_skip=\skip62
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count121
+\c__fp_leading_shift_int=\count122
+\c__fp_middle_shift_int=\count123
+\c__fp_trailing_shift_int=\count124
+\c__fp_big_leading_shift_int=\count125
+\c__fp_big_middle_shift_int=\count126
+\c__fp_big_trailing_shift_int=\count127
+\c__fp_Bigg_leading_shift_int=\count128
+\c__fp_Bigg_middle_shift_int=\count129
+\c__fp_Bigg_trailing_shift_int=\count130
+\c__fp_rand_size_int=\count131
+\c__fp_rand_four_int=\count132
+\c__fp_rand_eight_int=\count133
+\c__intarray_sp_dim=\dimen125
+\g__intarray_font_int=\count134
+\l__sort_length_int=\count135
+\l__sort_min_int=\count136
+\l__sort_top_int=\count137
+\l__sort_max_int=\count138
+\l__sort_true_max_int=\count139
+\l__sort_block_int=\count140
+\l__sort_begin_int=\count141
+\l__sort_end_int=\count142
+\l__sort_A_int=\count143
+\l__sort_B_int=\count144
+\l__sort_C_int=\count145
+\l__tl_analysis_normal_int=\count146
+\l__tl_analysis_index_int=\count147
+\l__tl_analysis_nesting_int=\count148
+\l__tl_analysis_type_int=\count149
+\l__regex_internal_a_int=\count150
+\l__regex_internal_b_int=\count151
+\l__regex_internal_c_int=\count152
+\l__regex_balance_int=\count153
+\l__regex_group_level_int=\count154
+\l__regex_mode_int=\count155
+\c__regex_cs_in_class_mode_int=\count156
+\c__regex_cs_mode_int=\count157
+\l__regex_catcodes_int=\count158
+\l__regex_default_catcodes_int=\count159
+\c__regex_catcode_D_int=\count160
+\c__regex_catcode_S_int=\count161
+\c__regex_catcode_L_int=\count162
+\c__regex_catcode_O_int=\count163
+\c__regex_catcode_A_int=\count164
+\c__regex_all_catcodes_int=\count165
+\l__regex_show_lines_int=\count166
+\l__regex_min_state_int=\count167
+\l__regex_max_state_int=\count168
+\l__regex_left_state_int=\count169
+\l__regex_right_state_int=\count170
+\l__regex_capturing_group_int=\count171
+\l__regex_min_pos_int=\count172
+\l__regex_max_pos_int=\count173
+\l__regex_curr_pos_int=\count174
+\l__regex_start_pos_int=\count175
+\l__regex_success_pos_int=\count176
+\l__regex_curr_char_int=\count177
+\l__regex_curr_catcode_int=\count178
+\l__regex_last_char_int=\count179
+\l__regex_case_changed_char_int=\count180
+\l__regex_curr_state_int=\count181
+\l__regex_step_int=\count182
+\l__regex_min_active_int=\count183
+\l__regex_max_active_int=\count184
+\l__regex_replacement_csnames_int=\count185
+\l__regex_match_count_int=\count186
+\l__regex_min_submatch_int=\count187
+\l__regex_submatch_int=\count188
+\l__regex_zeroth_submatch_int=\count189
+\g__regex_trace_regex_int=\count190
+\c_empty_box=\box33
+\l_tmpa_box=\box34
+\l_tmpb_box=\box35
+\g_tmpa_box=\box36
+\g_tmpb_box=\box37
+\l__box_top_dim=\dimen126
+\l__box_bottom_dim=\dimen127
+\l__box_left_dim=\dimen128
+\l__box_right_dim=\dimen129
+\l__box_top_new_dim=\dimen130
+\l__box_bottom_new_dim=\dimen131
+\l__box_left_new_dim=\dimen132
+\l__box_right_new_dim=\dimen133
+\l__box_internal_box=\box38
+\l__coffin_internal_box=\box39
+\l__coffin_internal_dim=\dimen134
+\l__coffin_offset_x_dim=\dimen135
+\l__coffin_offset_y_dim=\dimen136
+\l__coffin_x_dim=\dimen137
+\l__coffin_y_dim=\dimen138
+\l__coffin_x_prime_dim=\dimen139
+\l__coffin_y_prime_dim=\dimen140
+\c_empty_coffin=\box40
+\l__coffin_aligned_coffin=\box41
+\l__coffin_aligned_internal_coffin=\box42
+\l_tmpa_coffin=\box43
+\l_tmpb_coffin=\box44
+\l__coffin_display_coffin=\box45
+\l__coffin_display_coord_coffin=\box46
+\l__coffin_display_pole_coffin=\box47
+\l__coffin_display_offset_dim=\dimen141
+\l__coffin_display_x_dim=\dimen142
+\l__coffin_display_y_dim=\dimen143
+\g__file_internal_ior=\read2
+\l__coffin_bounding_shift_dim=\dimen144
+\l__coffin_left_corner_dim=\dimen145
+\l__coffin_right_corner_dim=\dimen146
+\l__coffin_bottom_corner_dim=\dimen147
+\l__coffin_top_corner_dim=\dimen148
+\l__coffin_scaled_total_height_dim=\dimen149
+\l__coffin_scaled_width_dim=\dimen150
+\l__seq_internal_a_int=\count191
+\l__seq_internal_b_int=\count192
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3dvips.def
+File: l3dvips.def 2018-04-30 v L3 Experimental driver: dvips
+))
+\AMC@logfile=\write4
+\openout4 = `tex_de_base.amc'.
+
+\AMCload@counter=\count193
+\AMCid@quest=\count194
+\AMCid@check=\count195
+\AMCid@etud=\count196
+\AMCid@etudstart=\count197
+\AMCid@etudfin=\count198
+\AMCnum@copies=\count199
+\AMCformVSpace=\dimen151
+\AMCformHSpace=\dimen152
+\AMCinterIrep=\dimen153
+\AMCinterBrep=\dimen154
+\AMCinterIquest=\dimen155
+\AMCinterBquest=\dimen156
+\AMCpostOquest=\dimen157
+\AMCids@width=\dimen158
+\AMCids@height=\dimen159
+\AMC@SR=\count266
+\AMC@SR@count=\count267
+\AMC@SRnum=\count268
+\AMC@sti=\count269
+\AMC@stil=\count270
+\AMCsw@p@=\toks30
+\AMC@numerotation=\count271
+\AMC@XYspecial=\write5
+\AMC@tmpXY=\write6
+\AMC@smashbox=\box48
+\AMC@smashboxheight=\dimen160
+\c@AMC@ncase=\count272
+\AMC@boxedrule=\skip63
+\AMC@crossrule=\skip64
+\AMC@boxeddown=\skip65
+\AMC@boxedwidth=\skip66
+\AMC@boxedheight=\skip67
+\AMC@oval@radius=\skip68
+\AMC@outside@sep=\skip69
+\AMC@CBtaille=\skip70
+\AMCbin@sequence=\toks31
+\AMCbin@number=\count273
+\AMCbin@ndigits=\count274
+\AMCbin@id=\count275
+\AMCbin@digit=\count276
+\AMCtok@k=\count277
+\AMCtok@max=\count278
+\AMCtok@size=\count279
+\AMC@imax=\count280
+\AMCtok@ik=\count281
+\AMCloop@k=\count282
+\AMCrep@count=\count283
+\reponse@cxcix=\toks32
+\reponse@cxcviii=\toks33
+\reponse@cxcvii=\toks34
+\reponse@cxcvi=\toks35
+\reponse@cxcv=\toks36
+\reponse@cxciv=\toks37
+\reponse@cxciii=\toks38
+\reponse@cxcii=\toks39
+\reponse@cxci=\toks40
+\reponse@cxc=\toks41
+\reponse@clxxxix=\toks42
+\reponse@clxxxviii=\toks43
+\reponse@clxxxvii=\toks44
+\reponse@clxxxvi=\toks45
+\reponse@clxxxv=\toks46
+\reponse@clxxxiv=\toks47
+\reponse@clxxxiii=\toks48
+\reponse@clxxxii=\toks49
+\reponse@clxxxi=\toks50
+\reponse@clxxx=\toks51
+\reponse@clxxix=\toks52
+\reponse@clxxviii=\toks53
+\reponse@clxxvii=\toks54
+\reponse@clxxvi=\toks55
+\reponse@clxxv=\toks56
+\reponse@clxxiv=\toks57
+\reponse@clxxiii=\toks58
+\reponse@clxxii=\toks59
+\reponse@clxxi=\toks60
+\reponse@clxx=\toks61
+\reponse@clxix=\toks62
+\reponse@clxviii=\toks63
+\reponse@clxvii=\toks64
+\reponse@clxvi=\toks65
+\reponse@clxv=\toks66
+\reponse@clxiv=\toks67
+\reponse@clxiii=\toks68
+\reponse@clxii=\toks69
+\reponse@clxi=\toks70
+\reponse@clx=\toks71
+\reponse@clix=\toks72
+\reponse@clviii=\toks73
+\reponse@clvii=\toks74
+\reponse@clvi=\toks75
+\reponse@clv=\toks76
+\reponse@cliv=\toks77
+\reponse@cliii=\toks78
+\reponse@clii=\toks79
+\reponse@cli=\toks80
+\reponse@cl=\toks81
+\reponse@cxlix=\toks82
+\reponse@cxlviii=\toks83
+\reponse@cxlvii=\toks84
+\reponse@cxlvi=\toks85
+\reponse@cxlv=\toks86
+\reponse@cxliv=\toks87
+\reponse@cxliii=\toks88
+\reponse@cxlii=\toks89
+\reponse@cxli=\toks90
+\reponse@cxl=\toks91
+\reponse@cxxxix=\toks92
+\reponse@cxxxviii=\toks93
+\reponse@cxxxvii=\toks94
+\reponse@cxxxvi=\toks95
+\reponse@cxxxv=\toks96
+\reponse@cxxxiv=\toks97
+\reponse@cxxxiii=\toks98
+\reponse@cxxxii=\toks99
+\reponse@cxxxi=\toks100
+\reponse@cxxx=\toks101
+\reponse@cxxix=\toks102
+\reponse@cxxviii=\toks103
+\reponse@cxxvii=\toks104
+\reponse@cxxvi=\toks105
+\reponse@cxxv=\toks106
+\reponse@cxxiv=\toks107
+\reponse@cxxiii=\toks108
+\reponse@cxxii=\toks109
+\reponse@cxxi=\toks110
+\reponse@cxx=\toks111
+\reponse@cxix=\toks112
+\reponse@cxviii=\toks113
+\reponse@cxvii=\toks114
+\reponse@cxvi=\toks115
+\reponse@cxv=\toks116
+\reponse@cxiv=\toks117
+\reponse@cxiii=\toks118
+\reponse@cxii=\toks119
+\reponse@cxi=\toks120
+\reponse@cx=\toks121
+\reponse@cix=\toks122
+\reponse@cviii=\toks123
+\reponse@cvii=\toks124
+\reponse@cvi=\toks125
+\reponse@cv=\toks126
+\reponse@civ=\toks127
+\reponse@ciii=\toks128
+\reponse@cii=\toks129
+\reponse@ci=\toks130
+\reponse@c=\toks131
+\reponse@xcix=\toks132
+\reponse@xcviii=\toks133
+\reponse@xcvii=\toks134
+\reponse@xcvi=\toks135
+\reponse@xcv=\toks136
+\reponse@xciv=\toks137
+\reponse@xciii=\toks138
+\reponse@xcii=\toks139
+\reponse@xci=\toks140
+\reponse@xc=\toks141
+\reponse@lxxxix=\toks142
+\reponse@lxxxviii=\toks143
+\reponse@lxxxvii=\toks144
+\reponse@lxxxvi=\toks145
+\reponse@lxxxv=\toks146
+\reponse@lxxxiv=\toks147
+\reponse@lxxxiii=\toks148
+\reponse@lxxxii=\toks149
+\reponse@lxxxi=\toks150
+\reponse@lxxx=\toks151
+\reponse@lxxix=\toks152
+\reponse@lxxviii=\toks153
+\reponse@lxxvii=\toks154
+\reponse@lxxvi=\toks155
+\reponse@lxxv=\toks156
+\reponse@lxxiv=\toks157
+\reponse@lxxiii=\toks158
+\reponse@lxxii=\toks159
+\reponse@lxxi=\toks160
+\reponse@lxx=\toks161
+\reponse@lxix=\toks162
+\reponse@lxviii=\toks163
+\reponse@lxvii=\toks164
+\reponse@lxvi=\toks165
+\reponse@lxv=\toks166
+\reponse@lxiv=\toks167
+\reponse@lxiii=\toks168
+\reponse@lxii=\toks169
+\reponse@lxi=\toks170
+\reponse@lx=\toks171
+\reponse@lix=\toks172
+\reponse@lviii=\toks173
+\reponse@lvii=\toks174
+\reponse@lvi=\toks175
+\reponse@lv=\toks176
+\reponse@liv=\toks177
+\reponse@liii=\toks178
+\reponse@lii=\toks179
+\reponse@li=\toks180
+\reponse@l=\toks181
+\reponse@xlix=\toks182
+\reponse@xlviii=\toks183
+\reponse@xlvii=\toks184
+\reponse@xlvi=\toks185
+\reponse@xlv=\toks186
+\reponse@xliv=\toks187
+\reponse@xliii=\toks188
+\reponse@xlii=\toks189
+\reponse@xli=\toks190
+\reponse@xl=\toks191
+\reponse@xxxix=\toks192
+\reponse@xxxviii=\toks193
+\reponse@xxxvii=\toks194
+\reponse@xxxvi=\toks195
+\reponse@xxxv=\toks196
+\reponse@xxxiv=\toks197
+\reponse@xxxiii=\toks198
+\reponse@xxxii=\toks199
+\reponse@xxxi=\toks200
+\reponse@xxx=\toks201
+\reponse@xxix=\toks202
+\reponse@xxviii=\toks203
+\reponse@xxvii=\toks204
+\reponse@xxvi=\toks205
+\reponse@xxv=\toks206
+\reponse@xxiv=\toks207
+\reponse@xxiii=\toks208
+\reponse@xxii=\toks209
+\reponse@xxi=\toks210
+\reponse@xx=\toks211
+\reponse@xix=\toks212
+\reponse@xviii=\toks213
+\reponse@xvii=\toks214
+\reponse@xvi=\toks215
+\reponse@xv=\toks216
+\reponse@xiv=\toks217
+\reponse@xiii=\toks218
+\reponse@xii=\toks219
+\reponse@xi=\toks220
+\reponse@x=\toks221
+\reponse@ix=\toks222
+\reponse@viii=\toks223
+\reponse@vii=\toks224
+\reponse@vi=\toks225
+\reponse@v=\toks226
+\reponse@iv=\toks227
+\reponse@iii=\toks228
+\reponse@ii=\toks229
+\reponse@i=\toks230
+\AMCnum@questions=\count284
+\AMCrep@@count=\count285
+\amc_memory_elts_count=\count286
+\AMChorizAnswerSep=\skip71
+\AMChorizBoxSep=\skip72
+\AMC@mn@test=\skip73
+\AMC@mn@sep=\skip74
+\AMC@mn@leftmargin=\skip75
+\AMC@mn@rightmargin=\skip76
+\AMC@sz@width=\skip77
+\AMC@sz@height=\skip78
+\AMC@sz@depth=\skip79
+\AMC@sza@width=\skip80
+\AMC@sza@height=\skip81
+\AMC@sza@depth=\skip82
+\c@AMCquestionaff=\count287
+\ouverte@vs=\dimen161
+\AMC@chiffres=\count288
+\AMCcodeHspace=\dimen162
+\AMCcodeVspace=\dimen163
+\amc_code_digit_n_int=\count289
+\amc_num_exponent_int=\count290
+\amc_todigits_int=\count291
+\AMCnumeric@Hspace=\dimen164
+\AMCnumeric@Vspace=\dimen165
+\amc_num_ndigits_int=\count292
+\amc_num_decd_int=\count293
+\amc_num_expo_int=\count294
+\amc_num_base_int=\count295
+\amc_num_exact_int=\count296
+\amc_num_approx_int=\count297
+\amc_num_first_digit_int=\count298
+\amc_num_digit_int=\count299
+\amc_num_correct_expo_int=\count300
+\AMCopen@Hspace=\dimen166
+\AMCopen@LineHeight=\dimen167
+\AMCopen@Lines=\count301
+\AMCopen@boxmargin=\dimen168
+\AMCopen@boxframerule=\dimen169
+\AMCopen@framerule=\dimen170
+\AMC@addpages=\count302
+
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+
+
+Package etex Warning: Extended allocation already in use.
+(etex)                etex.sty code will not be used.
+(etex)                To force etex package to load, add
+(etex)                \RequirePackage{etex}
+(etex)                at the start of the document.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count303
+\Gm@cntv=\count304
+\c@Gm@tempcnt=\count305
+\Gm@bindingoffset=\dimen171
+\Gm@wd@mp=\dimen172
+\Gm@odd@mp=\dimen173
+\Gm@even@mp=\dimen174
+\Gm@layoutwidth=\dimen175
+\Gm@layoutheight=\dimen176
+\Gm@layouthoffset=\dimen177
+\Gm@layoutvoffset=\dimen178
+\Gm@dimlist=\toks231
+))
+(./tex_de_base.aux)
+\openout1 = `tex_de_base.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+\c@lstlisting=\count306
+\AMC@ovalbox@R=\box49
+\AMC@ovalbox@RF=\box50
+\AMC@ovalbox@=\box51
+\AMC@ovalbox@F=\box52
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(99.58464pt, 674.33032pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.12675pt
+* \headheight=56.9055pt
+* \headsep=8.5359pt
+* \topskip=10.0pt
+* \footskip=28.45274pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@k=\count307
+\AMCcodageentiernaturel@j=\count308
+\codageentiernaturel@i=\toks232
+\codageentiernaturel@ii=\toks233
+\codageentiernaturel@iii=\toks234
+\codageentiernaturel@iv=\toks235
+\codageentiernaturel@v=\toks236
+\codageentierrelatif@k=\count309
+\AMCcodageentierrelatif@j=\count310
+\codageentierrelatif@i=\toks237
+\codageentierrelatif@ii=\toks238
+\codageentierrelatif@iii=\toks239
+\codageentierrelatif@iv=\toks240
+\codageentierrelatif@v=\toks241
+\codageentierrelatif@vi=\toks242
+\codageentierrelatif@vii=\toks243
+\codageentierrelatif@viii=\toks244
+\codagereels@k=\count311
+\AMCcodagereels@j=\count312
+\codagereels@i=\toks245
+\codagereels@ii=\toks246
+\codagereels@iii=\toks247
+\codagereels@iv=\toks248
+\codagereels@v=\toks249
+\codagereels@vi=\toks250
+\codagereels@vii=\toks251
+\codagereels@viii=\toks252
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 333.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [1
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@vi=\toks253
+\codageentiernaturel@vii=\toks254
+\codageentiernaturel@viii=\toks255
+\codageentiernaturel@ix=\toks256
+\codageentiernaturel@x=\toks257
+\codageentierrelatif@ix=\toks258
+\codageentierrelatif@x=\toks259
+\codageentierrelatif@xi=\toks260
+\codageentierrelatif@xii=\toks261
+\codageentierrelatif@xiii=\toks262
+\codageentierrelatif@xiv=\toks263
+\codageentierrelatif@xv=\toks264
+\codageentierrelatif@xvi=\toks265
+\codagereels@ix=\toks266
+\codagereels@x=\toks267
+\codagereels@xi=\toks268
+\codagereels@xii=\toks269
+\codagereels@xiii=\toks270
+\codagereels@xiv=\toks271
+\codagereels@xv=\toks272
+\codagereels@xvi=\toks273
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xi=\toks274
+\codageentiernaturel@xii=\toks275
+\codageentiernaturel@xiii=\toks276
+\codageentiernaturel@xiv=\toks277
+\codageentiernaturel@xv=\toks278
+\codageentierrelatif@xvii=\toks279
+\codageentierrelatif@xviii=\toks280
+\codageentierrelatif@xix=\toks281
+\codageentierrelatif@xx=\toks282
+\codageentierrelatif@xxi=\toks283
+\codageentierrelatif@xxii=\toks284
+\codageentierrelatif@xxiii=\toks285
+\codageentierrelatif@xxiv=\toks286
+\codagereels@xvii=\toks287
+\codagereels@xviii=\toks288
+\codagereels@xix=\toks289
+\codagereels@xx=\toks290
+\codagereels@xxi=\toks291
+\codagereels@xxii=\toks292
+\codagereels@xxiii=\toks293
+\codagereels@xxiv=\toks294
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xvi=\toks295
+\codageentiernaturel@xvii=\toks296
+\codageentiernaturel@xviii=\toks297
+\codageentiernaturel@xix=\toks298
+\codageentiernaturel@xx=\toks299
+\codageentierrelatif@xxv=\toks300
+\codageentierrelatif@xxvi=\toks301
+\codageentierrelatif@xxvii=\toks302
+\codageentierrelatif@xxviii=\toks303
+\codageentierrelatif@xxix=\toks304
+\codageentierrelatif@xxx=\toks305
+\codageentierrelatif@xxxi=\toks306
+\codageentierrelatif@xxxii=\toks307
+\codagereels@xxv=\toks308
+\codagereels@xxvi=\toks309
+\codagereels@xxvii=\toks310
+\codagereels@xxviii=\toks311
+\codagereels@xxix=\toks312
+\codagereels@xxx=\toks313
+\codagereels@xxxi=\toks314
+\codagereels@xxxii=\toks315
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xxi=\toks316
+\codageentiernaturel@xxii=\toks317
+\codageentiernaturel@xxiii=\toks318
+\codageentiernaturel@xxiv=\toks319
+\codageentiernaturel@xxv=\toks320
+\codageentierrelatif@xxxiii=\toks321
+\codageentierrelatif@xxxiv=\toks322
+\codageentierrelatif@xxxv=\toks323
+\codageentierrelatif@xxxvi=\toks324
+\codageentierrelatif@xxxvii=\toks325
+\codageentierrelatif@xxxviii=\toks326
+\codageentierrelatif@xxxix=\toks327
+\codageentierrelatif@xl=\toks328
+\codagereels@xxxiii=\toks329
+\codagereels@xxxiv=\toks330
+\codagereels@xxxv=\toks331
+\codagereels@xxxvi=\toks332
+\codagereels@xxxvii=\toks333
+\codagereels@xxxviii=\toks334
+\codagereels@xxxix=\toks335
+\codagereels@xl=\toks336
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xxvi=\toks337
+\codageentiernaturel@xxvii=\toks338
+\codageentiernaturel@xxviii=\toks339
+\codageentiernaturel@xxix=\toks340
+\codageentiernaturel@xxx=\toks341
+\codageentierrelatif@xli=\toks342
+\codageentierrelatif@xlii=\toks343
+\codageentierrelatif@xliii=\toks344
+\codageentierrelatif@xliv=\toks345
+\codageentierrelatif@xlv=\toks346
+\codageentierrelatif@xlvi=\toks347
+\codageentierrelatif@xlvii=\toks348
+\codageentierrelatif@xlviii=\toks349
+\codagereels@xli=\toks350
+\codagereels@xlii=\toks351
+\codagereels@xliii=\toks352
+\codagereels@xliv=\toks353
+\codagereels@xlv=\toks354
+\codagereels@xlvi=\toks355
+\codagereels@xlvii=\toks356
+\codagereels@xlviii=\toks357
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xxxi=\toks358
+\codageentiernaturel@xxxii=\toks359
+\codageentiernaturel@xxxiii=\toks360
+\codageentiernaturel@xxxiv=\toks361
+\codageentiernaturel@xxxv=\toks362
+\codageentierrelatif@xlix=\toks363
+\codageentierrelatif@l=\toks364
+\codageentierrelatif@li=\toks365
+\codageentierrelatif@lii=\toks366
+\codageentierrelatif@liii=\toks367
+\codageentierrelatif@liv=\toks368
+\codageentierrelatif@lv=\toks369
+\codageentierrelatif@lvi=\toks370
+\codagereels@xlix=\toks371
+\codagereels@l=\toks372
+\codagereels@li=\toks373
+\codagereels@lii=\toks374
+\codagereels@liii=\toks375
+\codagereels@liv=\toks376
+\codagereels@lv=\toks377
+\codagereels@lvi=\toks378
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xxxvi=\toks379
+\codageentiernaturel@xxxvii=\toks380
+\codageentiernaturel@xxxviii=\toks381
+\codageentiernaturel@xxxix=\toks382
+\codageentiernaturel@xl=\toks383
+\codageentierrelatif@lvii=\toks384
+\codageentierrelatif@lviii=\toks385
+\codageentierrelatif@lix=\toks386
+\codageentierrelatif@lx=\toks387
+\codageentierrelatif@lxi=\toks388
+\codageentierrelatif@lxii=\toks389
+\codageentierrelatif@lxiii=\toks390
+\codageentierrelatif@lxiv=\toks391
+\codagereels@lvii=\toks392
+\codagereels@lviii=\toks393
+\codagereels@lix=\toks394
+\codagereels@lx=\toks395
+\codagereels@lxi=\toks396
+\codagereels@lxii=\toks397
+\codagereels@lxiii=\toks398
+\codagereels@lxiv=\toks399
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xli=\toks400
+\codageentiernaturel@xlii=\toks401
+\codageentiernaturel@xliii=\toks402
+\codageentiernaturel@xliv=\toks403
+\codageentiernaturel@xlv=\toks404
+\codageentierrelatif@lxv=\toks405
+\codageentierrelatif@lxvi=\toks406
+\codageentierrelatif@lxvii=\toks407
+\codageentierrelatif@lxviii=\toks408
+\codageentierrelatif@lxix=\toks409
+\codageentierrelatif@lxx=\toks410
+\codageentierrelatif@lxxi=\toks411
+\codageentierrelatif@lxxii=\toks412
+\codagereels@lxv=\toks413
+\codagereels@lxvi=\toks414
+\codagereels@lxvii=\toks415
+\codagereels@lxviii=\toks416
+\codagereels@lxix=\toks417
+\codagereels@lxx=\toks418
+\codagereels@lxxi=\toks419
+\codagereels@lxxii=\toks420
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xlvi=\toks421
+\codageentiernaturel@xlvii=\toks422
+\codageentiernaturel@xlviii=\toks423
+\codageentiernaturel@xlix=\toks424
+\codageentiernaturel@l=\toks425
+\codageentierrelatif@lxxiii=\toks426
+\codageentierrelatif@lxxiv=\toks427
+\codageentierrelatif@lxxv=\toks428
+\codageentierrelatif@lxxvi=\toks429
+\codageentierrelatif@lxxvii=\toks430
+\codageentierrelatif@lxxviii=\toks431
+\codageentierrelatif@lxxix=\toks432
+\codageentierrelatif@lxxx=\toks433
+\codagereels@lxxiii=\toks434
+\codagereels@lxxiv=\toks435
+\codagereels@lxxv=\toks436
+\codagereels@lxxvi=\toks437
+\codagereels@lxxvii=\toks438
+\codagereels@lxxviii=\toks439
+\codagereels@lxxix=\toks440
+\codagereels@lxxx=\toks441
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@li=\toks442
+\codageentiernaturel@lii=\toks443
+\codageentiernaturel@liii=\toks444
+\codageentiernaturel@liv=\toks445
+\codageentiernaturel@lv=\toks446
+\codageentierrelatif@lxxxi=\toks447
+\codageentierrelatif@lxxxii=\toks448
+\codageentierrelatif@lxxxiii=\toks449
+\codageentierrelatif@lxxxiv=\toks450
+\codageentierrelatif@lxxxv=\toks451
+\codageentierrelatif@lxxxvi=\toks452
+\codageentierrelatif@lxxxvii=\toks453
+\codageentierrelatif@lxxxviii=\toks454
+\codagereels@lxxxi=\toks455
+\codagereels@lxxxii=\toks456
+\codagereels@lxxxiii=\toks457
+\codagereels@lxxxiv=\toks458
+\codagereels@lxxxv=\toks459
+\codagereels@lxxxvi=\toks460
+\codagereels@lxxxvii=\toks461
+\codagereels@lxxxviii=\toks462
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lvi=\toks463
+\codageentiernaturel@lvii=\toks464
+\codageentiernaturel@lviii=\toks465
+\codageentiernaturel@lix=\toks466
+\codageentiernaturel@lx=\toks467
+\codageentierrelatif@lxxxix=\toks468
+\codageentierrelatif@xc=\toks469
+\codageentierrelatif@xci=\toks470
+\codageentierrelatif@xcii=\toks471
+\codageentierrelatif@xciii=\toks472
+\codageentierrelatif@xciv=\toks473
+\codageentierrelatif@xcv=\toks474
+\codageentierrelatif@xcvi=\toks475
+\codagereels@lxxxix=\toks476
+\codagereels@xc=\toks477
+\codagereels@xci=\toks478
+\codagereels@xcii=\toks479
+\codagereels@xciii=\toks480
+\codagereels@xciv=\toks481
+\codagereels@xcv=\toks482
+\codagereels@xcvi=\toks483
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxi=\toks484
+\codageentiernaturel@lxii=\toks485
+\codageentiernaturel@lxiii=\toks486
+\codageentiernaturel@lxiv=\toks487
+\codageentiernaturel@lxv=\toks488
+\codageentierrelatif@xcvii=\toks489
+\codageentierrelatif@xcviii=\toks490
+\codageentierrelatif@xcix=\toks491
+\codageentierrelatif@c=\toks492
+\codageentierrelatif@ci=\toks493
+\codageentierrelatif@cii=\toks494
+\codageentierrelatif@ciii=\toks495
+\codageentierrelatif@civ=\toks496
+\codagereels@xcvii=\toks497
+\codagereels@xcviii=\toks498
+\codagereels@xcix=\toks499
+\codagereels@c=\toks500
+\codagereels@ci=\toks501
+\codagereels@cii=\toks502
+\codagereels@ciii=\toks503
+\codagereels@civ=\toks504
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxvi=\toks505
+\codageentiernaturel@lxvii=\toks506
+\codageentiernaturel@lxviii=\toks507
+\codageentiernaturel@lxix=\toks508
+\codageentiernaturel@lxx=\toks509
+\codageentierrelatif@cv=\toks510
+\codageentierrelatif@cvi=\toks511
+\codageentierrelatif@cvii=\toks512
+\codageentierrelatif@cviii=\toks513
+\codageentierrelatif@cix=\toks514
+\codageentierrelatif@cx=\toks515
+\codageentierrelatif@cxi=\toks516
+\codageentierrelatif@cxii=\toks517
+\codagereels@cv=\toks518
+\codagereels@cvi=\toks519
+\codagereels@cvii=\toks520
+\codagereels@cviii=\toks521
+\codagereels@cix=\toks522
+\codagereels@cx=\toks523
+\codagereels@cxi=\toks524
+\codagereels@cxii=\toks525
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxxi=\toks526
+\codageentiernaturel@lxxii=\toks527
+\codageentiernaturel@lxxiii=\toks528
+\codageentiernaturel@lxxiv=\toks529
+\codageentiernaturel@lxxv=\toks530
+\codageentierrelatif@cxiii=\toks531
+\codageentierrelatif@cxiv=\toks532
+\codageentierrelatif@cxv=\toks533
+\codageentierrelatif@cxvi=\toks534
+\codageentierrelatif@cxvii=\toks535
+\codageentierrelatif@cxviii=\toks536
+\codageentierrelatif@cxix=\toks537
+\codageentierrelatif@cxx=\toks538
+\codagereels@cxiii=\toks539
+\codagereels@cxiv=\toks540
+\codagereels@cxv=\toks541
+\codagereels@cxvi=\toks542
+\codagereels@cxvii=\toks543
+\codagereels@cxviii=\toks544
+\codagereels@cxix=\toks545
+\codagereels@cxx=\toks546
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxxvi=\toks547
+\codageentiernaturel@lxxvii=\toks548
+\codageentiernaturel@lxxviii=\toks549
+\codageentiernaturel@lxxix=\toks550
+\codageentiernaturel@lxxx=\toks551
+\codageentierrelatif@cxxi=\toks552
+\codageentierrelatif@cxxii=\toks553
+\codageentierrelatif@cxxiii=\toks554
+\codageentierrelatif@cxxiv=\toks555
+\codageentierrelatif@cxxv=\toks556
+\codageentierrelatif@cxxvi=\toks557
+\codageentierrelatif@cxxvii=\toks558
+\codageentierrelatif@cxxviii=\toks559
+\codagereels@cxxi=\toks560
+\codagereels@cxxii=\toks561
+\codagereels@cxxiii=\toks562
+\codagereels@cxxiv=\toks563
+\codagereels@cxxv=\toks564
+\codagereels@cxxvi=\toks565
+\codagereels@cxxvii=\toks566
+\codagereels@cxxviii=\toks567
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxxxi=\toks568
+\codageentiernaturel@lxxxii=\toks569
+\codageentiernaturel@lxxxiii=\toks570
+\codageentiernaturel@lxxxiv=\toks571
+\codageentiernaturel@lxxxv=\toks572
+\codageentierrelatif@cxxix=\toks573
+\codageentierrelatif@cxxx=\toks574
+\codageentierrelatif@cxxxi=\toks575
+\codageentierrelatif@cxxxii=\toks576
+\codageentierrelatif@cxxxiii=\toks577
+\codageentierrelatif@cxxxiv=\toks578
+\codageentierrelatif@cxxxv=\toks579
+\codageentierrelatif@cxxxvi=\toks580
+\codagereels@cxxix=\toks581
+\codagereels@cxxx=\toks582
+\codagereels@cxxxi=\toks583
+\codagereels@cxxxii=\toks584
+\codagereels@cxxxiii=\toks585
+\codagereels@cxxxiv=\toks586
+\codagereels@cxxxv=\toks587
+\codagereels@cxxxvi=\toks588
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@lxxxvi=\toks589
+\codageentiernaturel@lxxxvii=\toks590
+\codageentiernaturel@lxxxviii=\toks591
+\codageentiernaturel@lxxxix=\toks592
+\codageentiernaturel@xc=\toks593
+\codageentierrelatif@cxxxvii=\toks594
+\codageentierrelatif@cxxxviii=\toks595
+\codageentierrelatif@cxxxix=\toks596
+\codageentierrelatif@cxl=\toks597
+\codageentierrelatif@cxli=\toks598
+\codageentierrelatif@cxlii=\toks599
+\codageentierrelatif@cxliii=\toks600
+\codageentierrelatif@cxliv=\toks601
+\codagereels@cxxxvii=\toks602
+\codagereels@cxxxviii=\toks603
+\codagereels@cxxxix=\toks604
+\codagereels@cxl=\toks605
+\codagereels@cxli=\toks606
+\codagereels@cxlii=\toks607
+\codagereels@cxliii=\toks608
+\codagereels@cxliv=\toks609
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xci=\toks610
+\codageentiernaturel@xcii=\toks611
+\codageentiernaturel@xciii=\toks612
+\codageentiernaturel@xciv=\toks613
+\codageentiernaturel@xcv=\toks614
+\codageentierrelatif@cxlv=\toks615
+\codageentierrelatif@cxlvi=\toks616
+\codageentierrelatif@cxlvii=\toks617
+\codageentierrelatif@cxlviii=\toks618
+\codageentierrelatif@cxlix=\toks619
+\codageentierrelatif@cl=\toks620
+\codageentierrelatif@cli=\toks621
+\codageentierrelatif@clii=\toks622
+\codagereels@cxlv=\toks623
+\codagereels@cxlvi=\toks624
+\codagereels@cxlvii=\toks625
+\codagereels@cxlviii=\toks626
+\codagereels@cxlix=\toks627
+\codagereels@cl=\toks628
+\codagereels@cli=\toks629
+\codagereels@clii=\toks630
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@xcvi=\toks631
+\codageentiernaturel@xcvii=\toks632
+\codageentiernaturel@xcviii=\toks633
+\codageentiernaturel@xcix=\toks634
+\codageentiernaturel@c=\toks635
+\codageentierrelatif@cliii=\toks636
+\codageentierrelatif@cliv=\toks637
+\codageentierrelatif@clv=\toks638
+\codageentierrelatif@clvi=\toks639
+\codageentierrelatif@clvii=\toks640
+\codageentierrelatif@clviii=\toks641
+\codageentierrelatif@clix=\toks642
+\codageentierrelatif@clx=\toks643
+\codagereels@cliii=\toks644
+\codagereels@cliv=\toks645
+\codagereels@clv=\toks646
+\codagereels@clvi=\toks647
+\codagereels@clvii=\toks648
+\codagereels@clviii=\toks649
+\codagereels@clix=\toks650
+\codagereels@clx=\toks651
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@ci=\toks652
+\codageentiernaturel@cii=\toks653
+\codageentiernaturel@ciii=\toks654
+\codageentiernaturel@civ=\toks655
+\codageentiernaturel@cv=\toks656
+\codageentierrelatif@clxi=\toks657
+\codageentierrelatif@clxii=\toks658
+\codageentierrelatif@clxiii=\toks659
+\codageentierrelatif@clxiv=\toks660
+\codageentierrelatif@clxv=\toks661
+\codageentierrelatif@clxvi=\toks662
+\codageentierrelatif@clxvii=\toks663
+\codageentierrelatif@clxviii=\toks664
+\codagereels@clxi=\toks665
+\codagereels@clxii=\toks666
+\codagereels@clxiii=\toks667
+\codagereels@clxiv=\toks668
+\codagereels@clxv=\toks669
+\codagereels@clxvi=\toks670
+\codagereels@clxvii=\toks671
+\codagereels@clxviii=\toks672
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cvi=\toks673
+\codageentiernaturel@cvii=\toks674
+\codageentiernaturel@cviii=\toks675
+\codageentiernaturel@cix=\toks676
+\codageentiernaturel@cx=\toks677
+\codageentierrelatif@clxix=\toks678
+\codageentierrelatif@clxx=\toks679
+\codageentierrelatif@clxxi=\toks680
+\codageentierrelatif@clxxii=\toks681
+\codageentierrelatif@clxxiii=\toks682
+\codageentierrelatif@clxxiv=\toks683
+\codageentierrelatif@clxxv=\toks684
+\codageentierrelatif@clxxvi=\toks685
+\codagereels@clxix=\toks686
+\codagereels@clxx=\toks687
+\codagereels@clxxi=\toks688
+\codagereels@clxxii=\toks689
+\codagereels@clxxiii=\toks690
+\codagereels@clxxiv=\toks691
+\codagereels@clxxv=\toks692
+\codagereels@clxxvi=\toks693
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxi=\toks694
+\codageentiernaturel@cxii=\toks695
+\codageentiernaturel@cxiii=\toks696
+\codageentiernaturel@cxiv=\toks697
+\codageentiernaturel@cxv=\toks698
+\codageentierrelatif@clxxvii=\toks699
+\codageentierrelatif@clxxviii=\toks700
+\codageentierrelatif@clxxix=\toks701
+\codageentierrelatif@clxxx=\toks702
+\codageentierrelatif@clxxxi=\toks703
+\codageentierrelatif@clxxxii=\toks704
+\codageentierrelatif@clxxxiii=\toks705
+\codageentierrelatif@clxxxiv=\toks706
+\codagereels@clxxvii=\toks707
+\codagereels@clxxviii=\toks708
+\codagereels@clxxix=\toks709
+\codagereels@clxxx=\toks710
+\codagereels@clxxxi=\toks711
+\codagereels@clxxxii=\toks712
+\codagereels@clxxxiii=\toks713
+\codagereels@clxxxiv=\toks714
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxvi=\toks715
+\codageentiernaturel@cxvii=\toks716
+\codageentiernaturel@cxviii=\toks717
+\codageentiernaturel@cxix=\toks718
+\codageentiernaturel@cxx=\toks719
+\codageentierrelatif@clxxxv=\toks720
+\codageentierrelatif@clxxxvi=\toks721
+\codageentierrelatif@clxxxvii=\toks722
+\codageentierrelatif@clxxxviii=\toks723
+\codageentierrelatif@clxxxix=\toks724
+\codageentierrelatif@cxc=\toks725
+\codageentierrelatif@cxci=\toks726
+\codageentierrelatif@cxcii=\toks727
+\codagereels@clxxxv=\toks728
+\codagereels@clxxxvi=\toks729
+\codagereels@clxxxvii=\toks730
+\codagereels@clxxxviii=\toks731
+\codagereels@clxxxix=\toks732
+\codagereels@cxc=\toks733
+\codagereels@cxci=\toks734
+\codagereels@cxcii=\toks735
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxxi=\toks736
+\codageentiernaturel@cxxii=\toks737
+\codageentiernaturel@cxxiii=\toks738
+\codageentiernaturel@cxxiv=\toks739
+\codageentiernaturel@cxxv=\toks740
+\codageentierrelatif@cxciii=\toks741
+\codageentierrelatif@cxciv=\toks742
+\codageentierrelatif@cxcv=\toks743
+\codageentierrelatif@cxcvi=\toks744
+\codageentierrelatif@cxcvii=\toks745
+\codageentierrelatif@cxcviii=\toks746
+\codageentierrelatif@cxcix=\toks747
+\codageentierrelatif@cc=\toks748
+\codagereels@cxciii=\toks749
+\codagereels@cxciv=\toks750
+\codagereels@cxcv=\toks751
+\codagereels@cxcvi=\toks752
+\codagereels@cxcvii=\toks753
+\codagereels@cxcviii=\toks754
+\codagereels@cxcix=\toks755
+\codagereels@cc=\toks756
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxxvi=\toks757
+\codageentiernaturel@cxxvii=\toks758
+\codageentiernaturel@cxxviii=\toks759
+\codageentiernaturel@cxxix=\toks760
+\codageentiernaturel@cxxx=\toks761
+\codageentierrelatif@cci=\toks762
+\codageentierrelatif@ccii=\toks763
+\codageentierrelatif@cciii=\toks764
+\codageentierrelatif@cciv=\toks765
+\codageentierrelatif@ccv=\toks766
+\codageentierrelatif@ccvi=\toks767
+\codageentierrelatif@ccvii=\toks768
+\codageentierrelatif@ccviii=\toks769
+\codagereels@cci=\toks770
+\codagereels@ccii=\toks771
+\codagereels@cciii=\toks772
+\codagereels@cciv=\toks773
+\codagereels@ccv=\toks774
+\codagereels@ccvi=\toks775
+\codagereels@ccvii=\toks776
+\codagereels@ccviii=\toks777
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxxxi=\toks778
+\codageentiernaturel@cxxxii=\toks779
+\codageentiernaturel@cxxxiii=\toks780
+\codageentiernaturel@cxxxiv=\toks781
+\codageentiernaturel@cxxxv=\toks782
+\codageentierrelatif@ccix=\toks783
+\codageentierrelatif@ccx=\toks784
+\codageentierrelatif@ccxi=\toks785
+\codageentierrelatif@ccxii=\toks786
+\codageentierrelatif@ccxiii=\toks787
+\codageentierrelatif@ccxiv=\toks788
+\codageentierrelatif@ccxv=\toks789
+\codageentierrelatif@ccxvi=\toks790
+\codagereels@ccix=\toks791
+\codagereels@ccx=\toks792
+\codagereels@ccxi=\toks793
+\codagereels@ccxii=\toks794
+\codagereels@ccxiii=\toks795
+\codagereels@ccxiv=\toks796
+\codagereels@ccxv=\toks797
+\codagereels@ccxvi=\toks798
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxxxvi=\toks799
+\codageentiernaturel@cxxxvii=\toks800
+\codageentiernaturel@cxxxviii=\toks801
+\codageentiernaturel@cxxxix=\toks802
+\codageentiernaturel@cxl=\toks803
+\codageentierrelatif@ccxvii=\toks804
+\codageentierrelatif@ccxviii=\toks805
+\codageentierrelatif@ccxix=\toks806
+\codageentierrelatif@ccxx=\toks807
+\codageentierrelatif@ccxxi=\toks808
+\codageentierrelatif@ccxxii=\toks809
+\codageentierrelatif@ccxxiii=\toks810
+\codageentierrelatif@ccxxiv=\toks811
+\codagereels@ccxvii=\toks812
+\codagereels@ccxviii=\toks813
+\codagereels@ccxix=\toks814
+\codagereels@ccxx=\toks815
+\codagereels@ccxxi=\toks816
+\codagereels@ccxxii=\toks817
+\codagereels@ccxxiii=\toks818
+\codagereels@ccxxiv=\toks819
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxli=\toks820
+\codageentiernaturel@cxlii=\toks821
+\codageentiernaturel@cxliii=\toks822
+\codageentiernaturel@cxliv=\toks823
+\codageentiernaturel@cxlv=\toks824
+\codageentierrelatif@ccxxv=\toks825
+\codageentierrelatif@ccxxvi=\toks826
+\codageentierrelatif@ccxxvii=\toks827
+\codageentierrelatif@ccxxviii=\toks828
+\codageentierrelatif@ccxxix=\toks829
+\codageentierrelatif@ccxxx=\toks830
+\codageentierrelatif@ccxxxi=\toks831
+\codageentierrelatif@ccxxxii=\toks832
+\codagereels@ccxxv=\toks833
+\codagereels@ccxxvi=\toks834
+\codagereels@ccxxvii=\toks835
+\codagereels@ccxxviii=\toks836
+\codagereels@ccxxix=\toks837
+\codagereels@ccxxx=\toks838
+\codagereels@ccxxxi=\toks839
+\codagereels@ccxxxii=\toks840
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cxlvi=\toks841
+\codageentiernaturel@cxlvii=\toks842
+\codageentiernaturel@cxlviii=\toks843
+\codageentiernaturel@cxlix=\toks844
+\codageentiernaturel@cl=\toks845
+\codageentierrelatif@ccxxxiii=\toks846
+\codageentierrelatif@ccxxxiv=\toks847
+\codageentierrelatif@ccxxxv=\toks848
+\codageentierrelatif@ccxxxvi=\toks849
+\codageentierrelatif@ccxxxvii=\toks850
+\codageentierrelatif@ccxxxviii=\toks851
+\codageentierrelatif@ccxxxix=\toks852
+\codageentierrelatif@ccxl=\toks853
+\codagereels@ccxxxiii=\toks854
+\codagereels@ccxxxiv=\toks855
+\codagereels@ccxxxv=\toks856
+\codagereels@ccxxxvi=\toks857
+\codagereels@ccxxxvii=\toks858
+\codagereels@ccxxxviii=\toks859
+\codagereels@ccxxxix=\toks860
+\codagereels@ccxl=\toks861
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@cli=\toks862
+\codageentiernaturel@clii=\toks863
+\codageentiernaturel@cliii=\toks864
+\codageentiernaturel@cliv=\toks865
+\codageentiernaturel@clv=\toks866
+\codageentierrelatif@ccxli=\toks867
+\codageentierrelatif@ccxlii=\toks868
+\codageentierrelatif@ccxliii=\toks869
+\codageentierrelatif@ccxliv=\toks870
+\codageentierrelatif@ccxlv=\toks871
+\codageentierrelatif@ccxlvi=\toks872
+\codageentierrelatif@ccxlvii=\toks873
+\codageentierrelatif@ccxlviii=\toks874
+\codagereels@ccxli=\toks875
+\codagereels@ccxlii=\toks876
+\codagereels@ccxliii=\toks877
+\codagereels@ccxliv=\toks878
+\codagereels@ccxlv=\toks879
+\codagereels@ccxlvi=\toks880
+\codagereels@ccxlvii=\toks881
+\codagereels@ccxlviii=\toks882
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clvi=\toks883
+\codageentiernaturel@clvii=\toks884
+\codageentiernaturel@clviii=\toks885
+\codageentiernaturel@clix=\toks886
+\codageentiernaturel@clx=\toks887
+\codageentierrelatif@ccxlix=\toks888
+\codageentierrelatif@ccl=\toks889
+\codageentierrelatif@ccli=\toks890
+\codageentierrelatif@cclii=\toks891
+\codageentierrelatif@ccliii=\toks892
+\codageentierrelatif@ccliv=\toks893
+\codageentierrelatif@cclv=\toks894
+\codageentierrelatif@cclvi=\toks895
+\codagereels@ccxlix=\toks896
+\codagereels@ccl=\toks897
+\codagereels@ccli=\toks898
+\codagereels@cclii=\toks899
+\codagereels@ccliii=\toks900
+\codagereels@ccliv=\toks901
+\codagereels@cclv=\toks902
+\codagereels@cclvi=\toks903
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxi=\toks904
+\codageentiernaturel@clxii=\toks905
+\codageentiernaturel@clxiii=\toks906
+\codageentiernaturel@clxiv=\toks907
+\codageentiernaturel@clxv=\toks908
+\codageentierrelatif@cclvii=\toks909
+\codageentierrelatif@cclviii=\toks910
+\codageentierrelatif@cclix=\toks911
+\codageentierrelatif@cclx=\toks912
+\codageentierrelatif@cclxi=\toks913
+\codageentierrelatif@cclxii=\toks914
+\codageentierrelatif@cclxiii=\toks915
+\codageentierrelatif@cclxiv=\toks916
+\codagereels@cclvii=\toks917
+\codagereels@cclviii=\toks918
+\codagereels@cclix=\toks919
+\codagereels@cclx=\toks920
+\codagereels@cclxi=\toks921
+\codagereels@cclxii=\toks922
+\codagereels@cclxiii=\toks923
+\codagereels@cclxiv=\toks924
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxvi=\toks925
+\codageentiernaturel@clxvii=\toks926
+\codageentiernaturel@clxviii=\toks927
+\codageentiernaturel@clxix=\toks928
+\codageentiernaturel@clxx=\toks929
+\codageentierrelatif@cclxv=\toks930
+\codageentierrelatif@cclxvi=\toks931
+\codageentierrelatif@cclxvii=\toks932
+\codageentierrelatif@cclxviii=\toks933
+\codageentierrelatif@cclxix=\toks934
+\codageentierrelatif@cclxx=\toks935
+\codageentierrelatif@cclxxi=\toks936
+\codageentierrelatif@cclxxii=\toks937
+\codagereels@cclxv=\toks938
+\codagereels@cclxvi=\toks939
+\codagereels@cclxvii=\toks940
+\codagereels@cclxviii=\toks941
+\codagereels@cclxix=\toks942
+\codagereels@cclxx=\toks943
+\codagereels@cclxxi=\toks944
+\codagereels@cclxxii=\toks945
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxxi=\toks946
+\codageentiernaturel@clxxii=\toks947
+\codageentiernaturel@clxxiii=\toks948
+\codageentiernaturel@clxxiv=\toks949
+\codageentiernaturel@clxxv=\toks950
+\codageentierrelatif@cclxxiii=\toks951
+\codageentierrelatif@cclxxiv=\toks952
+\codageentierrelatif@cclxxv=\toks953
+\codageentierrelatif@cclxxvi=\toks954
+\codageentierrelatif@cclxxvii=\toks955
+\codageentierrelatif@cclxxviii=\toks956
+\codageentierrelatif@cclxxix=\toks957
+\codageentierrelatif@cclxxx=\toks958
+\codagereels@cclxxiii=\toks959
+\codagereels@cclxxiv=\toks960
+\codagereels@cclxxv=\toks961
+\codagereels@cclxxvi=\toks962
+\codagereels@cclxxvii=\toks963
+\codagereels@cclxxviii=\toks964
+\codagereels@cclxxix=\toks965
+\codagereels@cclxxx=\toks966
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxxvi=\toks967
+\codageentiernaturel@clxxvii=\toks968
+\codageentiernaturel@clxxviii=\toks969
+\codageentiernaturel@clxxix=\toks970
+\codageentiernaturel@clxxx=\toks971
+\codageentierrelatif@cclxxxi=\toks972
+\codageentierrelatif@cclxxxii=\toks973
+\codageentierrelatif@cclxxxiii=\toks974
+\codageentierrelatif@cclxxxiv=\toks975
+\codageentierrelatif@cclxxxv=\toks976
+\codageentierrelatif@cclxxxvi=\toks977
+\codageentierrelatif@cclxxxvii=\toks978
+\codageentierrelatif@cclxxxviii=\toks979
+\codagereels@cclxxxi=\toks980
+\codagereels@cclxxxii=\toks981
+\codagereels@cclxxxiii=\toks982
+\codagereels@cclxxxiv=\toks983
+\codagereels@cclxxxv=\toks984
+\codagereels@cclxxxvi=\toks985
+\codagereels@cclxxxvii=\toks986
+\codagereels@cclxxxviii=\toks987
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxxxi=\toks988
+\codageentiernaturel@clxxxii=\toks989
+\codageentiernaturel@clxxxiii=\toks990
+\codageentiernaturel@clxxxiv=\toks991
+\codageentiernaturel@clxxxv=\toks992
+\codageentierrelatif@cclxxxix=\toks993
+\codageentierrelatif@ccxc=\toks994
+\codageentierrelatif@ccxci=\toks995
+\codageentierrelatif@ccxcii=\toks996
+\codageentierrelatif@ccxciii=\toks997
+\codageentierrelatif@ccxciv=\toks998
+\codageentierrelatif@ccxcv=\toks999
+\codageentierrelatif@ccxcvi=\toks1000
+\codagereels@cclxxxix=\toks1001
+\codagereels@ccxc=\toks1002
+\codagereels@ccxci=\toks1003
+\codagereels@ccxcii=\toks1004
+\codagereels@ccxciii=\toks1005
+\codagereels@ccxciv=\toks1006
+\codagereels@ccxcv=\toks1007
+\codagereels@ccxcvi=\toks1008
+[1
+
+
+] [2
+
+]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 333--333
+[]$[]$ 
+ []
+
+
+Overfull \hbox (16.79755pt too wide) in paragraph at lines 333--333
+[] []
+ []
+
+\codageentiernaturel@clxxxvi=\toks1009
+\codageentiernaturel@clxxxvii=\toks1010
+\codageentiernaturel@clxxxviii=\toks1011
+\codageentiernaturel@clxxxix=\toks1012
+\codageentiernaturel@cxc=\toks1013
+\codageentierrelatif@ccxcvii=\toks1014
+\codageentierrelatif@ccxcviii=\toks1015
+\codageentierrelatif@ccxcix=\toks1016
+\codageentierrelatif@ccc=\toks1017
+\codageentierrelatif@ccci=\toks1018
+\codageentierrelatif@cccii=\toks1019
+\codageentierrelatif@ccciii=\toks1020
+\codageentierrelatif@ccciv=\toks1021
+\codagereels@ccxcvii=\toks1022
+\codagereels@ccxcviii=\toks1023
+\codagereels@ccxcix=\toks1024
+\codagereels@ccc=\toks1025
+\codagereels@ccci=\toks1026
+\codagereels@cccii=\toks1027
+\codagereels@ccciii=\toks1028
+\codagereels@ccciv=\toks1029
+[1
+
+
+] [2
+
+] (./tex_de_base.aux) ) 
+Here is how much of TeX's memory you used:
+ 14338 strings out of 492649
+ 259545 string characters out of 6132041
+ 340249 words of memory out of 5000000
+ 18164 multiletter control sequences out of 15000+600000
+ 534327 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,23n,66p,10350b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on tex_de_base.dvi (76 pages, 831764 bytes).

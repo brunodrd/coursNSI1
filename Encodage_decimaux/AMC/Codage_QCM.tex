@@ -1,0 +1,358 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{listings}
+%\usepackage{minted}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage[francais,bloc,completemulti]{automultiplechoice}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setdefaultgroupmode{withoutreplacement}
+
+\element{codageentiernaturel}{
+  \begin{question}{entiernaturel-Q1}\bareme{b=2,m=-0.25,e=-0.25,v=0}
+  L'entier naturel $25$ s'écrit en binaire naturel sur 8 bits:    
+   \begin{reponseshoriz}
+   		\mauvaise{$0001 1010$}
+   		\mauvaise{$0001 1000$}
+   		\mauvaise{$0001 0101$}
+   		\bonne{$0001 1001$}
+   \end{reponseshoriz}
+  \end{question}
+}
+%
+%
+\element{codageentiernaturel}{
+  \begin{question}{entiernaturel-Q2}\bareme{b=2,m=-0.25,e=-0.25,v=0}
+         On effectue l'addition binaire $0010 1101 + 0000 1011$. Quel est le résultat?
+          \begin{reponseshoriz}
+   			\mauvaise{$0011 1100$}
+   			\mauvaise{$0010 1000$}
+   			\mauvaise{$0010 0110$}
+   			\bonne{$0011 1000$}
+   \end{reponseshoriz}
+  \end{question}
+}
+%
+% 
+\element{codageentiernaturel}{
+  \begin{question}{entiernaturel-Q3}\bareme{b=2,m=-0.25,e=-0.25,v=0}
+Quelle est la valeur de l'entier naturel codé par le motif binaire $0001 1010$ ?
+
+     \begin{reponseshoriz}
+      \mauvaise{$22$}
+      \mauvaise{$51$}
+      \bonne{$26$}
+      \mauvaise{$24$}
+    \end{reponseshoriz} 
+  \end{question}
+}
+%
+%
+\element{codageentiernaturel}{
+  \begin{question}{entiernaturel-Q4}\bareme{b=2,m=-0.25,e=-0.25,v=0} 
+	Quelle est la représentation sur 8 bits de l'addition binaire $1011 1011 + 0111 0101$?
+     \begin{reponseshoriz}
+      \mauvaise{Impossible}
+      \bonne{$0011 0000$}
+      \mauvaise{$1 0011 0000$}
+      \mauvaise{$0000 0000$}
+    \end{reponseshoriz} 
+  \end{question} 
+}
+%
+%
+\element{codageentiernaturel}{
+  \begin{question}{entiernaturel-Q5}\bareme{b=2,m=-0.25,e=-0.25,v=0}
+On considère le nombre $N=1000_{10}$ (\emph{écrit en base 10}). L'écriture de $N$ en binaire:
+     \begin{reponses}
+      \mauvaise{comporte 4 chiffres}
+      \bonne{comporte au moins 9 chiffres}
+      \mauvaise{se termine par 1}
+      \mauvaise{comporte moins de 9 chiffres}
+    \end{reponses} 
+  \end{question} 
+}
+
+
+\element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q1} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+  Quelle est la représentation de $-3$ sur 8 bits, par la méthode du complément à deux?
+     \begin{reponseshoriz}
+      \mauvaise{$0000 0101$}
+      \bonne{$1111 1101$}
+      \mauvaise{$1111 1100$}
+      \mauvaise{$0000 0100$}
+    \end{reponseshoriz} 
+  \end{question}
+}
+%
+%
+\element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q2} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+ Que vaut le nombre binaire $1110 0000$ codé par la méthode du complément à deux, sur 8 bits?
+     \begin{reponseshoriz}
+      \mauvaise{$224$}
+      \bonne{$-32$}
+      \mauvaise{$-224$}
+      \mauvaise{$-96$}
+    \end{reponseshoriz} 
+  \end{question}
+}
+%
+%
+\element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q3} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+ On travaille avec des entiers relatifs codés sur 8 bits. L'addition binaire ${0111 1111 + 0000 0001}$:
+     \begin{reponses}
+      \mauvaise{donne un nombre positif}
+      \bonne{donne un nombre négatif}
+      \mauvaise{zéro}
+      \mauvaise{est impossible}
+    \end{reponses} 
+  \end{question}
+  }
+ %
+ %
+  \element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q4} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Quel est le codage de l'entier relatif positif 64 sur 8 bits?
+     \begin{reponseshoriz}
+      \mauvaise{$1100 0000$}
+      \bonne{$0100 0000$}
+      \mauvaise{$1110 0000$}
+      \mauvaise{$0110 0000$}
+    \end{reponseshoriz} 
+  \end{question}
+  }
+  %
+  %
+  \element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q5} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+Le nombre binaire $0111 1111$ codé sur 8 bits est:
+     \begin{reponses}
+      \mauvaise{le plus petit entier relatif négatif qu'on peut coder sur 8 bits}
+      \bonne{le plus grand entier relatif positif qu'on peut coder sur 8 bits}
+      \mauvaise{le codage de un}
+      \mauvaise{est un cas particulier: il a la même représentation que son opposé}
+    \end{reponses} 
+  \end{question}
+  }
+  %
+  %
+    \element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q6} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Dans une représentation d'entiers relatifs sur 8 bits par la méthode du complément à deux, le bit de signe est:
+     \begin{reponses}
+      \mauvaise{le bit de poids faible (\emph{bit 0})}
+      \bonne{le bit de poids fort (\emph{bit 7})}
+      \mauvaise{obtenu en ajoutant $1$ au nombre}
+      \mauvaise{obtenu en inversant les bits}
+    \end{reponses} 
+  \end{question}
+  }
+%
+%
+     \element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q7} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	La méthode du complément à deux permet:
+     \begin{reponses}
+      \mauvaise{d'inverser tous les bits d'un nombre entier écrit en binaire}
+      \bonne{d'obtenir l'opposé d'un nombre entier écrit en binaire}
+      \mauvaise{d'ajouter $1$ à un nombre entier écrit en binaire}
+      \mauvaise{de trouver la valeur absolue d'un entier relatif}
+    \end{reponses} 
+  \end{question} 
+  }
+  %
+  %
+   \element{codageentierrelatif}{
+  \begin{question}{entierrelatif-Q8} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Quelle est la valeur de l'entier relatif dont la représentation en binaire est $0111 1110$ (\emph{sur 8 bits})?
+     \begin{reponseshoriz}
+      \mauvaise{$-126$}
+      \bonne{$126$}
+      \mauvaise{$-124$}
+      \mauvaise{$-128$}
+    \end{reponseshoriz} 
+  \end{question}
+ }
+ %
+ %
+    \element{codagereels}{
+  \begin{question}{codagereels-Q1} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Quel est le codage en binaire selon la méthode de la virgule fixe, du nombre réel $3,25$?
+     \begin{reponseshoriz}
+      \mauvaise{$11,11001$}
+      \bonne{$11,01$}
+      \mauvaise{$3,11001$}
+      \mauvaise{$1,101$}
+    \end{reponseshoriz} 
+  \end{question}
+  }
+  %
+  %
+     \element{codagereels}{
+  \begin{question}{codagereels-Q2} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Que vaut le nombre binaire $10001,01$ codé selon la méthode de la virgule fixe?
+     \begin{reponseshoriz}
+      \mauvaise{$17,01$}
+      \bonne{$17,25$}
+      \mauvaise{$17,1$}
+      \mauvaise{$1,000101$}
+    \end{reponseshoriz} 
+  \end{question}
+  }
+  %
+  % 
+     \element{codagereels}{
+  \begin{question}{codagereels-Q3} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Le nombre $10010,0011$ peut s'écrire:
+     \begin{reponses}
+      \mauvaise{$1,00100011\times 2^{-4}$}
+      \bonne{$1,00100011\times 2^4$}
+      \mauvaise{$1,00100011\times 10^4$}
+      \mauvaise{$1,00100011\times 10^{-4}$}
+    \end{reponses} 
+  \end{question}
+  }
+  %
+  %    
+\element{codagereels}{
+  \begin{question}{codagereels-Q4} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	La représentation en virgule flottante est une écriture de la forme {\emph{signe}~$\vert$~\emph{exposant}$~\vert$~\emph{mantisse}}. Que vaut le nombre $0\ 10000011\ 10010100000000000000000$ codé en simple précision (\emph{32 bits})?
+     \begin{reponseshoriz}
+      \mauvaise{$131,578125$}
+      \bonne{$25,25$}
+      \mauvaise{$0,578125\times 2^{131}$}
+      \mauvaise{$9,25$}
+    \end{reponseshoriz} 
+  \end{question}
+  }
+   %
+  %   
+     \element{codagereels}{
+  \begin{question}{codagereels-Q5} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Quelle est la représentation en virgule flottante, simple précision de $-132,5$?
+     \begin{reponses}
+      \mauvaise{$0\ 10000110\ 00001001000000000000000$}
+      \bonne{$1\ 10000110\ 00001001000000000000000$}
+      \mauvaise{$1\ 10000100\ 10000000000000000000000$}
+      \mauvaise{$1\ 10000111\ 00001001000000000000000$}
+    \end{reponses} 
+  \end{question}
+  }
+   %
+  %   
+     \element{codagereels}{
+  \begin{question}{codagereels-Q6} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	L'opération \texttt{0.1*12} en python fournit \texttt{1.2000000000000002}. Quelle en est la raison?
+     \begin{reponses}
+      \mauvaise{La calculatrice de python est plus précise qu'une calculatrice ordinaire}
+      \bonne{Les nombres réels sont représentés de manière approximative en machine}
+      \mauvaise{L'opérateur aurait dû saisir \texttt{float(0.1*12)}}
+      \mauvaise{Par défaut tous les calculs sur les décimaux sont fourni avec 16 décimales}
+    \end{reponses} 
+  \end{question}
+  }
+    %
+  %   
+     \element{codagereels}{
+  \begin{question}{codagereels-Q7} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	Cochez une propriété correcte des nombres flottants sur une machine numérique.
+     \begin{reponses}
+      \mauvaise{La représentation en virgule flottante nécessite 3 octets pour coder le signe, l'exposant et la mantisse}
+      \bonne{Des propriétés mathématiques comme l'associativité de l'addition ne sont pas forcément valables avec les flottants}
+      \mauvaise{La représentation avec tous les bits à zéro est interdite}
+      \mauvaise{Il n'est pas possible de coder zéro avec la norme IEEE754 qui définit les règles de codage et d'utilisation des flottants}
+    \end{reponses} 
+  \end{question}
+  }   
+ %
+ % 
+     \element{codagereels}{
+  \begin{question}{codagereels-Q8} \bareme{b=2,m=-0.25,e=-0.25,v=0}
+	L'instruction \texttt{0.1 + 0.2 == 0.3} en python, fournira:
+     \begin{reponseshoriz}
+      \mauvaise{\texttt{True}}
+      \bonne{\texttt{False}}
+      \mauvaise{\texttt{0.3}}
+      \mauvaise{\texttt{SyntaxError}}
+    \end{reponseshoriz} 
+  \end{question}
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\exemplaire{38}{
+
+%%% debut de l'entête des copies :    
+	%%% première ligne
+
+	\begin{minipage}{1\linewidth}
+	  \centering\large\bf CODAGE DE NOMBRES 
+	\end{minipage}
+
+	%%% codage des numéros d'étudiants sur 3 chiffres par les candidats et encadré d'écriture manuelle des noms.
+	\vspace*{3mm}
+	{\setlength{\parindent}{0pt}\AMCcode{nsi}{2}\hspace*{\fill}
+	\begin{minipage}[b]{12cm}
+	 \hspace*{5mm}
+  	  Codez votre numéro d'identification ci contre chiffre par chiffre,
+  	  
+  	  puis complétez l'encadré.
+     \vspace{3ex}
+
+	 \hfill\champnom{\fbox{
+	 \begin{minipage}{1\linewidth}
+		\vspace*{3mm}
+		NOM - Prénom - Classe :
+		\vspace*{3mm}
+	 \end{minipage}
+	    }
+	   }
+	\hfill\vspace{1ex}
+% texte de présentation 
+\begin{center}\em
+
+Durée : 55 minutes.
+
+  Document écrit non autorisé. Calculatrice autorisée.
+  Les réponses fausses ou incohérentes retirent des points.
+
+\end{center}
+
+	\end{minipage}\hspace*{\fill}
+	}
+
+\vspace{4ex}
+
+%%% Fin de l'entête
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\hrule\vspace{2mm}
+	\bf\Large Codage d'entiers naturels
+	\vspace{1mm}\hrule
+\end{center}
+\restituegroupe{codageentiernaturel}
+%
+\begin{center}
+	\hrule\vspace{2mm}
+	\bf\Large Codage d'entiers relatifs
+	\vspace{1mm}\hrule
+\end{center}
+\restituegroupe{codageentierrelatif}
+%
+\begin{center}
+	\hrule\vspace{2mm}
+	\bf\Large Codage de nombres réels
+	\vspace{1mm}\hrule
+\end{center}
+\restituegroupe{codagereels}
+\AMCcleardoublepage
+
+}
+
+\end{document}
+
