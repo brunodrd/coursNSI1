@@ -1,0 +1,51 @@
+Product Name;Vendor Name;Product Type;Total
+IE;Microsoft;Application;631
+PHP;PHP;Application;596
+Thunderbird;Mozilla;Application;872
+JRE;Oracle;Application;601
+Windows 8.1;Microsoft;OS;808
+Windows Rt 8.1;Microsoft;OS;681
+Enterprise Linux Desktop;Redhat;OS;924
+Acrobat;Adobe;Application;1130
+Imagemagick;Imagemagick;Application;499
+Windows 7;Microsoft;OS;1097
+Windows Vista;Microsoft;OS;828
+Acrobat Dc;Adobe;Application;912
+Watchos;Apple;OS;470
+Windows 2000;Microsoft;OS;514
+JDK;Oracle;Application;597
+Iphone Os;Apple;OS;1651
+Firefox Esr;Mozilla;Application;621
+Ubuntu Linux;Canonical;OS;1703
+Mac Os X;Apple;OS;2208
+Windows Server 2016;Microsoft;OS;627
+Windows Xp;Microsoft;OS;740
+Internet Explorer;Microsoft;Application;997
+Enterprise Linux;Redhat;OS;625
+IOS;Cisco;OS;517
+Android;Google;OS;2164
+Windows 10;Microsoft;OS;845
+Opensuse;Opensuse;OS;916
+Enterprise Linux Workstation;Redhat;OS;823
+Acrobat Reader Dc;Adobe;Application;912
+Mac Os X Server;Apple;OS;640
+Safari;Apple;Application;1029
+Sunos;SUN;OS;569
+Office;Microsoft;Application;519
+Debian Linux;Debian;OS;2579
+Flash Player;Adobe;Application;1070
+Mysql;Oracle;Application;628
+Acrobat Reader;Adobe;Application;878
+Itunes;Apple;Application;597
+Wireshark;Wireshark;Application;573
+Windows Server 2008;Microsoft;OS;1237
+Seamonkey;Mozilla;Application;697
+Fedora;Fedoraproject;OS;608
+Edge;Microsoft;Application;552
+Linux Kernel;Linux;OS;2219
+Firefox;Mozilla;Application;1781
+Solaris;SUN;OS;46
+Enterprise Linux Server;Redhat;OS;857
+Windows Server 2012;Microsoft;OS;872
+Chrome;Google;Application;1763
+Leap;Opensuse;OS;510

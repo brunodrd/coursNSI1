@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tables de données &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tables de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-tableaux-part-3">Les tableaux - part. 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-tableau-de-tableaux">Qu’est-ce qu’un tableau de tableaux?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-acceder-aux-elements-dun-tableau-de-tableaux">Comment accéder aux éléments d’un tableau de tableaux?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exercice-dapplication-directe">Exercice d’application directe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-construire-un-tableau-de-tableaux-en-comprehension">Comment construire un tableau de tableaux en compréhension?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Exercice d’application directe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#organisation-des-donnees-sous-forme-de-tables">Organisation des données sous forme de tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reperes-historiques">Repères historiques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quest-ce-quune-table-de-donnees">Qu’est-ce qu’une table de données?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quelle-structure-de-donnees-pour-representer-une-table">Quelle structure de données pour représenter une table ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importation-sous-forme-de-tableau-de-tableaux">Importation sous forme de tableau de tableaux</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Exercice d’application directe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#importation-sous-forme-de-tableau-de-n-uplets-nommes">Importation sous forme de tableau de n-uplets nommés</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Exercice d’application directe</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resume">Résumé</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tables de données</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_XI_Notion_de_tables_de_données.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tables-de-donnees">
+<h1>Tables de données<a class="headerlink" href="#tables-de-donnees" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="les-tableaux-part-3">
+<h2>Les tableaux - part. 3<a class="headerlink" href="#les-tableaux-part-3" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="quest-ce-quun-tableau-de-tableaux">
+<h3>Qu’est-ce qu’un tableau de tableaux?<a class="headerlink" href="#quest-ce-quun-tableau-de-tableaux" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les éléments d’un tableau peuvent être des entiers, des flottants, des
+chaines de caractères, mais aussi … des tableaux! Ainsi, l’écriture
+suivante est parfaitement valide:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">t</span></code> est un tableau composé de <strong>deux</strong> tableaux de <strong>quatre</strong> entiers.
+Pour faciliter la compréhension, on aussi saisir <code class="docutils literal notranslate"><span class="pre">t</span></code> de la manière
+suivante:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Cette présentation met bien en évidence une structure à <strong>deux</strong>
+lignes et <strong>quatre</strong> colonnes. Un tel tableau, dont les lignes ont la
+même taille, est appelé une <strong>matrice</strong>.</div>
+<div class="line">Les tableaux de tableaux sont utilisées pour les manipulations des
+données tabulées (voir ci-dessous) ou des images.</div>
+</div>
+</div>
+<div class="section" id="comment-acceder-aux-elements-dun-tableau-de-tableaux">
+<h3>Comment accéder aux éléments d’un tableau de tableaux?<a class="headerlink" href="#comment-acceder-aux-elements-dun-tableau-de-tableaux" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">On peut envisager un accès indexé. Ce qui revient à dire que l’accès à
+un élément <code class="docutils literal notranslate"><span class="pre">t[i][j]</span></code> se fera grâce à deux index <span class="math notranslate nohighlight">\(i\)</span> et
+<span class="math notranslate nohighlight">\(j\)</span> qui représentent respectivement le numéro de la ligne et le
+numéro de la colonne.</div>
+<div class="line"><strong>Exemples</strong></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+<span class="c1">#Elément de la 2ème ligne, 3ème colonne --&gt; i=1, j=2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">7</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Modification de la valeur de la 1ere ligne, 4eme colonne --&gt; i=0, j=3</span>
+<span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]]</span>
+</pre></div>
+</div>
+<div class="section" id="exercice-dapplication-directe">
+<h4>Exercice d’application directe<a class="headerlink" href="#exercice-dapplication-directe" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Soit la matrice:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">22</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">27</span><span class="p">],</span>
+     <span class="p">[</span><span class="mi">31</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">]]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Que vaut <code class="docutils literal notranslate"><span class="pre">t[1][2]</span></code>?</p></li>
+<li><p>Que doit-on modifier pour avoir
+<code class="docutils literal notranslate"><span class="pre">[[15,</span> <span class="pre">17,</span> <span class="pre">22],</span> <span class="pre">[17,</span> <span class="pre">25,</span> <span class="pre">45],</span> <span class="pre">[31,</span> <span class="pre">33,</span> <span class="pre">35]]</span></code>?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="comment-construire-un-tableau-de-tableaux-en-comprehension">
+<h3>Comment construire un tableau de tableaux en compréhension?<a class="headerlink" href="#comment-construire-un-tableau-de-tableaux-en-comprehension" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Pour construire un tableau <code class="docutils literal notranslate"><span class="pre">t</span></code> ayant <span class="math notranslate nohighlight">\(n\)</span> lignes et <span class="math notranslate nohighlight">\(p\)</span>
+colonnes initialisé avec des zéros par exemple, on peut procéder comme
+suit:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">p</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’instruction <code class="docutils literal notranslate"><span class="pre">[0]*p</span></code> est équivalente à <code class="docutils literal notranslate"><span class="pre">[0]</span> <span class="pre">+</span> <span class="pre">[0]</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">[0]</span></code>
+(p tableaux <code class="docutils literal notranslate"><span class="pre">[0]</span></code>) soit <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">...,</span> <span class="pre">0]</span></code> composé de p zéros.</p>
+</div>
+<div class="section" id="id1">
+<h4>Exercice d’application directe<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Que vaut <code class="docutils literal notranslate"><span class="pre">t</span></code> après l’instruction <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">[[i,</span> <span class="pre">i+1]</span> <span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(2)]</span></code>?</p>
+</div>
+</div>
+</div>
+<div class="section" id="organisation-des-donnees-sous-forme-de-tables">
+<h2>Organisation des données sous forme de tables<a class="headerlink" href="#organisation-des-donnees-sous-forme-de-tables" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="reperes-historiques">
+<h3>Repères historiques<a class="headerlink" href="#reperes-historiques" title="Lien permanent vers ce titre">¶</a></h3>
+<p><img alt="IBM" src="_images/IBM360.jpg" /></p>
+<div class="docutils container">
+<p>By ArnoldReinhold - Own work, CC BY-SA 3.0, Link</p>
+</div>
+<p>Le compilateur fortran de l’<strong>IBM OS/360</strong> supportait dès 1972 des
+données tabulées, au format <em>csv (comma-separated values)</em>.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Source</a></p>
+</div>
+<div class="section" id="quest-ce-quune-table-de-donnees">
+<h3>Qu’est-ce qu’une table de données?<a class="headerlink" href="#quest-ce-quune-table-de-donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Une table de données est un <strong>arrangement de lignes et de colonnes</strong>.
+Les lignes ont divers synonymes: <em>enregistrement, p-uplet, vecteur,
+etc.</em>. Il en est de même pour les colonnes: <em>champ, propriété, attribut,
+etc.</em> L’organisation des données sous forme de table (on dit aussi <em>sous
+forme tabulée</em>) est très répandue.</p>
+<p><strong>Exemple</strong>: Les résultats du bac général à la Réunion ces dernières
+années. L’utilisation d’une table est très commode:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>id_lycee</p></th>
+<th class="head"><p>annee</p></th>
+<th class="head"><p>ville</p></th>
+<th class="head"><p>taux_L</p></th>
+<th class="head"><p>taux_ES</p></th>
+<th class="head"><p>taux_S</p></th>
+<th class="head"><p>academie</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LYCEE LECONTE DE LISLE</p></td>
+<td><p>2018</p></td>
+<td><p>ST DENIS</p></td>
+<td><p>97</p></td>
+<td><p>98</p></td>
+<td><p>92</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-odd"><td><p>LYCEE BEL AIR (GENERAL ET TECHNO.)</p></td>
+<td><p>2018</p></td>
+<td><p>STE SUZANNE</p></td>
+<td><p>92</p></td>
+<td><p>81</p></td>
+<td><p>95</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-even"><td><p>LYCEE PIERRE LAGOURGUE (GENERAL ET TECHNO.)</p></td>
+<td><p>2018</p></td>
+<td><p>LE TAMPON</p></td>
+<td><p>95</p></td>
+<td><p>94</p></td>
+<td><p>96</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-odd"><td><p>LYCEE MAHATMA GANDHI</p></td>
+<td><p>2018</p></td>
+<td><p>ST ANDRE</p></td>
+<td><p>88</p></td>
+<td><p>84</p></td>
+<td><p>85</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dans l’exemple ci-dessus, chaque ligne (en dehors de la première)
+représente les résultats d’un lycée. Les attributs de cette table sont
+<code class="docutils literal notranslate"><span class="pre">id_lycee</span></code>, <code class="docutils literal notranslate"><span class="pre">annee</span></code>, <code class="docutils literal notranslate"><span class="pre">ville</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_L</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_ES</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_S</span></code>
+et <code class="docutils literal notranslate"><span class="pre">academie</span></code>.</p>
+<p>Les données tabulées sont très importantes en informatique: on les
+utilise dans de nombreux domaines (web, IA, calcul scientifique, etc.).</p>
+</div>
+</div>
+<div class="section" id="quelle-structure-de-donnees-pour-representer-une-table">
+<h2>Quelle structure de données pour représenter une table ?<a class="headerlink" href="#quelle-structure-de-donnees-pour-representer-une-table" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les données sont habituellement séparées des programmes qui les
+traitent, dans un fichier texte. On utilise souvent des fichiers au
+format <strong>csv</strong> (<em>comma separated values</em>). Chaque ligne de ce fichier
+correspond à un enregistrement (<em>p-uplet</em>). Les différents champs
+(<em>attributs</em>) étant séparés par un délimiteur (<em>virgule, point-virgule,
+tabulation, etc.</em>). La librairie standard de python possède un module
+adapté à la lecture (<em>et à l’écriture</em>) de ce type de fichiers: le
+<strong>module csv</strong>.</p>
+<div class="section" id="importation-sous-forme-de-tableau-de-tableaux">
+<h3>Importation sous forme de tableau de tableaux<a class="headerlink" href="#importation-sous-forme-de-tableau-de-tableaux" title="Lien permanent vers ce titre">¶</a></h3>
+<p>On souhaite importer le fichier de résultats du bac général
+<code class="docutils literal notranslate"><span class="pre">bac_L_ES_S.csv</span></code> situé dans le dossier <code class="docutils literal notranslate"><span class="pre">data</span></code>, sous la forme d’un
+tableau de tableaux. Un code python typique est le suivant:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/bac_L_ES_S.csv&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="n">ligne</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>Affichons les 5 premiers éléments de cette table:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;LYCEE MONTMAJOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;2012&#39;</span><span class="p">,</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;95&#39;</span><span class="p">,</span> <span class="s1">&#39;79&#39;</span><span class="p">,</span> <span class="s1">&#39;96&#39;</span><span class="p">,</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;LYCEE BRISTOL&#39;</span><span class="p">,</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;75&#39;</span><span class="p">,</span> <span class="s1">&#39;NICE&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;LYCEE MARGUERITE DE NAVARRE&#39;</span><span class="p">,</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;94&#39;</span><span class="p">,</span> <span class="s1">&#39;91&#39;</span><span class="p">,</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s1">&#39;LYCEE FULBERT&#39;</span><span class="p">,</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Cette première solution est simple à mettre en oeuvre, cependant elle
+souffre de deux défauts:</div>
+</div>
+<ul class="simple">
+<li><p>on doit mémoriser l’ordre des attributs;</p></li>
+<li><p>la première ligne apparait comme une ligne de données, il va
+falloir l’ignorer lors des traitements.</p></li>
+</ul>
+<div class="section" id="id2">
+<h4>Exercice d’application directe<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les résultats du lycée de Bois d’Olive en 2018 se trouvent à l’index
+8262 de cette table. Afficher le taux de réussite au bac S.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Votre code</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="importation-sous-forme-de-tableau-de-n-uplets-nommes">
+<h3>Importation sous forme de tableau de n-uplets nommés<a class="headerlink" href="#importation-sous-forme-de-tableau-de-n-uplets-nommes" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Pour éviter les inconvénients précédents, on importe les données
+tabulées sous forme de tableau de p-uplets nommés. Un code python
+typique est le suivant:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/bac_L_ES_S.csv&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>Les premiers éléments affichés confirment que l’on a bien un tableau de
+dictionnaire:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MONTMAJOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">:</span> <span class="s1">&#39;2012&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;95&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;79&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;96&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">:</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE BRISTOL&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;75&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">:</span> <span class="s1">&#39;NICE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MARGUERITE DE NAVARRE&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">:</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;94&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;91&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE FULBERT&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;id_lycee&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE NOTRE DAME&#39;</span><span class="p">,</span> <span class="s1">&#39;annee&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;97&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;96&#39;</span><span class="p">,</span> <span class="s1">&#39;academie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">On remarque que ce tableau ne contient plus la première ligne. Cette
+dernière a servi à fournir les clés du dictionnaire créé.</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’instruction <code class="docutils literal notranslate"><span class="pre">dict</span></code> du tableau construit en compréhension est
+nécessaire avec les dernières versions de python, afin d’avoir des
+éléments de type dictionnaire.</p>
+</div>
+<div class="section" id="id3">
+<h4>Exercice d’application directe<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les résultats du lycée de Bois d’Olive en 2018 se trouvent cette fois ci
+à l’index 8261 de cette table (<em>rappel: la 1ere ligne a servi pour créer
+les clés du dictionnaire</em>). Afficher le taux de réussite au bac L.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Votre code</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="resume">
+<h2>Résumé<a class="headerlink" href="#resume" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>Les tableaux peuvent contenir aussi des tableaux. Il est commode de
+les présenter sur plusieurs lignes. Un élément sera alors repéré par
+<code class="docutils literal notranslate"><span class="pre">t[i][j]</span></code> (i et j représentant la ligne et la colonne).</p></li>
+<li><p>Une table de données est un arrangement de lignes et de colonnes. Les
+données sont souvent situées dans des fichiers csv. On peut les
+importer de deux manières:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fichier</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="n">ligne</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p>ou</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fichier</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<ol class="upperalpha simple" start="2">
+<li><p>DARID <img alt="licence" src="_images/licence.png" /></p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
