@@ -1,0 +1,549 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>HTML5 &amp; CSS3: les bases &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HTML5 &amp; CSS3: les bases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-langages-du-web">Les langages du web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html">HTML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#premier-exemple-et-definitions">Premier exemple et définitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#application-directe">Application directe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#structuration-des-documents">Structuration des documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#les-titres">Les titres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#les-textes">Les textes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#liens-et-ressources">Liens et ressources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conseils-utilisation-de-balises-semantiques">Conseils: utilisation de balises sémantiques</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#css">CSS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quest-ce-que-le-css-et-comment-le-mettre-en-application">Qu’est-ce que le CSS et comment le mettre en application?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#regles-de-style-en-ligne-a-eviter-absolument">Règles de style en ligne: <strong>A EVITER ABSOLUMENT</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#regles-de-style-interne-acceptable">Règles de style interne: <strong>ACCEPTABLE</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#regles-de-style-dans-un-fichier-externe-a-privilegier">Règles de style dans un fichier externe: <strong>A PRIVILEGIER</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#quelques-proprietes-css">Quelques propriétés CSS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>HTML5 &amp; CSS3: les bases</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_XIV_Bases_html_css.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="html5-css3-les-bases">
+<h1>HTML5 &amp; CSS3: les bases<a class="headerlink" href="#html5-css3-les-bases" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="les-langages-du-web">
+<h2>Les langages du web<a class="headerlink" href="#les-langages-du-web" title="Lien permanent vers ce titre">¶</a></h2>
+<blockquote>
+<div><p>Côté client, c’est-à-dire côté utilisateur, les langages incontournables sont:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>HTML pour la description du contenu d’une page;</p></li>
+<li><p>CSS pour définir la mise en forme des pages;</p></li>
+<li><p>Javascript (<em>qui ne sera pas abordé dans ce chapitre</em>) pour permettre l’interactivité avec l’utilisateur.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="html">
+<h2>HTML<a class="headerlink" href="#html" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="premier-exemple-et-definitions">
+<h3>Premier exemple et définitions<a class="headerlink" href="#premier-exemple-et-definitions" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Le langage <strong>HTML</strong> est un langage de <em>balisage</em> qui permet de décrire
+la structure et le contenu d’un document. Un navigateur web donne un
+rendu graphique au fichier textuel HTML. Voici un premier exemple de
+code:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Structuration de document<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Les <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>balises<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span> html doivent rendre compte de la structure de la page.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>et son rendu dans un navigateur:</p>
+<div class="figure align-default">
+<img alt="index" src="_images/index.png" />
+</div>
+<div class="line-block">
+<div class="line">Un fichier HTML est structuré à partir de <strong>balises</strong> (<em>tag</em> en
+anglais). Ce sont des informations situées entre les caractères <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>
+et <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>. La première ligne n’est pas une balise HTML, en toute
+rigueur il s’agit d’une déclaration de type de document à destination
+du navigateur. Sauf exceptions, qui seront vues au fur et à mesure de
+la découverte du langage, <strong>à une balise ouvrante &lt;…&gt; correspond une
+balise fermante &lt;/…&gt;</strong>. La premère exception rencontrée ici est la
+balise <code class="docutils literal notranslate"><span class="pre">meta</span></code> (qui est une balise <em>auto-fermante</em>).</div>
+<div class="line">L’ensemble constitué des balises ouvrante et fermante et du contenu se
+trouvant entre ces balises, constitue un <strong>élément</strong> HTML. Chaque
+élément HTML peut avoir des <strong>attributs</strong>. Ce sont des valeurs
+supplémentaires qui permettent de configurer les éléments ou d’adapter
+leur comportement, avec une syntaxe du type <code class="docutils literal notranslate"><span class="pre">attribut=&quot;valeur&quot;</span></code>.</div>
+<div class="line"><strong>Exemple</strong></div>
+</div>
+<div class="figure align-default" id="id1">
+<img alt="element" src="_images/element.png" />
+<p class="caption"><span class="caption-text">element</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<div class="section" id="application-directe">
+<h4>Application directe<a class="headerlink" href="#application-directe" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Donner les attributs et les valeurs associées, des éléments <code class="docutils literal notranslate"><span class="pre">meta</span></code> et
+<code class="docutils literal notranslate"><span class="pre">html</span></code> de l’exemple ci-dessus.</p>
+</div>
+</div>
+<div class="section" id="structuration-des-documents">
+<h3>Structuration des documents<a class="headerlink" href="#structuration-des-documents" title="Lien permanent vers ce titre">¶</a></h3>
+<p>D’une manière générale, un fichier HTML aura un <em>squelette</em> sera très
+proche de celui de l’exemple donné en introduction. On adaptera le
+contenu de l’élément <code class="docutils literal notranslate"><span class="pre">head</span></code>, notamment le texte de sa balise
+<code class="docutils literal notranslate"><span class="pre">&lt;title&gt;</span></code>, ainsi que celui de l’élément <code class="docutils literal notranslate"><span class="pre">body</span></code>.</p>
+<div class="section" id="les-titres">
+<h4>Les titres<a class="headerlink" href="#les-titres" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les titres peuvent être déclinés en six niveaux de 1 à 6 à l’aide des
+balises <code class="docutils literal notranslate"><span class="pre">&lt;h1&gt;</span></code> à <code class="docutils literal notranslate"><span class="pre">&lt;h6&gt;</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre de niveau 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Titre de niveau 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+......
+<span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Titre de niveau 6<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Le rendu est le suivant:</div>
+<div class="line"><img alt="titre" src="_images/titre.png" /></div>
+</div>
+</div>
+<div class="section" id="les-textes">
+<h4>Les textes<a class="headerlink" href="#les-textes" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les textes peuvent être organisés en paragraphes avec la balise <code class="docutils literal notranslate"><span class="pre">&lt;p&gt;</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>HTML contient environ 140 balises qui fournissent au navigateur des indications sur
+le sens d&#39;un élément, son interprétation ou son affichage. Entre autres choses, les balises
+permettent de fournir des méta-données pour le document HTML, de mettre en avant certaines
+phrases, d&#39;ajouter des fichiers multimédias ou de gérer des formulaires en ligne.
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>On peut également présenter du texte sous forme de <strong>listes</strong> ordonnées:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>Les parties essentielles d&#39;un document HTML:
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément html;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément head;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément body.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Le rendu est le suivant:</p>
+<div class="line-block">
+<div class="line">Les parties essentielles d’un document HTML:</div>
+<div class="line">1. l’élément html;</div>
+<div class="line">2. l’élément head;</div>
+<div class="line">3. l’élément body.</div>
+</div>
+<p>La présentation peut se faire également sous forme de listes <strong>non</strong>
+ordonnées:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>Les parties essentielles d&#39;un document HTML:
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément html;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément head;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>l&#39;élément body.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Le rendu est le suivant:</p>
+<div class="line-block">
+<div class="line">Les parties essentielles d’un document HTML:</div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>l’élément html;</p></li>
+<li><p>l’élément head;</p></li>
+<li><p>l’élément body.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="liens-et-ressources">
+<h4>Liens et ressources<a class="headerlink" href="#liens-et-ressources" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Une des caractéristiques essentielles de HTML est de fournir des liens
+<em>hypertextes</em>. Ces derniers sont insérés avec la balise <code class="docutils literal notranslate"><span class="pre">&lt;a&gt;</span></code>
+(<em>ancre</em>). Cette balise est utilisée avec l’attribut <code class="docutils literal notranslate"><span class="pre">href</span></code> qui
+fournit l’adresse de la ressource.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.w3schools.com/tags/tag_a.asp&quot;</span><span class="p">&gt;</span>Lien vers W3schools.com<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Rendu:</div>
+<div class="line"><a class="reference external" href="https://www.w3schools.com/tags/tag_a.asp">Lien vers W3schools.com</a></div>
+</div>
+<p>Parmi les ressources, on peut citer les images. On les insère dans un
+document HTML avec une balise auto-fermante <code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">/&gt;</span></code> à qui on doit
+fournir deux attributs <code class="docutils literal notranslate"><span class="pre">src=&quot;nom_fichier.jpg&quot;</span> <span class="pre">alt=&quot;texte_alternatif&quot;</span></code>.
+Par exemple:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/html5-logo.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;logo&quot;</span> <span class="p">/&gt;</span>
+</pre></div>
+</div>
+<p>Rendu:</p>
+<div class="figure align-default">
+<img alt="logo" src="_images/html5-logo.png" />
+</div>
+</div>
+<div class="section" id="conseils-utilisation-de-balises-semantiques">
+<h4>Conseils: utilisation de balises sémantiques<a class="headerlink" href="#conseils-utilisation-de-balises-semantiques" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="line-block">
+<div class="line">HTML5 accentue encore plus l’objectif de bien structurer un document
+en y ajoutant de nouvelles balises (<em>par rapport à HTML4</em>). Parmi ces
+nouvelles balises, on peut citer, entre autres: <code class="docutils literal notranslate"><span class="pre">header</span></code>, <code class="docutils literal notranslate"><span class="pre">nav</span></code>,
+<code class="docutils literal notranslate"><span class="pre">section</span></code>, <code class="docutils literal notranslate"><span class="pre">article</span></code>, <code class="docutils literal notranslate"><span class="pre">aside</span></code> et <code class="docutils literal notranslate"><span class="pre">footer</span></code>. Ces balises sont
+dites <em>sémantiques</em>, c’est-à-dire qui ont du sens, … par opposition à
+d’anciennes balises génériques comme <code class="docutils literal notranslate"><span class="pre">div</span></code> ou <code class="docutils literal notranslate"><span class="pre">span</span></code>. Bien qu’il
+ne s’agisse pas d’une règle absolue, voici un exemple correct (au sens
+HTML5) de structure de document: <img alt="structure" src="_images/html5semantique.png" /></div>
+<div class="line"><a class="reference external" href="https://brdarid.nohost.me/nextcloud/index.php/s/STrADeaoFcPK9MN">… et le plan de ce cours en
+HTML5</a></div>
+</div>
+<p>Dans la mesure du possible, on réservera la balise générique <code class="docutils literal notranslate"><span class="pre">div</span></code>
+pour des regroupements d’éléments nécessitant un traitement CSS (voir
+ci-dessous) spécifique.</p>
+</div>
+</div>
+</div>
+<div class="section" id="css">
+<h2>CSS<a class="headerlink" href="#css" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="quest-ce-que-le-css-et-comment-le-mettre-en-application">
+<h3>Qu’est-ce que le CSS et comment le mettre en application?<a class="headerlink" href="#quest-ce-que-le-css-et-comment-le-mettre-en-application" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">Le langage CSS (<em>Cascading Style Sheet</em>) est un langage permettant de
+définir la mise en forme des éléments HTML constituant une page web.
+Il est important de retenir: <strong>HTML est gère le ‘fond’, CSS gère la
+‘forme’</strong>. Il existe trois emplacements pour placer les <strong>règles de
+style</strong> CSS associées à un document.</div>
+</div>
+<div class="section" id="regles-de-style-en-ligne-a-eviter-absolument">
+<h4>Règles de style en ligne: <strong>A EVITER ABSOLUMENT</strong><a class="headerlink" href="#regles-de-style-en-ligne-a-eviter-absolument" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Il s’agit de définir une règle de style directement via l’attribut <code class="docutils literal notranslate"><span class="pre">style</span></code>d’un élément. Sa syntaxe est la suivante:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">&lt;tag</span> <span class="pre">style=&quot;definition_des_styles&quot;&gt;....&lt;/tag&gt;</span></code> où
+<code class="docutils literal notranslate"><span class="pre">definition_des_styles</span></code> est de la forme <code class="docutils literal notranslate"><span class="pre">propriete:</span> <span class="pre">valeur;</span></code>.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Exemple</strong></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: right; border: 2px solid gray;&quot;</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet consectetur. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    adipisicing elit deleniti magni sequi ducimus ad similique quo beatae dolor tempora et cum. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    corporis enim earum eligendi unde itaque dicta, blanditiis aut consequuntur?
+<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p><strong>Cette méthode est à déconseiller franchement car elle rend le code
+HTML peu lisible</strong>.</p>
+<p>Rendu:</p>
+<p style="text-align: right; border: 2px solid gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Deleniti magni sequi ducimus ad similique quo beatae dolor tempora et cum. <br>
+            corporis enim earum eligendi unde itaque
+            dicta, blanditiis aut consequuntur?
+</p></div>
+<div class="section" id="regles-de-style-interne-acceptable">
+<h4>Règles de style interne: <strong>ACCEPTABLE</strong><a class="headerlink" href="#regles-de-style-interne-acceptable" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="line-block">
+<div class="line">Il s’agit de déclarer les règles de style à l’intérieur d’une balise
+<code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> de l’élément <code class="docutils literal notranslate"><span class="pre">head</span></code> du document HTML. Les règles étant
+écrites les unes en dessous des autres (<em>la syntaxe détaillée sera vue
+dans le prochain paragraphe</em>).</div>
+<div class="line"><strong>Exemple</strong></div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">p</span> <span class="p">{</span>
+              <span class="k">text-align</span><span class="p">:</span> <span class="kc">right</span><span class="p">;</span>
+              <span class="k">border</span><span class="p">:</span> <span class="mi">2</span><span class="kt">px</span> <span class="kc">solid</span> <span class="kc">gray</span><span class="p">;</span>
+              <span class="p">}</span>
+            <span class="p">.</span><span class="nc">remarque</span> <span class="p">{</span><span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;}</span>
+      <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      Deleniti magni sequi ducimus <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;remarque&quot;</span><span class="p">&gt;</span> similique dolor tempora<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> et cum. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+      corporis enim earum eligendi unde itaque
+      dicta, blanditiis aut consequuntur?
+   <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Le rendu est identique:</p>
+<p style="text-align: right; border: 2px solid gray;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Deleniti magni sequi ducimus <span style="color: red;"> similique dolor tempora</span> et cum. <br>
+         corporis enim earum eligendi unde itaque
+         dicta, blanditiis aut consequuntur?
+</p><p>Cette méthode est acceptable mais elle présente l’inconvénient de
+<em>mélanger</em> le fond et la forme et surtout de <strong>ne pas permettre la
+réutilisation</strong> des règles de style dans d’autres pages (<em>à moins de
+faire du copier-coller</em>).</p>
+</div>
+<div class="section" id="regles-de-style-dans-un-fichier-externe-a-privilegier">
+<h4>Règles de style dans un fichier externe: <strong>A PRIVILEGIER</strong><a class="headerlink" href="#regles-de-style-dans-un-fichier-externe-a-privilegier" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Les règles de style sont définies dans un fichier <em>texte</em> externe,
+d’extension <code class="docutils literal notranslate"><span class="pre">.css</span></code>. La présence de ce fichier doit être signalé au
+navigateur dans l’élément <code class="docutils literal notranslate"><span class="pre">head</span></code>avec une balise <code class="docutils literal notranslate"><span class="pre">&lt;link&gt;</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    ......
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style/fichier.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">si on suppose que le fichier s’appelle <code class="docutils literal notranslate"><span class="pre">fichier.css</span></code> et qu’il se
+trouve dans le dossier <code class="docutils literal notranslate"><span class="pre">style</span></code>. On remarque au passage que la
+<strong>balise link est auto-fermante</strong>.</div>
+<div class="line">La syntaxe d’une règle de style CSS est la suivante:</div>
+</div>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>selecteur {
+    propriete1: valeur1;
+    propriete2: valeur2;
+    ...
+}
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Le <strong>selecteur</strong> peut être un tag HTML, l’identifiant d’un élément
+précédé du caractère <code class="docutils literal notranslate"><span class="pre">#</span></code> (sans espace) ou le nom d’une classe
+précédé du caractère <code class="docutils literal notranslate"><span class="pre">.</span></code>.</div>
+<div class="line"><strong>Exemple de</strong> <code class="docutils literal notranslate"><span class="pre">fichier.css</span></code></div>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">p</span> <span class="p">{</span>
+    <span class="nx">text</span><span class="o">-</span><span class="nx">align</span><span class="o">:</span> <span class="nx">right</span><span class="p">;</span>
+    <span class="nx">border</span><span class="o">:</span> <span class="mi">2</span><span class="nx">px</span> <span class="nx">solid</span> <span class="nx">gray</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nx">remarque</span> <span class="p">{</span>
+    <span class="nx">color</span><span class="o">:</span> <span class="nx">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>On voit ici tout l’intérêt à ajuster les attributs <code class="docutils literal notranslate"><span class="pre">class</span></code> et <code class="docutils literal notranslate"><span class="pre">id</span></code>
+des éléments HTML lors de la construction de la page (voir documentation
+sur W3Schools.com pour
+<a class="reference external" href="https://www.w3schools.com/tags/att_global_class.asp">class</a> et
+<a class="reference external" href="https://www.w3schools.com/tags/att_global_id.asp">id</a>).</p>
+</div>
+</div>
+<div class="section" id="quelques-proprietes-css">
+<h3>Quelques propriétés CSS<a class="headerlink" href="#quelques-proprietes-css" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Il n’est pas question questions de citer toutes les propriétés CSS
+(qu’on peut trouver sur
+<a class="reference external" href="https://www.w3schools.com/cssref/css3_pr_all.asp">W3Schools.com</a>),
+mais quelques unes fréquemment utilisées.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">font-size</span></code>: fixe la taille de la police;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">color</span></code>: fixe la couleur du texte;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">text-align</span></code>: définit l’alignement horizontal du texte;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">background-color</span></code>: couleur d’arrière plan;</p></li>
+</ul>
+<hr class="docutils" />
+<ol class="upperalpha simple" start="2">
+<li><p>DARID</p></li>
+</ol>
+<p><img alt="licence" src="_images/licence.png" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

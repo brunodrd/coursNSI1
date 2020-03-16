@@ -1,0 +1,54 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_XIV_HTML_CSS_LES_BASES
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=3844bf1412508e84542425f7d0640c3ebc7ebf1a147e456c
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-6398-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=3844bf1412508e84542425f7d0640c3ebc7ebf1a147e456c
+[NotebookApp | WARNING] Notebook Chap_XIV_Bases_html_css.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /notebooks/img/titre.png (127.0.0.1): No such file or directory: img/titre.png
+[NotebookApp | WARNING] 404 GET /notebooks/img/titre.png (127.0.0.1) 77.14ms referer=http://localhost:8888/notebooks/Chap_XIV_Bases_html_css.ipynb
+[NotebookApp | INFO] Kernel started: 81053e0d-9f0a-4ff8-87f4-91fba300c6eb
+[NotebookApp | INFO] 302 GET /notebooks/img/index.png (127.0.0.1) 5.01ms
+[NotebookApp | INFO] 302 GET /notebooks/img/element.png (127.0.0.1) 9.77ms
+[NotebookApp | INFO] 302 GET /notebooks/img/html5-logo.png (127.0.0.1) 5.31ms
+[NotebookApp | INFO] 302 GET /notebooks/img/html5semantique.png (127.0.0.1) 5.27ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 81053e0d-9f0a-4ff8-87f4-91fba300c6eb
+[NotebookApp | WARNING] Notebook Ex-Chap_XIV_Bases_html_css.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: d7d572ab-8fa6-4d76-af41-da3c997af4e7
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel d7d572ab-8fa6-4d76-af41-da3c997af4e7
+[NotebookApp | INFO] Starting buffering for 81053e0d-9f0a-4ff8-87f4-91fba300c6eb:91011e8eb7b04aea809feb49c2aa7daa
+[NotebookApp | INFO] Starting buffering for d7d572ab-8fa6-4d76-af41-da3c997af4e7:68a4ff025e804b2e8a51d8c7ad81976d
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_XIV_HTML_CSS_LES_BASES
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=db0e5b2f24c3d2163dbfaa2bb116418f74ae599b1ac6896a
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-5326-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=db0e5b2f24c3d2163dbfaa2bb116418f74ae599b1ac6896a
+[NotebookApp | WARNING] Notebook Chap_XIV_Bases_html_css.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /notebooks/img/titre.png (127.0.0.1): No such file or directory: img/titre.png
+[NotebookApp | WARNING] 404 GET /notebooks/img/titre.png (127.0.0.1) 33.50ms referer=http://localhost:8888/notebooks/Chap_XIV_Bases_html_css.ipynb
+[NotebookApp | INFO] Kernel started: 14b3ba83-5eb7-44a9-9e92-73e270678b6a
+[NotebookApp | INFO] 302 GET /notebooks/img/index.png (127.0.0.1) 4.74ms
+[NotebookApp | INFO] 302 GET /notebooks/img/element.png (127.0.0.1) 13.43ms
+[NotebookApp | INFO] 302 GET /notebooks/img/html5-logo.png (127.0.0.1) 5.84ms
+[NotebookApp | INFO] 302 GET /notebooks/img/html5semantique.png (127.0.0.1) 4.66ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 14b3ba83-5eb7-44a9-9e92-73e270678b6a
+[NotebookApp | INFO] Saving file at /Chap_XIV_Bases_html_css.ipynb
+[NotebookApp | WARNING] Notebook Chap_XIV_Bases_html_css.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 14b3ba83-5eb7-44a9-9e92-73e270678b6a:b136166a81d44d018bd7687839228f59
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 14b3ba83-5eb7-44a9-9e92-73e270678b6a

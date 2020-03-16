@@ -1,0 +1,14 @@
+1) les langages des pages web
+
+2) HTML
+2.1) Premier exemple et définitions
+2.2) Structuration des documents
+2.2.1) Les titres
+2.2.2) Les paragraphes
+2.2.3) Les listes
+2.2.4) Liens et ressources
+2.2.5) Conseils sémantiques
+
+3) CSS
+3.1) Qu'est-ce que le CSS et comment l'utiliser
+3.2) Quelques propriétés CSS
