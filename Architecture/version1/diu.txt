@@ -1,0 +1,10 @@
+cours:
+dans les composants essentiels rajouter 2 paragraphes mémoires,
+entrées/sorties
+
+Renommer la partie instruction
+E1C5 : annexe aide simulateur
+Nommer exercice séquence d'instruction
+Alternatives:
+mentionner goulot etranglement; ajout cache; parallelisation
+Architecture harvard

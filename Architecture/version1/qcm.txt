@@ -1,0 +1,52 @@
+Qui a élaboré un modèle d'architecture de l'ordinateur en 1945, encore valable actuellement?
+a) Bill Gates
+b) Alan Turing
+c) Jon Von Neumann
+d) John Backus
+e) John McCarthy
+
+Dans le modèle d'architecture séquentielle, les trois principaux organes sont:
+a) Le clavier, l'écran et la mémoire
+b) Le processeur, la mémoire et les dispositifs d'entrées/sorties
+c) La mémoire de type RAM, les registres et la mémoire cache
+d) Le processeur, la carte graphique et l'écran
+e) Le compteur ordinal, le registre d'instruction et le registre d'adresse
+
+Les registres sont des mémoires:
+a) de grande taille;
+b) très rapides;
+c) en lecture seule;
+d) qui permettent d'effectuer des opérations arithmétiques
+
+L'UAL permet:
+a) d'enregistrer les programmes et les données
+b) d'effectuer des opérations arithmétiques et logiques
+c) de gérer l'enchainement des instructions et de contrôler les échanges
+d) d'améliorer le temps d'accès à la mémoire vive
+e) d'augmenter la capacité mémoire de l'ordinateur
+
+L'unité de commande permet:
+a) d'enregistrer les programmes et les données
+b) d'effectuer des opérations arithmétiques et logiques
+c) de gérer l'enchainement des instructions et de contrôler les échanges
+d) d'améliorer le temps d'accès à la mémoire vive
+e) d'augmenter la capacité mémoire de l'ordinateur
+
+Une instruction exécutée par le processeur:
+a) est une chaine binaire comportant un code opération et un code opérande(s)
+b) est une chaine de caractères comportant le mot clé MOV
+c) est une chaine écrite en langage naturel
+d) doit d'abord être traduite en binaire par l'UAL
+
+Une instruction du type MOV R2,#3:
+a) additionne les contenus des registres R2 et R3
+b) soustrait 3 à R2
+c) permute les valeurs de R2 et R3
+d) charge la valeur 3 dans le registre R2
+e) est une chaine de caractères mnémoniques directement exécutable par le processeur
+
+L'architecture de Von Neumann:
+a) n'a qu'un intérêt historique et n'est plus utilisé aujourd'hui
+b) est un modèle abstrait et ne peut être mis en oeuvre
+c) est toujours valable, avec quelques ajustements
+d) est utilisé uniquement dans les sytèmes embarqués
