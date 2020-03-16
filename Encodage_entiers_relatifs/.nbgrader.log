@@ -1,0 +1,20 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode1/Encodage_entiers_relatifs
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=d19fcaecb1aa4c967bfcaa5f02b853852fff95bb1d75485f
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-5412-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=d19fcaecb1aa4c967bfcaa5f02b853852fff95bb1d75485f
+[NotebookApp | WARNING] Notebook Entiers_relatifs.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: e648bc7e-faf6-49ca-9d55-2c7dc58e2b31
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel e648bc7e-faf6-49ca-9d55-2c7dc58e2b31
+[NotebookApp | INFO] Saving file at /Entiers_relatifs.ipynb
+[NotebookApp | INFO] Kernel shutdown: e648bc7e-faf6-49ca-9d55-2c7dc58e2b31
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 0 kernels
