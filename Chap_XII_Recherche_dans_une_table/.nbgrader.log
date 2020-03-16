@@ -1,0 +1,132 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_XII_Traitement_de_données_en_tables
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=233f0bb4773170aaad168a41994b71836f8d4ae4d65c47d9
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-5822-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=233f0bb4773170aaad168a41994b71836f8d4ae4d65c47d9
+[NotebookApp | INFO] Creating new notebook in 
+[NotebookApp | INFO] Kernel started: 1ceceaf5-7257-409d-850f-77be68eead2d
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 1ceceaf5-7257-409d-850f-77be68eead2d
+[NotebookApp | INFO] Uploading file to /Chap_XI_Notion_de_tables_de_données.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/img/IBM360.jpg (127.0.0.1): No such file or directory: img/IBM360.jpg
+[NotebookApp | WARNING] 404 GET /notebooks/img/IBM360.jpg (127.0.0.1) 224.00ms referer=http://localhost:8888/notebooks/Chap_XI_Notion_de_tables_de_donn%C3%A9es.ipynb
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1): No such file or directory: img/Cc-by-nc_icon.svg.png
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1) 118.43ms referer=http://localhost:8888/notebooks/Chap_XI_Notion_de_tables_de_donn%C3%A9es.ipynb
+[NotebookApp | INFO] Kernel started: ac562cdf-c61a-49bc-b35c-34c9febf62e8
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel ac562cdf-c61a-49bc-b35c-34c9febf62e8
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XI_Notion_de_tables_de_données.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Starting buffering for 1ceceaf5-7257-409d-850f-77be68eead2d:592903e26fb5407486733914949ec10c
+[NotebookApp | INFO] Starting buffering for ac562cdf-c61a-49bc-b35c-34c9febf62e8:9cc1113de0f449b8912e163f92d56b42
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_XII_Recherche_dans_une_table
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=f1444851e227f4966d6b961ea0458f13b69ec08655208313
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-3730-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=f1444851e227f4966d6b961ea0458f13b69ec08655208313
+[NotebookApp | WARNING] Notebook Chap_XII_Recherche_dans_une_table.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1): No such file or directory: img/Cc-by-nc_icon.svg.png
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1) 60.81ms referer=http://localhost:8888/notebooks/Chap_XII_Recherche_dans_une_table.ipynb
+[NotebookApp | INFO] Kernel started: fec04d93-6411-4e38-bd49-1e325ae08e97
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel fec04d93-6411-4e38-bd49-1e325ae08e97
+[NotebookApp | INFO] Saving file at /Chap_XII_Recherche_dans_une_table.ipynb
+[NotebookApp | WARNING] Notebook Chap_XII_Recherche_dans_une_table.ipynb is not trusted
+[NotebookApp | INFO] New terminal with automatic name: 1
+[NotebookApp | WARNING] Forbidden
+[NotebookApp | WARNING] 403 GET /api/sessions?_=1583466321954 (127.0.0.1) 5.73ms referer=http://localhost:8888/tree
+[NotebookApp | WARNING] Forbidden
+[NotebookApp | WARNING] 403 GET /api/terminals?_=1583466321955 (127.0.0.1) 3.95ms referer=http://localhost:8888/tree
+[NotebookApp | WARNING] Forbidden
+[NotebookApp | WARNING] 403 POST /api/contents (127.0.0.1) 2.53ms referer=http://localhost:8888/tree
+[NotebookApp | INFO] Starting buffering for fec04d93-6411-4e38-bd49-1e325ae08e97:0f4c160bd71248228039cf8d41efbdb8
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: fec04d93-6411-4e38-bd49-1e325ae08e97
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_XII_Recherche_dans_une_table
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=bbb08d8b4116f36d868d839bdd757f958fdd0fef79403d5d
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-4372-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=bbb08d8b4116f36d868d839bdd757f958fdd0fef79403d5d
+[NotebookApp | INFO] Creating new notebook in 
+[NotebookApp | INFO] Kernel started: 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | WARNING] Notebook Chap_XII_Recherche_dans_une_table.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1): No such file or directory: img/Cc-by-nc_icon.svg.png
+[NotebookApp | WARNING] 404 GET /notebooks/img/Cc-by-nc_icon.svg.png (127.0.0.1) 51.87ms referer=http://localhost:8888/notebooks/Chap_XII_Recherche_dans_une_table.ipynb
+[NotebookApp | INFO] Kernel started: be356e9a-5bbb-4202-822f-c4266138e10d
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel be356e9a-5bbb-4202-822f-c4266138e10d
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Kernel interrupted: 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Starting buffering for 4b8ddb28-2440-4506-8b3f-1c685482bb47:c92a4514964949a38d2df10ea13382cf
+[NotebookApp | INFO] Kernel restarted: 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Restoring connection for 4b8ddb28-2440-4506-8b3f-1c685482bb47:c92a4514964949a38d2df10ea13382cf
+[NotebookApp | INFO] Replaying 6 buffered messages
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Kernel interrupted: 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Starting buffering for 4b8ddb28-2440-4506-8b3f-1c685482bb47:c92a4514964949a38d2df10ea13382cf
+[NotebookApp | INFO] Starting buffering for be356e9a-5bbb-4202-822f-c4266138e10d:557f4d719f884d9f9a377a64d3f43a15
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down 2 kernels
+[NotebookApp | INFO] Kernel shutdown: 4b8ddb28-2440-4506-8b3f-1c685482bb47
+[NotebookApp | INFO] Kernel shutdown: be356e9a-5bbb-4202-822f-c4266138e10d

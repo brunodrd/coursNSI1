@@ -1,0 +1,7 @@
+Plan Chap_XIII_recherche dans une table
+
+1) Cohérence des tables
+- validation
+- conversion
+- doublon
+2) Sélection de lignes ou de colonnes

@@ -1,0 +1,476 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Recherche dans une table &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recherche dans une table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#coherence-dune-table">Cohérence d’une table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#les-donnees-sont-elles-valides">Les données sont-elles valides?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-changer-le-type-de-certains-attributs">Comment changer le type de certains attributs?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#la-table-comporte-t-elle-des-doublons">La table comporte-t-elle des doublons?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#selection-de-lignes-ou-de-colonnes">Sélection de lignes ou de colonnes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#comment-selectionner-des-lignes-dune-table">Comment sélectionner des lignes d’une table?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-selectionner-des-colonnes-dune-table">Comment sélectionner des colonnes d’une table?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bonus-une-fonction-projection">Bonus: une fonction projection</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Recherche dans une table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_XII_Recherche_dans_une_table.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="recherche-dans-une-table">
+<h1>Recherche dans une table<a class="headerlink" href="#recherche-dans-une-table" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Fichier de travail</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">FILE1</span> <span class="o">=</span> <span class="s1">&#39;./data/resultats_bac2.csv&#39;</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">FILE1</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="section" id="coherence-dune-table">
+<h2>Cohérence d’une table<a class="headerlink" href="#coherence-dune-table" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="les-donnees-sont-elles-valides">
+<h3>Les données sont-elles valides?<a class="headerlink" href="#les-donnees-sont-elles-valides" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Dans le cours précédent on a importé les données d’un fichier csv dans
+un tableau. Cependant, rien ne garantit la validité des lignes. Par
+exemple, on souhaiterait que les champs <code class="docutils literal notranslate"><span class="pre">taux_..</span></code> soient complets et que
+leur valeur représente bien un nombre (avant sa conversion en <code class="docutils literal notranslate"><span class="pre">int</span></code>
+par la suite). Par ailleurs, le taux ne doit pas être supérieur à 100.
+D’où un exemple de fonction de validation:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">validation</span><span class="p">(</span><span class="n">ligne</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne un booléen valant True uniquement si l&#39;année et les taux sont des nombres (inférieurs</span>
+<span class="sd">    à 100 pour les taux);</span>
+<span class="sd">    ligne: dictionnaire</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">an</span><span class="p">,</span> <span class="n">tL</span><span class="p">,</span> <span class="n">tES</span><span class="p">,</span> <span class="n">tS</span> <span class="o">=</span> <span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Année&#39;</span><span class="p">],</span> <span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Taux_L&#39;</span><span class="p">],</span> <span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Taux_ES&#39;</span><span class="p">],</span> <span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Taux_S&#39;</span><span class="p">]</span>
+    <span class="c1">#La méthode de chaine isdecimal() est particulièrement adaptée ici (voir aide)</span>
+    <span class="n">sont_des_nb</span> <span class="o">=</span> <span class="n">an</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span> <span class="ow">and</span> <span class="n">tL</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span> <span class="ow">and</span> <span class="n">tES</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span> <span class="ow">and</span> <span class="n">tS</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">()</span>
+    <span class="c1">#Si les taux sont des nombres, on vérifie leur conformité.</span>
+    <span class="k">return</span> <span class="n">sont_des_nb</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">tL</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">tES</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">tS</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="mi">100</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">on</span> <span class="n">method_descriptor</span><span class="p">:</span>
+
+<span class="n">isdecimal</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span>
+    <span class="n">Return</span> <span class="kc">True</span> <span class="k">if</span> <span class="n">the</span> <span class="n">string</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">string</span><span class="p">,</span> <span class="kc">False</span> <span class="n">otherwise</span><span class="o">.</span>
+
+    <span class="n">A</span> <span class="n">string</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">decimal</span> <span class="n">string</span> <span class="k">if</span> <span class="nb">all</span> <span class="n">characters</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">string</span> <span class="n">are</span> <span class="n">decimal</span> <span class="ow">and</span>
+    <span class="n">there</span> <span class="ow">is</span> <span class="n">at</span> <span class="n">least</span> <span class="n">one</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">string</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>On peut alors construire une table ayant des lignes conformes aux
+critères présentés ci-dessus et afficher les 5 premières lignes:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">table_conforme</span> <span class="o">=</span> <span class="p">[</span><span class="n">ligne</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">validation</span><span class="p">(</span><span class="n">ligne</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table_conforme</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MONTMAJOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="s1">&#39;2012&#39;</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;95&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;79&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;96&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE BRISTOL&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;84&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;75&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;NICE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MARGUERITE DE NAVARRE&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;94&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;91&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE FULBERT&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;88&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;89&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE NOTRE DAME&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="s1">&#39;2017&#39;</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="s1">&#39;97&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="s1">&#39;96&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comment-changer-le-type-de-certains-attributs">
+<h3>Comment changer le type de certains attributs?<a class="headerlink" href="#comment-changer-le-type-de-certains-attributs" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En plus de la validation des données, on souhaiterait convertir certains
+attributs (l’année et les taux) en <code class="docutils literal notranslate"><span class="pre">int</span></code>. Une fonction de conversion a
+déjà été vue dans la fiche d’exercices du cours précédent. En voici une
+autre:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">conversion</span><span class="p">(</span><span class="n">enr</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne un dictionnaire avec les champs &#39;Année&#39; et &#39;Taux_..&#39; convertis en &#39;int&#39;.</span>
+<span class="sd">    enr: un enregistrement, de type dictionnaire</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">enr</span><span class="p">,</span> <span class="nb">dict</span><span class="p">),</span> <span class="s2">&quot;La donnée convertie doit être un dictionnaire&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;Année&#39;</span><span class="p">:</span><span class="nb">int</span><span class="p">(</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Année&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Ville&#39;</span><span class="p">:</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Ville&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span><span class="nb">int</span><span class="p">(</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Taux_L&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span><span class="nb">int</span><span class="p">(</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Taux_ES&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span><span class="nb">int</span><span class="p">(</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Taux_S&#39;</span><span class="p">]),</span>
+           <span class="s1">&#39;Académie&#39;</span><span class="p">:</span><span class="n">enr</span><span class="p">[</span><span class="s1">&#39;Académie&#39;</span><span class="p">]}</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">table_validee</span> <span class="o">=</span> <span class="p">[</span><span class="n">conversion</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="n">validation</span><span class="p">(</span><span class="n">ligne</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table_validee</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MONTMAJOUR&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2012</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">79</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE BRISTOL&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">84</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">84</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">75</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;NICE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MARGUERITE DE NAVARRE&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">89</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">94</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">91</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE FULBERT&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">88</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">89</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE NOTRE DAME&#39;</span><span class="p">,</span> <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">,</span> <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">97</span><span class="p">,</span> <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="la-table-comporte-t-elle-des-doublons">
+<h3>La table comporte-t-elle des doublons?<a class="headerlink" href="#la-table-comporte-t-elle-des-doublons" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les tables de données ne doivent généralement pas comporter de doublons.
+La fonction suivante vérifie la présence de doublons dans une table.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">doublon</span><span class="p">(</span><span class="n">table</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne un booléen correspond à la présence ou non de doublons dans la table.</span>
+<span class="sd">    table: tableau de dictionnaires ou de tableaux</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">table</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">table</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">doublon</span><span class="p">(</span><span class="n">table_validee</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cette fonction n’est pas très efficace, notamment sur des tables
+volumineuses.</p>
+</div>
+</div>
+</div>
+<div class="section" id="selection-de-lignes-ou-de-colonnes">
+<h2>Sélection de lignes ou de colonnes<a class="headerlink" href="#selection-de-lignes-ou-de-colonnes" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="comment-selectionner-des-lignes-dune-table">
+<h3>Comment sélectionner des lignes d’une table?<a class="headerlink" href="#comment-selectionner-des-lignes-dune-table" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">Les opérations faites sur les tables sont en nombre très limité. Parmi
+celles-ci, on trouve la <strong>sélection</strong> de lignes qui répondent à
+certain(s) critère(s). Ces critères sont exprimés avec des booléens.</div>
+<div class="line">Afin de faciliter l’écriture et l’évaluation des critères, on
+utilisera la fonction <code class="docutils literal notranslate"><span class="pre">eval</span></code> de python, dont l’aide est fournie
+ci-dessous.</div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">eval</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Help</span> <span class="n">on</span> <span class="n">built</span><span class="o">-</span><span class="ow">in</span> <span class="n">function</span> <span class="nb">eval</span> <span class="ow">in</span> <span class="n">module</span> <span class="n">builtins</span><span class="p">:</span>
+
+<span class="nb">eval</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="nb">globals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">locals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">/</span><span class="p">)</span>
+    <span class="n">Evaluate</span> <span class="n">the</span> <span class="n">given</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">context</span> <span class="n">of</span> <span class="nb">globals</span> <span class="ow">and</span> <span class="nb">locals</span><span class="o">.</span>
+
+    <span class="n">The</span> <span class="n">source</span> <span class="n">may</span> <span class="n">be</span> <span class="n">a</span> <span class="n">string</span> <span class="n">representing</span> <span class="n">a</span> <span class="n">Python</span> <span class="n">expression</span>
+    <span class="ow">or</span> <span class="n">a</span> <span class="n">code</span> <span class="nb">object</span> <span class="k">as</span> <span class="n">returned</span> <span class="n">by</span> <span class="nb">compile</span><span class="p">()</span><span class="o">.</span>
+    <span class="n">The</span> <span class="nb">globals</span> <span class="n">must</span> <span class="n">be</span> <span class="n">a</span> <span class="n">dictionary</span> <span class="ow">and</span> <span class="nb">locals</span> <span class="n">can</span> <span class="n">be</span> <span class="nb">any</span> <span class="n">mapping</span><span class="p">,</span>
+    <span class="n">defaulting</span> <span class="n">to</span> <span class="n">the</span> <span class="n">current</span> <span class="nb">globals</span> <span class="ow">and</span> <span class="nb">locals</span><span class="o">.</span>
+    <span class="n">If</span> <span class="n">only</span> <span class="nb">globals</span> <span class="ow">is</span> <span class="n">given</span><span class="p">,</span> <span class="nb">locals</span> <span class="n">defaults</span> <span class="n">to</span> <span class="n">it</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">select</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">critere</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne une table dont les lignes vérifient le critere passé en paramètre.</span>
+<span class="sd">    table: tableau de dictionnaires</span>
+<span class="sd">    critere: chaine exprimant la condition</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">ligne</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">table</span> <span class="k">if</span> <span class="nb">eval</span><span class="p">(</span><span class="n">critere</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">select</span><span class="p">(</span><span class="n">table_validee</span><span class="p">,</span> <span class="s2">&quot;&#39;OLIVE&#39; in ligne[&#39;Etablissement&#39;] and ligne[&#39;Année&#39;] &gt;= 2017&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;LA REUNION&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2017</span><span class="p">,</span>
+  <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s2">&quot;LYCEE DE BOIS D&#39;OLIVE (GENERAL ET TECHNO.)&quot;</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">79</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">96</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">94</span><span class="p">,</span>
+  <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ST PIERRE&#39;</span><span class="p">},</span>
+ <span class="p">{</span><span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;LA REUNION&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Année&#39;</span><span class="p">:</span> <span class="mi">2018</span><span class="p">,</span>
+  <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s2">&quot;LYCEE DE BOIS D&#39;OLIVE (GENERAL ET TECHNO.)&quot;</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_ES&#39;</span><span class="p">:</span> <span class="mi">91</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_L&#39;</span><span class="p">:</span> <span class="mi">83</span><span class="p">,</span>
+  <span class="s1">&#39;Taux_S&#39;</span><span class="p">:</span> <span class="mi">97</span><span class="p">,</span>
+  <span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ST PIERRE&#39;</span><span class="p">}]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comment-selectionner-des-colonnes-dune-table">
+<h3>Comment sélectionner des colonnes d’une table?<a class="headerlink" href="#comment-selectionner-des-colonnes-dune-table" title="Lien permanent vers ce titre">¶</a></h3>
+<p>La sélection de colonnes, appelé couramment <strong>projection</strong> peut être
+réalisée avec le code de la cellule suivante. Supposons que l’on veuille
+garder uniquement les colonnes ‘Ville’ et ‘Académie’ de notre table.
+Cette opération peut être facilement réalisée avec un tableau construit
+en compréhension.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span><span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Ville&#39;</span><span class="p">],</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span><span class="n">ligne</span><span class="p">[</span><span class="s1">&#39;Académie&#39;</span><span class="p">]}</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">table_validee</span><span class="p">]</span>
+<span class="c1">#Affichage des 5 premières lignes</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;NICE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="section" id="bonus-une-fonction-projection">
+<h4>Bonus: une fonction projection<a class="headerlink" href="#bonus-une-fonction-projection" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">projection</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">tableau_colonnes</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne une table ne contenant uniquement que les colonnes présentes dans tableau_colonnes.</span>
+<span class="sd">    table: tableau de dictionnaires</span>
+<span class="sd">    tableau_colonnes: tableau de chaine de caractères correspondant aux noms des colonnes sélectionnées.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[{</span><span class="n">nom_col</span><span class="p">:</span><span class="n">ligne</span><span class="p">[</span><span class="n">nom_col</span><span class="p">]</span> <span class="k">for</span> <span class="n">nom_col</span> <span class="ow">in</span> <span class="n">tableau_colonnes</span><span class="p">}</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="explication">
+<h5>Explication<a class="headerlink" href="#explication" title="Lien permanent vers ce titre">¶</a></h5>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">projection</span></code> retourne un tableau de dictionnaires
+construit en <strong>compréhension</strong>. Décomposons cette construction.</p>
+<p>Entre les crochets <code class="docutils literal notranslate"><span class="pre">[...]</span></code>, on distingue bien trois parties
+essentielles:
+<code class="docutils literal notranslate"><span class="pre">{nom_col:ligne[nom_col]</span> <span class="pre">for</span> <span class="pre">nom_col</span> <span class="pre">in</span> <span class="pre">tableau_colonnes}</span></code>, <code class="docutils literal notranslate"><span class="pre">for</span></code> et
+<code class="docutils literal notranslate"><span class="pre">ligne</span> <span class="pre">in</span> <span class="pre">table</span></code>. Ce bloc d’instructions est du type
+<code class="docutils literal notranslate"><span class="pre">expression(ligne)</span> <span class="pre">for</span> <span class="pre">ligne</span> <span class="pre">in</span> <span class="pre">table</span></code>. Il est responsable de la
+formation des différentes lignes <code class="docutils literal notranslate"><span class="pre">{...},</span> <span class="pre">{...},</span> <span class="pre">...,</span> <span class="pre">{...}</span></code>.</p>
+<p>La suite d’instructions
+<code class="docutils literal notranslate"><span class="pre">{nom_col:ligne[nom_col]</span> <span class="pre">for</span> <span class="pre">nom_col</span> <span class="pre">in</span> <span class="pre">tableau_colonnes}</span></code> est
+responsable de la construction du <strong>contenu</strong> de chaque ligne (<em>il
+s’agit de la construction d’un dictionnaire par compréhension</em>). Les
+clés de chaque dictionnaire formé sont situées dans le tableau passé en
+argument et les valeurs sont les champs associés, de la ligne de la
+table de données.</p>
+</div>
+<div class="section" id="exemples-dutilisation">
+<h5>Exemples d’utilisation<a class="headerlink" href="#exemples-dutilisation" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Affichage des 5 premiers éléments d&#39;une table contenant ville et académie</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">projection</span><span class="p">(</span><span class="n">table_validee</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Ville&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;ARLES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;AIX-MARSEILLE&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MONTMAJOUR&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CANNES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;NICE&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE BRISTOL&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;BOURGES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE MARGUERITE DE NAVARRE&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE FULBERT&#39;</span><span class="p">}</span>
+<span class="p">{</span><span class="s1">&#39;Ville&#39;</span><span class="p">:</span> <span class="s1">&#39;CHARTRES&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">:</span> <span class="s1">&#39;ORLEANS-TOURS&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">:</span> <span class="s1">&#39;LYCEE NOTRE DAME&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Recherche de doublons</span>
+<span class="n">doublon</span><span class="p">(</span><span class="n">projection</span><span class="p">(</span><span class="n">table_validee</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Ville&#39;</span><span class="p">,</span> <span class="s1">&#39;Académie&#39;</span><span class="p">,</span> <span class="s1">&#39;Etablissement&#39;</span><span class="p">]))</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+<p><strong>Attention: une projection peut entrainer la présence de doublons</strong></p>
+<hr class="docutils" />
+<ol class="upperalpha simple" start="2">
+<li><p>DARID <img alt="licence" src="_images/licence.png" /></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
