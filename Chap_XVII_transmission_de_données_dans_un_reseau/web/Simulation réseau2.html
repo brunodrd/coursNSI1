@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://pixees.fr/informatiquelycee/n_site/nsi_prem_simReseau2.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title>Simulation réseau</title>
+		<link rel="stylesheet" href="./Simulation réseau2_files/bootstrap.min.css">
+		<link rel="stylesheet" href="./Simulation réseau2_files/flat-ui.min.css">
+		<link rel="stylesheet" href="./Simulation réseau2_files/tomorrow-night.css">
+		<link rel="stylesheet" href="./Simulation réseau2_files/style.css">
+		<script type="text/javascript" async="" src="./Simulation réseau2_files/analytics.js"></script><script src="./Simulation réseau2_files/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+    <script src="./Simulation réseau2_files/jquery.min.js"></script>
+    <script src="./Simulation réseau2_files/flat-ui.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./Simulation réseau2_files/js"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-53303169-1');
+	</script>
+	</head>
+	<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">NSI première</span>
+					<span class="navbar-brand">Simulation réseau</span>
+        </div>
+      </div>
+    </nav>
+    <div class="container act">
+		<h4>À faire vous-même 1</h4>
+		<p>
+			En utilisant Filius, nous allons maintenant mettre en place un serveur Web afin de pouvoir faire des requêtes HTTP. Il sera possible d'analyser les données échangées entre les machines grâce à l'outil "data exchange". Pour afficher cet outil, il suffit de faire un clic droit sur la machine concernée et de choisir "show data exchange".
+			Commencez par visionner la vidéo ci-dessous :
+		</p>
+		<iframe width="560" height="315" src="../videos/filius_5.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+		<p>
+			Une fois la vidéo visionnée, en utilisant le logiciel Filius, mettez en place un réseau composé de 2 clients et d'un serveur Web, créez ensuite une page HTML toute simple et activez le serveur Web (comme indiqué dans la vidéo). Choisissez un client et par l'intermédiaire d'un navigateur Web (que vous aurez au préalable installé sur le client),
+			 effectuez une requête HTTP. Analysez les données échangées entre le client et le serveur à l'aide de l'outil "data exchange".
+		</p>
+		<p>
+			Comme vous pouvez le constater on retrouve :
+		</p>
+		<ul>
+			<li>
+				le protocole TCP au niveau de la couche "Transport" ("ACK" signifie acknowledgement, ce sont les accusés de réception aussi appelés acquittement)
+			</li>
+			<li>
+				le protocole HTTP au niveau de la couche "Application" (en cliquant sur les requêtes et réponses HTTP on retrouve ce que l'on a vu précédemment dans le cours "Protocole HTTP")
+			</li>
+			<li>
+				le protocole ARP qui permet de trouver une adresse MAC à partir d'une adresse IP (l'échange entre les 2 machines commence d'ailleurs avec ce protocole ARP, sinon, impossible d'envoyer les trames)
+			</li>
+		</ul>
+			<p>
+				On notera que les trames et les paquets IP ne sont pas directement visibles avec cet outil "data exchange" : il faut cliquer sur une ligne "TCP" pour "voir" les couches "Internet" et "accès réseau".
+			</p>
+			<hr>
+			<img style="margin-bottom: 15px;" src="./Simulation réseau2_files/cc.png">
+			<p>
+				Auteur : David Roche
+			</p>
+</div>
+
+
+</body></html>

@@ -1,0 +1,13 @@
+1) Architecture d'un réseau
+	* catégorie de réseau
+	* différentes topologie - on montre l'étoile
+2) Les protocoles
+	* Principe de base
+	* Encapsulation
+	* Bit alterné
+
+----------------------------------
+Sources:
+Nathan page 150
+David Roche: https://pixees.fr/informatiquelycee/n_site/nsi_prem_tcpip.html
+<iframe src="./Simulation réseau_files/nzuRSOwdF5I.html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>

@@ -1,0 +1,209 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVI_Interaction_Client-Serveur
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=ccc17f7d90924154559de5563baf030ace99ecd21735e03a
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-28288-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=ccc17f7d90924154559de5563baf030ace99ecd21735e03a
+[NotebookApp | INFO] Creating new notebook in 
+[NotebookApp | INFO] Kernel started: ff6193d1-96d5-4449-b14e-6dac17d12315
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel ff6193d1-96d5-4449-b14e-6dac17d12315
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Creating new directory in 
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Starting buffering for ff6193d1-96d5-4449-b14e-6dac17d12315:bebf9d046c744ba88c18d9b84e43007c
+[NotebookApp | INFO] Shutting down on /api/shutdown request.
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: ff6193d1-96d5-4449-b14e-6dac17d12315
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVI_Interaction_Client-Serveur
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=aa183d2407e4acd68c6452bb74dce64862d310e6f4e3fc2d
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-3655-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=aa183d2407e4acd68c6452bb74dce64862d310e6f4e3fc2d
+[NotebookApp | INFO] Kernel started: fb26789c-3377-455a-afe6-9e09ee59f558
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel fb26789c-3377-455a-afe6-9e09ee59f558
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/img/capture1.png (127.0.0.1) 2.31ms
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/img/capture2.png (127.0.0.1) 4.20ms
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/img/capture3.png (127.0.0.1) 2.65ms
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Starting buffering for fb26789c-3377-455a-afe6-9e09ee59f558:bb2e56f50f274d6eb567fec47330770d
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVI_Interaction_Client-Serveur
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://127.0.0.1:8888/?token=1c94d341264e70d86a38a09cac176d979a536a839ad376c7
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-8816-open.html
+    Or copy and paste one of these URLs:
+        http://127.0.0.1:8888/?token=1c94d341264e70d86a38a09cac176d979a536a839ad376c7
+[NotebookApp | INFO] 302 GET /notebooks/img/capture3.png (127.0.0.1) 3.39ms
+[NotebookApp | INFO] Kernel started: f762ff77-893d-478c-abb2-c0feec2c18a5
+[NotebookApp | INFO] 302 GET /notebooks/img/capture1.png (127.0.0.1) 22.14ms
+[NotebookApp | INFO] 302 GET /notebooks/img/capture2.png (127.0.0.1) 24.05ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel f762ff77-893d-478c-abb2-c0feec2c18a5
+[NotebookApp | INFO] Starting buffering for f762ff77-893d-478c-abb2-c0feec2c18a5:ad93003ecab34912bc838d0ec32c9348
+[NotebookApp | INFO] Kernel shutdown: f762ff77-893d-478c-abb2-c0feec2c18a5
+[NotebookApp | INFO] 302 GET /notebooks/img/capture3.png (127.0.0.1) 3.11ms
+[NotebookApp | INFO] Kernel started: a27b1e6f-139e-4a70-be17-05390da400a2
+[NotebookApp | INFO] 302 GET /notebooks/img/capture1.png (127.0.0.1) 3.31ms
+[NotebookApp | INFO] 302 GET /notebooks/img/capture2.png (127.0.0.1) 2.70ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel a27b1e6f-139e-4a70-be17-05390da400a2
+[NotebookApp | INFO] Shutting down on /api/shutdown request.
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: a27b1e6f-139e-4a70-be17-05390da400a2
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVI_Interaction_Client-Serveur
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=98b767d0bc490b28fc34ce82883122f83d01da6e5990cdbf
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-3567-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=98b767d0bc490b28fc34ce82883122f83d01da6e5990cdbf
+[NotebookApp | INFO] 302 GET /notebooks/img/capture3.png (127.0.0.1) 2.96ms
+[NotebookApp | INFO] Kernel started: e8275672-4104-4ea2-85b2-680df6192dd4
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel e8275672-4104-4ea2-85b2-680df6192dd4
+[NotebookApp | INFO] 302 GET /notebooks/img/capture1.png (127.0.0.1) 2.00ms
+[NotebookApp | INFO] 302 GET /notebooks/img/capture2.png (127.0.0.1) 3.42ms
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/img/capture4b.png (127.0.0.1) 9.61ms
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Writing 24049 bytes to ./notebook.tex
+[NotebookApp | INFO] Building PDF
+[NotebookApp | INFO] Running xelatex 3 times: ['xelatex', './notebook.tex']
+[NotebookApp | INFO] Running bibtex 1 time: ['bibtex', './notebook']
+[NotebookApp | WARNING] bibtex had problems, most likely because there were no citations
+[NotebookApp | INFO] PDF successfully created
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for e8275672-4104-4ea2-85b2-680df6192dd4:0b73c4d8e2a2453dacb985ee24582d7a
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVI_Interaction_Client-Serveur
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=fb600e1932a7c03a118bb88ce485af5dca4d4f1f50d2cdb9
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-13714-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=fb600e1932a7c03a118bb88ce485af5dca4d4f1f50d2cdb9
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/img/capture3.png (127.0.0.1) 6.20ms
+[NotebookApp | INFO] Kernel started: 54f0e049-3d5b-46c6-a73b-7481da4b589c
+[NotebookApp | INFO] 302 GET /notebooks/img/capture1.png (127.0.0.1) 3.86ms
+[NotebookApp | INFO] 302 GET /notebooks/img/capture2.png (127.0.0.1) 2.91ms
+[NotebookApp | INFO] 302 GET /notebooks/img/capture4b.png (127.0.0.1) 2.48ms
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 54f0e049-3d5b-46c6-a73b-7481da4b589c
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] New terminal with automatic name: 1
+[NotebookApp | INFO] Saving file at /Chap_XVI_Interactions_client-serveur.ipynb
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Writing 24063 bytes to ./notebook.tex
+[NotebookApp | INFO] Building PDF
+[NotebookApp | INFO] Running xelatex 3 times: ['xelatex', './notebook.tex']
+[NotebookApp | INFO] Running bibtex 1 time: ['bibtex', './notebook']
+[NotebookApp | WARNING] bibtex had problems, most likely because there were no citations
+[NotebookApp | INFO] PDF successfully created
+[NotebookApp | WARNING] Notebook Chap_XVI_Interactions_client-serveur.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 54f0e049-3d5b-46c6-a73b-7481da4b589c:78983b643c7d47c58aa27f3f82ef4aaf
