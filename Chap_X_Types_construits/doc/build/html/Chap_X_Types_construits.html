@@ -1,0 +1,587 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Les types construits &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Les types construits</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-tableaux-part-2">Les tableaux - part. 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#iterer-sur-les-elements-dun-tableau">Itérer sur les éléments d’un tableau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#construction-de-tableaux-en-comprehension">Construction de tableaux en compréhension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#complement-ajouter-un-element-a-un-tableau">Complément: ajouter un élément à un tableau</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#les-p-uplets">Les p-uplets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#construction-et-proprietes-dun-p-uplet">Construction et propriétés d’un p-uplet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parcourir-un-p-uplet">Parcourir un p-uplet</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#les-dictionnaires">Les dictionnaires</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#construction-et-proprietes-des-dictionnaires">Construction et propriétés des dictionnaires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parcours-dun-dictionnaire">Parcours d’un dictionnaire</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#les-p-uplets-nommes">Les p-uplets nommés</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#insuffisance-des-p-uplets">Insuffisance des p-uplets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#une-solution-possible">Une solution possible</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#resume">Résumé</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tableau">Tableau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p-uplet">p-uplet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dictionnaires">Dictionnaires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p-uplets-nommes">p-uplets nommés</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Les types construits</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_X_Types_construits.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="les-types-construits">
+<h1>Les types construits<a class="headerlink" href="#les-types-construits" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="les-tableaux-part-2">
+<h2>Les tableaux - part. 2<a class="headerlink" href="#les-tableaux-part-2" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="iterer-sur-les-elements-dun-tableau">
+<h3>Itérer sur les éléments d’un tableau<a class="headerlink" href="#iterer-sur-les-elements-dun-tableau" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Dans la partie 1 on a vu qu’on pouvait accéder aux éléments d’un tableau
+en itérant sur les index de celui-ci avec une syntaxe du type:
+<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">element</span> <span class="pre">in</span> <span class="pre">range(len(tableau)):</span></code>. Par exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">notes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">notes</span><span class="p">)):</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">notes</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>On peut obtenir le même résultat en itérant sur les éléments. La syntaxe
+est la suivante:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">notes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">note</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il est d’usage (<em>mais non obligatoire</em>) d’utiliser un nom au
+pluriel pour le tableau et le même nom au singulier pour la variable de
+boucle.</p>
+</div>
+</div>
+<div class="section" id="construction-de-tableaux-en-comprehension">
+<h3>Construction de tableaux en compréhension<a class="headerlink" href="#construction-de-tableaux-en-comprehension" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">Supposons le problème suivant: construire un tableau des 10 premiers
+entiers naturels multiples de 9.</div>
+<div class="line">On peut construire ce tableau comme dans la partie 1 (on dit aussi en
+extension):</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="o">...</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>C’est long et pas très élégant! Une deuxième solution serait d’utiliser
+une boucle <code class="docutils literal notranslate"><span class="pre">for</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">*</span> <span class="n">i</span>
+</pre></div>
+</div>
+<p>Python propose une syntaxe plus compacte pour réaliser cette opération.
+Il s’agit de la construction par <strong>compréhension</strong> (on dit aussi en
+intension):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+</pre></div>
+</div>
+<p><strong>Plus généralement, au lieu de déclarer un tableau puis de le remplir
+avec une boucle, on préfèrera une construction plus concise appelée
+construction par compréhension, qui est de la forme:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tableau</span> <span class="o">=</span> <span class="p">[</span><span class="n">expr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">expr(x)</span></code> est une expression de la variable <code class="docutils literal notranslate"><span class="pre">x</span></code> qui parcourt tous
+les éléments de <code class="docutils literal notranslate"><span class="pre">sequence</span></code> (qui peut être un tableau, une chaine de
+caractère ou un des types qui seront vus dans les paragraphes
+ci-après).</div>
+<div class="line">Modifions notre consigne de départ: parmi les 10 premiers entiers
+naturels multiples de 9, construire un tableau des entiers pairs
+uniquement. La construction par compréhension permet ici une écriture
+compacte:</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="mi">9</span> <span class="o">*</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>La construction par compréhension permet d’ajouter une condition
+booléenne</strong>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span> <span class="o">*</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="k">if</span> <span class="mi">9</span> <span class="o">*</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">108</span><span class="p">,</span> <span class="mi">126</span><span class="p">,</span> <span class="mi">144</span><span class="p">,</span> <span class="mi">162</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="complement-ajouter-un-element-a-un-tableau">
+<h3>Complément: ajouter un élément à un tableau<a class="headerlink" href="#complement-ajouter-un-element-a-un-tableau" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Le langage python autorise un traitement particulier sur un tableau:
+pouvoir y ajouter un élément même si sa taille a déjà été fixée. La
+syntaxe est la suivante:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Dans la mesure du possible, on évitera le recours à la méthode
+append</strong>.</p>
+</div>
+</div>
+<div class="section" id="les-p-uplets">
+<h2>Les p-uplets<a class="headerlink" href="#les-p-uplets" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="construction-et-proprietes-dun-p-uplet">
+<h3>Construction et propriétés d’un p-uplet<a class="headerlink" href="#construction-et-proprietes-dun-p-uplet" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En mathématique, un <strong>p-uplet</strong> est une collection ordonnée d’objets.
+Python fournit un type adapté à la représentation des p-uplets: le type
+<code class="docutils literal notranslate"><span class="pre">tuple</span></code>. On créé un tuple en écrivant les composantes du p-uplet
+séparées par une virgule et de préférence entre parenthèses:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">notes</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Maxime&quot;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Comme avec les tableaux, on peut obtenir la taille d’un tuple avec la
+fonction native <code class="docutils literal notranslate"><span class="pre">len</span></code> et accéder au <span class="math notranslate nohighlight">\(i^{ème}\)</span> élément avec la
+notation utilisant des crochets:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">notes</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Maxime&quot;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Taille du p-uplet: &quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">notes</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valeur du 3ème élément (index 2): &quot;</span><span class="p">,</span> <span class="n">notes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Taille</span> <span class="n">du</span> <span class="n">p</span><span class="o">-</span><span class="n">uplet</span><span class="p">:</span>  <span class="mi">5</span>
+<span class="n">Valeur</span> <span class="n">du</span> <span class="mi">3</span><span class="n">ème</span> <span class="n">élément</span> <span class="p">(</span><span class="n">index</span> <span class="mi">2</span><span class="p">):</span>  <span class="mi">15</span>
+</pre></div>
+</div>
+<p><strong>Contrairement aux tableaux les composantes d’un tuple ne sont pas
+modifiables</strong>. On dit que les tuples sont des objets immutables (ou non
+mutables).</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">notes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mf">16.5</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+
+<span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="mf">06e2</span><span class="n">d03882e0</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">notes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mf">16.5</span>
+
+
+<span class="ne">TypeError</span><span class="p">:</span> <span class="s1">&#39;tuple&#39;</span> <span class="nb">object</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">support</span> <span class="n">item</span> <span class="n">assignment</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parcourir-un-p-uplet">
+<h3>Parcourir un p-uplet<a class="headerlink" href="#parcourir-un-p-uplet" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les méthodes de parcours rencontrées lors de la découverte des tableaux
+sont toujours valables. On peut itérer sur les index ou sur les
+éléments.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;****Relevé de notes &quot;</span><span class="p">,</span> <span class="s2">&quot;****&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">note</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;****Moyenne****&quot;</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">notes</span><span class="p">)):</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">notes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">s</span> <span class="o">/</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">notes</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block"><strong>**Relevé de notes  **</strong>
+Maxime
+17
+15
+16
+10
+<strong>**Moyenne**</strong>
+14.5</pre>
+</div>
+</div>
+<div class="section" id="les-dictionnaires">
+<h2>Les dictionnaires<a class="headerlink" href="#les-dictionnaires" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="construction-et-proprietes-des-dictionnaires">
+<h3>Construction et propriétés des dictionnaires<a class="headerlink" href="#construction-et-proprietes-des-dictionnaires" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Python possède une autre structure de données très importante: <strong>le
+dictionnaire</strong>. Contrairement aux tableaux ou aux tuples, les valeurs ne
+sont plus associées à des index forcément numériques mais à des <strong>clés</strong>
+qui peuvent être des nombres, des chaines de caractères, des tuples. On
+déclare un dictionnaire en plaçant ses paires clé-valeur entre accolades
+et séparées par une virgule. La clé et la valeur étant séparées par le
+caractère <code class="docutils literal notranslate"><span class="pre">:</span></code>.</p>
+<p>Exemple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cyclones_reunion</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;fakir&quot;</span><span class="p">:(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2018</span><span class="p">),</span> <span class="s2">&quot;berguitta&quot;</span><span class="p">:(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2018</span><span class="p">)}</span>
+</pre></div>
+</div>
+<p>On peut également construire un dictionnaire à partir d’un dictionnaire
+vide:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cyclones_reunion</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;bejisa&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2014</span><span class="p">)</span>
+<span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;dumile&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2013</span><span class="p">)</span>
+<span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;dina&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2002</span><span class="p">)</span>
+<span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;gamede&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2007</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cyclones_reunion</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;bejisa&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2014</span><span class="p">),</span> <span class="s1">&#39;dumile&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2013</span><span class="p">),</span> <span class="s1">&#39;dina&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2002</span><span class="p">),</span> <span class="s1">&#39;gamede&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2007</span><span class="p">)}</span>
+</pre></div>
+</div>
+<p>Le nombre d’entrées du dictionnaire est obtenu avec la fonction <code class="docutils literal notranslate"><span class="pre">len</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">cyclones_reunion</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span>
+</pre></div>
+</div>
+<p>On accède à la <strong>valeur</strong> associée à une <strong>clé</strong> d’un dictionnaire <code class="docutils literal notranslate"><span class="pre">d</span></code>
+avec une construction du type <code class="docutils literal notranslate"><span class="pre">d[clé]</span></code>. Si la clé n’existe pas, python
+lèvera une exception <strong>KeyError</strong>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;dina&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2002</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;carlos&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+
+<span class="ne">KeyError</span>                                  <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">9</span><span class="o">-</span><span class="mi">0306</span><span class="n">c0a2304c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">cyclones_reunion</span><span class="p">[</span><span class="s2">&quot;carlos&quot;</span><span class="p">])</span>
+
+
+<span class="ne">KeyError</span><span class="p">:</span> <span class="s1">&#39;carlos&#39;</span>
+</pre></div>
+</div>
+<p>Enfin, <strong>un dictionnaire n’est pas ordonné</strong>. Les éléments ne sont pas
+forcément afichés dans l’ordre de leur création.</p>
+</div>
+<div class="section" id="parcours-dun-dictionnaire">
+<h3>Parcours d’un dictionnaire<a class="headerlink" href="#parcours-dun-dictionnaire" title="Lien permanent vers ce titre">¶</a></h3>
+<p>L’appartenance à un dictionnaire se fait avec le mot clé <code class="docutils literal notranslate"><span class="pre">in</span></code>. Ainsi:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;dina&#39;</span> <span class="ow">in</span> <span class="n">cyclones_reunion</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">True</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;carlos&#39;</span> <span class="ow">in</span> <span class="n">cyclones_reunion</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kc">False</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Le parcours d’un dictionnaire <code class="docutils literal notranslate"><span class="pre">d</span></code> peut se faire en itérant avec une
+boucle <code class="docutils literal notranslate"><span class="pre">for</span></code> sur:</div>
+</div>
+<ul class="simple">
+<li><p>les clés</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">cle</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span><span class="c1">#équivalent à for cle in d.keys()</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>les valeurs</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>les couples (clé,valeur)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">cle</span><span class="p">,</span><span class="n">val</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="les-p-uplets-nommes">
+<h2>Les p-uplets nommés<a class="headerlink" href="#les-p-uplets-nommes" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="insuffisance-des-p-uplets">
+<h3>Insuffisance des p-uplets<a class="headerlink" href="#insuffisance-des-p-uplets" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Etant donné le problème suivant: on souhaite stocker les informations
+concernant des fichers image dans un p-uplet. Ce dernier aura pour
+composante le nom du fichier, sa largeur en pixel, sa hauteur en pixel
+et sa taille en kilo-octet. Par exemple, soit le fichier “dog.jpg” qui a
+une largeur de 6720 pixels, une hauteur de 4480 pixels et dont la taille
+est de 3319 ko. On peut le modéliser par un simple tuple:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;dog.jpg&quot;</span><span class="p">,</span> <span class="mi">6720</span><span class="p">,</span> <span class="mi">4480</span><span class="p">,</span> <span class="mi">3319</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Cependant cette solution n’est pas idéale. En effet, il faut se
+souvenir de l’ordre dans lequel les entiers ont été rentrés !</div>
+<div class="line"><strong>On évitera d’utiliser des p-uplets lorsque des ambiguités ou
+confusions sont possibles</strong>.</div>
+</div>
+</div>
+<div class="section" id="une-solution-possible">
+<h3>Une solution possible<a class="headerlink" href="#une-solution-possible" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">Pour contourner le problème soulevé précédemment, Python a une
+solution: les <strong>p-uplets nommés</strong>. Chaque composante du p-uplet se
+voit donner un nom !</div>
+<div class="line">Python possède un type permettant de manipuler les p-uplets nommés:
+les <code class="docutils literal notranslate"><span class="pre">namedtuple</span></code> du module <code class="docutils literal notranslate"><span class="pre">collections</span></code>. Cependant, et
+conformément au programme, en classe de <span class="math notranslate nohighlight">\(1^{ère}\)</span> NSI, <strong>on
+utilisera des dictionnaires pour implémenter des p-uplets nommés</strong>. Le
+problème précédent peut être modélisé par:</div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;dog.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;larg&#39;</span><span class="p">:</span><span class="mi">6720</span><span class="p">,</span> <span class="s1">&#39;haut&#39;</span><span class="p">:</span><span class="mi">4480</span><span class="p">,</span> <span class="s1">&#39;taille&#39;</span><span class="p">:</span><span class="mi">3319</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Taille de l&#39;image: &quot;</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hauteur: &quot;</span><span class="p">,</span> <span class="n">image</span><span class="p">[</span><span class="s1">&#39;haut&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Taille</span> <span class="n">de</span> <span class="n">l</span><span class="s1">&#39;image:  dog.jpg</span>
+<span class="n">Hauteur</span><span class="p">:</span>  <span class="mi">4480</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="resume">
+<h2>Résumé<a class="headerlink" href="#resume" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="tableau">
+<h3>Tableau<a class="headerlink" href="#tableau" title="Lien permanent vers ce titre">¶</a></h3>
+<p>On peut itérer directement sur les éléments d’un tableau avec la
+construction du type <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">element</span> <span class="pre">in</span> <span class="pre">tableau:</span></code>. Pour remplir un
+tableau on peut utiliser une construction par compréhension:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tableau</span> <span class="o">=</span> <span class="p">[</span><span class="n">expr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="p-uplet">
+<h3>p-uplet<a class="headerlink" href="#p-uplet" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Les p-uplets sont implémentés en python par le type <code class="docutils literal notranslate"><span class="pre">tuple</span></code>. Il s’agit
+d’un objet non mutable. La syntaxe pour construire un p-uplet ayant N
+composantes, est:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mon_objet</span> <span class="o">=</span> <span class="p">(</span><span class="n">comp1</span><span class="p">,</span> <span class="n">comp2</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">compN</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Les différentes composantes sont accessibles par indexation, comme
+pour un tableau: <code class="docutils literal notranslate"><span class="pre">mon_objet[0]</span></code>, <code class="docutils literal notranslate"><span class="pre">mob_objet[1]</span></code> etc.</div>
+<div class="line">Le parcours est identique à celui d’un tableau.</div>
+</div>
+</div>
+<div class="section" id="dictionnaires">
+<h3>Dictionnaires<a class="headerlink" href="#dictionnaires" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Un dictionnaire est une structure regroupant des paires “clé:valeur”. En
+python, ces paires sont situées entre accolades et séparées par une
+virgule.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;nom&#39;</span><span class="p">:</span><span class="s1">&#39;dog.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;larg&#39;</span><span class="p">:</span><span class="mi">6720</span><span class="p">,</span> <span class="s1">&#39;haut&#39;</span><span class="p">:</span><span class="mi">4480</span><span class="p">,</span> <span class="s1">&#39;taille&#39;</span><span class="p">:</span><span class="mi">3319</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>On peut itérer sur les clés, les valeurs ou les paires clé,valeur avec
+les méthodes <code class="docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">values()</span></code> ou <code class="docutils literal notranslate"><span class="pre">items()</span></code>.</p>
+</div>
+<div class="section" id="p-uplets-nommes">
+<h3>p-uplets nommés<a class="headerlink" href="#p-uplets-nommes" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En python, les p-uplets nommés sont implémentés avec des dictionnaires.</p>
+<hr class="docutils" />
+<ol class="upperalpha simple" start="2">
+<li><p>DARID <img alt="licence" src="_images/Cc-by-nc_icon.svg.png" /></p></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

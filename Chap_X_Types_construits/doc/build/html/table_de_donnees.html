@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tables de données &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Les types construits" href="types_construits.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="types_construits.html">Les types construits</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tables de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#les-tableaux-de-tableaux">Les tableaux de tableaux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quest-ce-quun-tableau-de-tableaux-ou-a-plusieurs-dimensions">Qu’est-ce qu’un tableau de tableaux (ou à plusieurs dimensions)?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comment-parcourir-un-tableau-de-tableaux">Comment parcourir un tableau de tableaux</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#organisation-des-donnees-sous-forme-de-tables">Organisation des données sous forme de tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reperes-historiques">Repères historiques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quest-ce-quune-table-de-donnees">Qu’est-ce qu’une table de données?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comment-lire-une-table-de-donnees">Comment lire une table de données ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#lecture-sans-importation-de-modules-annexes">Lecture sans importation de modules annexes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#utilisation-de-tableau-de-tableaux">Utilisation de tableau de tableaux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#utilisation-de-tableau-de-n-uplets-nommes">Utilisation de tableau de n-uplets nommés</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#lecture-avec-importation-du-module-csv">Lecture avec importation du module csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tables de données</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/table_de_donnees.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tables-de-donnees">
+<h1>Tables de données<a class="headerlink" href="#tables-de-donnees" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="les-tableaux-de-tableaux">
+<h2>Les tableaux de tableaux<a class="headerlink" href="#les-tableaux-de-tableaux" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="quest-ce-quun-tableau-de-tableaux-ou-a-plusieurs-dimensions">
+<h3>Qu’est-ce qu’un tableau de tableaux (ou à plusieurs dimensions)?<a class="headerlink" href="#quest-ce-quun-tableau-de-tableaux-ou-a-plusieurs-dimensions" title="Lien permanent vers ce titre">¶</a></h3>
+</div>
+<div class="section" id="comment-parcourir-un-tableau-de-tableaux">
+<h3>Comment parcourir un tableau de tableaux<a class="headerlink" href="#comment-parcourir-un-tableau-de-tableaux" title="Lien permanent vers ce titre">¶</a></h3>
+</div>
+</div>
+<div class="section" id="organisation-des-donnees-sous-forme-de-tables">
+<h2>Organisation des données sous forme de tables<a class="headerlink" href="#organisation-des-donnees-sous-forme-de-tables" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="reperes-historiques">
+<h3>Repères historiques<a class="headerlink" href="#reperes-historiques" title="Lien permanent vers ce titre">¶</a></h3>
+<p><img alt="IBM" src="_images/IBM360.jpg" /></p>
+<div class="docutils container">
+<p>By ArnoldReinhold - Own work, CC BY-SA 3.0, Link</p>
+</div>
+<p>Le compilateur fortran de l’<strong>IBM OS/360</strong> supportait dès 1972 des
+données tabulées, au format <em>csv (comma-separated values)</em>.
+<a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">Source</a></p>
+</div>
+<div class="section" id="quest-ce-quune-table-de-donnees">
+<h3>Qu’est-ce qu’une table de données?<a class="headerlink" href="#quest-ce-quune-table-de-donnees" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Une table de données est un <strong>arrangement de lignes et de colonnes</strong>.
+Les lignes ont divers synonymes: <em>enregistrement, n-uplet, vecteur,
+etc.</em>. Il en est de même pour les colonnes: <em>champ, propriété, attribut,
+etc.</em> L’organisation des données sous forme de table (on dit aussi <em>sous
+forme tabulée</em>) est très répandue.</p>
+<div class="line-block">
+<div class="line"><strong>Exemple</strong></div>
+<div class="line">On souhaite consulter (ou analyser) les résultats du bac général à la
+Réunion ces dernières années; l’utilisation d’une table est très
+commode:</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 6%" />
+<col style="width: 13%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>id_lycee</p></th>
+<th class="head"><p>annee</p></th>
+<th class="head"><p>ville</p></th>
+<th class="head"><p>taux_L</p></th>
+<th class="head"><p>taux_ES</p></th>
+<th class="head"><p>taux_S</p></th>
+<th class="head"><p>academie</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LYCEE LECONTE DE LISLE</p></td>
+<td><p>2018</p></td>
+<td><p>ST DENIS</p></td>
+<td><p>97</p></td>
+<td><p>98</p></td>
+<td><p>92</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-odd"><td><p>LYCEE BEL AIR (GENERAL ET TECHNO.)</p></td>
+<td><p>2018</p></td>
+<td><p>STE SUZANNE</p></td>
+<td><p>92</p></td>
+<td><p>81</p></td>
+<td><p>95</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-even"><td><p>LYCEE PIERRE LAGOURGUE (GENERAL ET TECHNO.)</p></td>
+<td><p>2018</p></td>
+<td><p>LE TAMPON</p></td>
+<td><p>95</p></td>
+<td><p>94</p></td>
+<td><p>96</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+<tr class="row-odd"><td><p>LYCEE MAHATMA GANDHI</p></td>
+<td><p>2018</p></td>
+<td><p>ST ANDRE</p></td>
+<td><p>88</p></td>
+<td><p>84</p></td>
+<td><p>85</p></td>
+<td><p>LA REUNION</p></td>
+</tr>
+</tbody>
+</table>
+<p>Dans l’exemple ci-dessus, chaque ligne (en dehors de la première)
+représente les résultats d’un lycée. Les attributs de cette table sont
+<code class="docutils literal notranslate"><span class="pre">id_lycee</span></code>, <code class="docutils literal notranslate"><span class="pre">annee</span></code>, <code class="docutils literal notranslate"><span class="pre">ville</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_L</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_ES</span></code>, <code class="docutils literal notranslate"><span class="pre">taux_S</span></code>
+et <code class="docutils literal notranslate"><span class="pre">academie</span></code>.</p>
+<p>Les données tabulées sont très importantes en informatique: on les
+utilise dans de nombreux domaines (web, IA, calcul scientifique, etc.).</p>
+</div>
+</div>
+<div class="section" id="comment-lire-une-table-de-donnees">
+<h2>Comment lire une table de données ?<a class="headerlink" href="#comment-lire-une-table-de-donnees" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les données séparées des programmes qui les traitent, dans un fichier
+texte par exemple. Chaque ligne de ce fichier correspond à un
+enregistrement (<em>n-uplet</em>). Les différents champs (<em>attributs</em>) étant
+séparés par un délimiteur (<em>virgule, point-virgule, tabulation, etc.</em>)</p>
+<div class="section" id="lecture-sans-importation-de-modules-annexes">
+<h3>Lecture sans importation de modules annexes<a class="headerlink" href="#lecture-sans-importation-de-modules-annexes" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="line-block">
+<div class="line">L’exploitation des données nécessite l’ouverture d’un fichier dont la
+lecture comporte toujours les étapes suivantes:</div>
+<div class="line">1. ouverture du fichier en mode lecture (utilisation de la fonction
+<a class="reference external" href="https://docs.python.org/fr/3/library/functions.html#open">open</a>
+afin de récupérer un <a class="reference external" href="https://docs.python.org/fr/3/glossary.html#term-file-object">objet
+fichier</a>);</div>
+<div class="line">2. lecture en utilisant des <a class="reference external" href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files">méthodes
+appropriées</a>
+ou <strong>mieux en itérant sur l’objet fichier</strong>;</div>
+<div class="line">3. fermeture du fichier (utilisation de la fonction <code class="docutils literal notranslate"><span class="pre">close</span></code>).</div>
+</div>
+<p>Typiquement, une séquence de lecture/traitement pourrait avoir la forme
+suivante:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;monfichier.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span>
+<span class="n">ligne</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1"># Récupération de la 1ere ligne,</span>
+<span class="c1"># y compris les caractères de fin de ligne &#39;\n&#39; ou &#39;\r\n&#39;!</span>
+<span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span> <span class="c1">#Pour chaque ligne du fichier,</span>
+    <span class="c1"># Traitement(s), voir ci-dessous ...</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Cependant, une meilleure pratique est conseillée : utiliser le mot clé
+<code class="docutils literal notranslate"><span class="pre">with</span></code> qui permettra la fermeture du fichier même si une
+<a class="reference external" href="https://docs.python.org/fr/3/tutorial/errors.html">exception</a> est
+levée. De ce fait, la structure recommandée (<em>celle qui sera retenue
+pour la suite</em>) est:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;monfichier.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">ligne</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1"># Traitement(s), voir ci-dessous ...</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line"><em>Note</em>:</div>
+<div class="line">Les lignes récupérées étant du type <code class="docutils literal notranslate"><span class="pre">string</span></code>, la suppression du
+caractère <code class="docutils literal notranslate"><span class="pre">'\n'</span></code> se fait avec la méthode <code class="docutils literal notranslate"><span class="pre">strip</span></code> (voir
+<a class="reference external" href="https://docs.python.org/fr/3/library/stdtypes.html#text-sequence-type-str">documentation</a>):</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ligne</span> <span class="o">=</span> <span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Deux structures de données peuvent être envisagées pour manipuler les
+données tabulées: un tableau de tableaux ou un tableau de n-uplets
+nommés.</p>
+<div class="section" id="utilisation-de-tableau-de-tableaux">
+<h4>Utilisation de tableau de tableaux<a class="headerlink" href="#utilisation-de-tableau-de-tableaux" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Dans le cas de fichiers textes de type csv, on construit facilement la
+table par compréhension:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;monfichier.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1">#On suppose que le délimiteur est &#39;;&#39;</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="p">[</span><span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">]</span>
+    <span class="c1">#table contient maintenant les données tabulées</span>
+</pre></div>
+</div>
+<p>L’intérêt de cette structure de données est sa simplicité de
+construction. Son principal inconvénient est de devoir mémoriser l’ordre
+des attributs.</p>
+</div>
+<div class="section" id="utilisation-de-tableau-de-n-uplets-nommes">
+<h4>Utilisation de tableau de n-uplets nommés<a class="headerlink" href="#utilisation-de-tableau-de-n-uplets-nommes" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Pour éviter l’inconvénient précédent, on peut adopter le tableau de
+n-uplets nommés comme structure de données.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;monfichier.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="c1">#On récupère les champs de la table (1ere ligne)</span>
+    <span class="n">champs</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="p">[]</span><span class="c1">#Notre structure de données</span>
+    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">enregistrement</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="c1">#enregistrement va accueillir les données d&#39;une ligne sous la forme {champ_i:ligne_i}</span>
+        <span class="n">ligne</span> <span class="o">=</span> <span class="n">ligne</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">champs</span><span class="p">)):</span>
+            <span class="n">enregistrement</span><span class="p">[</span><span class="n">champs</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">ligne</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">table</span> <span class="o">+</span> <span class="p">[</span><span class="n">enregistrement</span><span class="p">]</span>
+    <span class="c1">#table contient maintenant les données tabulées</span>
+</pre></div>
+</div>
+<p>La constructions est un peu plus complexe.</p>
+</div>
+</div>
+<div class="section" id="lecture-avec-importation-du-module-csv">
+<h3>Lecture avec importation du module csv<a class="headerlink" href="#lecture-avec-importation-du-module-csv" title="Lien permanent vers ce titre">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="types_construits.html" class="btn btn-neutral float-left" title="Les types construits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

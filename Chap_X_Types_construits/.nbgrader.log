@@ -1,0 +1,17 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode3/Chap_X_Types_construits
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8889/?token=da19884b2ddfbd9234f1922b7de347a0170dcd08235d11ca
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-6081-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=da19884b2ddfbd9234f1922b7de347a0170dcd08235d11ca
+[NotebookApp | WARNING] Notebook Ex-types_construits.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 6cadef96-c2ad-47ba-9d9f-7cc002f6c088
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 6cadef96-c2ad-47ba-9d9f-7cc002f6c088
+[NotebookApp | INFO] Saving file at /Ex-types_construits.ipynb
+[NotebookApp | INFO] Starting buffering for 6cadef96-c2ad-47ba-9d9f-7cc002f6c088:2b5d685db4a740828879aeee654b96c9

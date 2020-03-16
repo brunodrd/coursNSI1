@@ -1,0 +1,166 @@
+*****************
+Tables de données
+*****************
+
+Les tableaux de tableaux
+========================
+
+Qu’est-ce qu’un tableau de tableaux (ou à plusieurs dimensions)?
+----------------------------------------------------------------
+
+Comment parcourir un tableau de tableaux
+----------------------------------------
+
+Organisation des données sous forme de tables
+=============================================
+
+Repères historiques
+-------------------
+
+|IBM|
+
+.. container::
+
+   By ArnoldReinhold - Own work, CC BY-SA 3.0, Link
+
+Le compilateur fortran de l’\ **IBM OS/360** supportait dès 1972 des
+données tabulées, au format *csv (comma-separated values)*.
+`Source <https://en.wikipedia.org/wiki/Comma-separated_values>`__
+
+.. |IBM| image:: ../../img/IBM360.jpg
+
+Qu’est-ce qu’une table de données?
+----------------------------------
+
+Une table de données est un **arrangement de lignes et de colonnes**.
+Les lignes ont divers synonymes: *enregistrement, n-uplet, vecteur,
+etc.*. Il en est de même pour les colonnes: *champ, propriété, attribut,
+etc.* L’organisation des données sous forme de table (on dit aussi *sous
+forme tabulée*) est très répandue.
+
+| **Exemple**
+| On souhaite consulter (ou analyser) les résultats du bac général à la
+  Réunion ces dernières années; l’utilisation d’une table est très
+  commode:
+
+=========================================== ===== =========== ====== ======= ====== ==========
+id_lycee                                    annee ville       taux_L taux_ES taux_S academie
+=========================================== ===== =========== ====== ======= ====== ==========
+LYCEE LECONTE DE LISLE                      2018  ST DENIS    97     98      92     LA REUNION
+LYCEE BEL AIR (GENERAL ET TECHNO.)          2018  STE SUZANNE 92     81      95     LA REUNION
+LYCEE PIERRE LAGOURGUE (GENERAL ET TECHNO.) 2018  LE TAMPON   95     94      96     LA REUNION
+LYCEE MAHATMA GANDHI                        2018  ST ANDRE    88     84      85     LA REUNION
+=========================================== ===== =========== ====== ======= ====== ==========
+
+Dans l’exemple ci-dessus, chaque ligne (en dehors de la première)
+représente les résultats d’un lycée. Les attributs de cette table sont
+``id_lycee``, ``annee``, ``ville``, ``taux_L``, ``taux_ES``, ``taux_S``
+et ``academie``.
+
+Les données tabulées sont très importantes en informatique: on les
+utilise dans de nombreux domaines (web, IA, calcul scientifique, etc.).
+
+Comment lire une table de données ?
+===================================
+
+Les données séparées des programmes qui les traitent, dans un fichier
+texte par exemple. Chaque ligne de ce fichier correspond à un
+enregistrement (*n-uplet*). Les différents champs (*attributs*) étant
+séparés par un délimiteur (*virgule, point-virgule, tabulation, etc.*)
+
+Lecture sans importation de modules annexes
+-------------------------------------------
+
+| L’exploitation des données nécessite l’ouverture d’un fichier dont la
+  lecture comporte toujours les étapes suivantes:
+| 1. ouverture du fichier en mode lecture (utilisation de la fonction
+  `open <https://docs.python.org/fr/3/library/functions.html#open>`__
+  afin de récupérer un `objet
+  fichier <https://docs.python.org/fr/3/glossary.html#term-file-object>`__);
+| 2. lecture en utilisant des `méthodes
+  appropriées <https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files>`__
+  ou **mieux en itérant sur l’objet fichier**;
+| 3. fermeture du fichier (utilisation de la fonction ``close``).
+
+Typiquement, une séquence de lecture/traitement pourrait avoir la forme
+suivante:
+
+.. code:: python
+
+   f = open('monfichier.txt', 'r', encoding='utf8')
+   ligne = f.readline() # Récupération de la 1ere ligne, 
+   # y compris les caractères de fin de ligne '\n' ou '\r\n'!
+   for ligne in f: #Pour chaque ligne du fichier,
+       # Traitement(s), voir ci-dessous ...
+   f.close()
+
+Cependant, une meilleure pratique est conseillée : utiliser le mot clé
+``with`` qui permettra la fermeture du fichier même si une
+`exception <https://docs.python.org/fr/3/tutorial/errors.html>`__ est
+levée. De ce fait, la structure recommandée (*celle qui sera retenue
+pour la suite*) est:
+
+.. code:: python
+
+   with open('monfichier.txt', 'r', encoding='utf8') as f:
+       ligne = f.readline()
+       for ligne in f:
+           # Traitement(s), voir ci-dessous ...
+
+| *Note*:
+| Les lignes récupérées étant du type ``string``, la suppression du
+  caractère ``'\n'`` se fait avec la méthode ``strip`` (voir
+  `documentation <https://docs.python.org/fr/3/library/stdtypes.html#text-sequence-type-str>`__):
+
+.. code:: python
+
+   ligne = ligne.strip()
+
+Deux structures de données peuvent être envisagées pour manipuler les
+données tabulées: un tableau de tableaux ou un tableau de n-uplets
+nommés.
+
+Utilisation de tableau de tableaux
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Dans le cas de fichiers textes de type csv, on construit facilement la
+table par compréhension:
+
+.. code:: python
+
+   with open('monfichier.csv', 'r', encoding='utf8') as f:
+       for ligne in f:
+           #On suppose que le délimiteur est ';'
+           table = [ligne.strip().split(';') for ligne in f]
+       #table contient maintenant les données tabulées
+
+L’intérêt de cette structure de données est sa simplicité de
+construction. Son principal inconvénient est de devoir mémoriser l’ordre
+des attributs.
+
+Utilisation de tableau de n-uplets nommés
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Pour éviter l’inconvénient précédent, on peut adopter le tableau de
+n-uplets nommés comme structure de données.
+
+.. code:: python
+
+   with open('monfichier.csv', 'r', encoding='utf8') as f:
+       #On récupère les champs de la table (1ere ligne)
+       champs = f.readline().strip().split(';')
+       table = []#Notre structure de données
+       for ligne in f:
+           enregistrement = {}
+           #enregistrement va accueillir les données d'une ligne sous la forme {champ_i:ligne_i}
+           ligne = ligne.strip().split(';')
+           for i in range(len(champs)):
+               enregistrement[champs[i]] = ligne[i]
+           table = table + [enregistrement]
+       #table contient maintenant les données tabulées
+
+La constructions est un peu plus complexe.
+
+Lecture avec importation du module csv
+--------------------------------------
+
