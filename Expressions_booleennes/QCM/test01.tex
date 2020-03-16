@@ -1,0 +1,106 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[francais,bloc,completemulti]{automultiplechoice}
+\begin{document}
+
+\exemplaire{10}{
+
+%%% debut de l’en-tête des copies :
+
+\noindent{\bf QCM \hfill SPECIALIT\'E NSI}
+
+\vspace*{.5cm}
+\begin{minipage}{.4\linewidth}
+\centering\large\bf LOGIQUE BOOL\'EENNE\end{minipage}
+\champnom{\fbox{
+				\begin{minipage}{.5\linewidth}
+					Nom et prénom :
+				
+					\vspace*{.5cm}\dotfill
+					\vspace*{1mm}
+				\end{minipage}
+		}}
+		
+\begin{center}\em
+Durée : 10 minutes.
+
+L’usage de la calculatrice n'est pas autorisé.
+
+Les questions ont une unique bonne réponse.
+
+Des points négatifs pourront être affectés à de \emph{très
+mauvaises} réponses.
+\end{center}
+\vspace{1ex}
+%%% fin de l’en-tête
+
+
+\begin{question}{operateurs}
+Quels sont les trois opérateurs booléens fondamentaux?
+	\begin{reponses}
+		\bonne{NON, ET, OU}
+		\mauvaise{OUI, NON, OU}
+		\mauvaise{OUI, ET, PEUT-\^ETRE}
+		\mauvaise{OUI, ET, OU}
+	\end{reponses}
+\end{question}
+
+\begin{question}{nand}
+On considère le circuit logique présenté à la figure 1  de la feuille annexe. Quelle table de vérité correspond à ce circuit?
+	\begin{reponses}
+		\bonne{Table 5}
+		\mauvaise{Table 2}
+		\mauvaise{Table 3}
+		\mauvaise{Table 4}
+		\mauvaise{Table 1}
+	\end{reponses}
+\end{question}
+
+\begin{question}{aouabarre}
+Soit $A$ une variable logique. On considère l'expression booléenne $S=A+\overline{A}$. Quelle proposition est correcte?
+\begin{reponses}
+		\bonne{On a toujours $S=1$}
+		\mauvaise{On a toujours $S=0$}
+		\mauvaise{On a toujours $S=A$}
+		\mauvaise{On a toujours $S=\overline{A}$}
+\end{reponses}
+\end{question}
+
+\begin{question}{aetabarre}
+Soit $A$ une variable logique. On considère l'expression booléenne $S=A\cdot\overline{A}$. Quelle proposition est correcte?
+\begin{reponses}
+		\bonne{On a toujours $S=1$}
+		\mauvaise{On a toujours $S=0$}
+		\mauvaise{On a toujours $S=A$}
+		\mauvaise{On a toujours $S=\overline{A}$}
+\end{reponses}
+\end{question}
+
+\begin{question}{expressionnand}
+On considère le circuit logique présenté à la figure 1  de la feuille annexe. \`A quelle expression booléenne  correspond la sortie $S$ ce circuit?
+	\begin{reponses}
+		\bonne{$\overline{A}+\overline{B}$}
+		\mauvaise{$\overline{A}\cdot\overline{B}$}
+		\mauvaise{$A+B$}
+		\mauvaise{$A\cdot B$}
+	\end{reponses}
+\end{question}
+
+\begin{question}{demiadd}
+On considère un demi additionneur 1 bit. Les entrées sont notées $A$ et $B$, la sortie $S$ et la retenue $R$. Quelle proposition est correcte?
+	\begin{reponses}
+		\bonne{$S=A\oplus B$, $R=A\cdot B$}
+		\mauvaise{$S=A\oplus B$, $R=A+ B$}
+		\mauvaise{$S=A+ B$, $R=A\cdot B$}
+		\mauvaise{$S=A\cdot B$, $R=A+ B$}
+		\mauvaise{$S=A\cdot B$, $R=A\oplus B$}
+	\end{reponses}
+\end{question}
+% \AMCaddpagesto{3}
+
+}
+
+\end{document}
