@@ -1,0 +1,17 @@
+﻿Interactions homme-machine dans une page web
+
+Capacités:
+Identifier les différents composants graphiques
+permettant d’interagir avec une application Web
+
+
+
+Bibliographie: Hatier p. 138
+
+1) Analyse d'une page web
+1.1 Les composants graphiques permettant l'interaction avec l'utilisateur
+1.2 Quels événements sont associés aux composants graphiques?
+
+2) Comment modifier le comportement d'une page web?
+2.1 Introduction au langage Javascript
+2.2 Méthodes associées aux événements

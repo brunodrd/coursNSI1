@@ -1,0 +1,9 @@
+body {
+    border: 1px solid;
+    padding: 10px;
+}
+#solution1 {
+    border: 2px solid gray;
+    margin-top: 10px;
+    visibility: hidden;
+}

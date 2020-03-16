@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <article>
+        <section>
+            <h2>Exercice 1</h2>
+            <p>
+                Voici une portion de code HTML:
+                <pre>
+                    <code >
+                    <!-- les suites de caractères &lt; et &gt; représentent les chevrons < et >. -->
+                    <!--On les utilise pour éviter l'interprétation par le navigateur-->
+                    &lt;a href="rene.html"&gt;&lt;img src="images/papi-rene.jpg" alt="Photo papi rene"&gt;&lt;/a&gt;
+                    </code>
+                </pre>
+            </p>
+            <ol>
+                <li>Qu'affiche ce code?</li>
+                <li>Où se trouve l'objet affiché par ce code ?</li>
+                <li>Y a-t-il un événement lié à ce code ?</li>
+            </ol> 
+            <button id="boutonSolution" onclick="afficheMasque()">Afficher solution</button>
+            <div id="solution1">
+                <ol>
+                    <li>Ce code affiche l'image 'papi-rene.jpg'</li>
+                    <li>L'image se trouve dans le sous-dossier 'images' situé dans le dossier courant.</li>
+                    <li>Il y a un événement associé à un clic sur le lien (une redirection vers 'rene.html'</li>
+                </ol>
+            </div>
+        </section>
+    </article>
+    <script src="js/script.js"></script>
+</body>
+</html>

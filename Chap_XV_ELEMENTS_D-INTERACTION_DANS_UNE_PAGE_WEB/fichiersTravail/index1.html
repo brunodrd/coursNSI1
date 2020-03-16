@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>IHM sur le web en NSI</title>
+    <style>
+        span:hover {
+            color: royalblue;
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Identification</h1>
+
+        <form action="index1.html">
+            <label for="nom">Votre Nom</label> 
+            <input type="text" name="nom" id="nom">
+            <label for="prenom">Votre prénom</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp">
+            <input type="submit" value="Valider">
+        </form>
+    <h1>Les ressources</h1>
+    <p> 
+    Le site incontournable pour l'étudiant ayant un parcours <span>Web</span> dans son cursus est le site 
+    <strong>MDN  web docs</strong>. il s'agit d'une communauté ouverte de développeurs et rédacteurs 
+    qui créent des ressources afin de rendre le <span>Web</span> meilleur. <br>
+    <a href="https://developer.mozilla.org/fr/docs/Apprendre" target="_blank">Adresse du site</a>   
+    </p>
+    <p>Son dernier logo</p>
+    <img src="../img/logo-MDN.png" alt="logo de la mdn">
+    <h1>Les langages</h1>
+    <p>Les trois langages à connaître sont:</p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+    <label for="langages">Sélectionner votre niveau dans ces trois langages</label>
+    <select name="listlangages" id="langages">
+        <option value="debutant">Débutant</option>
+        <option value="inter">Intermédiaire</option>
+        <option value="expert">Expert</option>
+    </select>
+    </article>
+</body>
+</html>

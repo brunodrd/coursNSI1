@@ -1,0 +1,661 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eléments d’interaction dans une page web &mdash; Documentation Cours NSI 1ere 1.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Cours de spécialité NSI - niveau première" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Cours NSI 1ere
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sommaire:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Eléments d’interaction dans une page web</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#analyse-dune-page-web">Analyse d’une page web</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#les-composants-graphiques-permettant-linteraction-avec-lutilisateur">Les composants graphiques permettant l’interaction avec l’utilisateur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exercice-dapplication">Exercice d’application</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#quels-evenements-sont-associes-aux-composants-graphiques">Quels événements sont associés aux composants graphiques?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#decouvrir-les-attributs-devenements">Découvrir les attributs d’événements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quappelle-t-on-evenement-et-comment-est-il-lie-a-une-page-web">Qu’appelle-t-on événement et comment est-il lié à une page web?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Exercice d’application</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#comment-modifier-le-traitement-des-evenements">Comment modifier le traitement des événements?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#le-langage-utilise">Le langage utilisé</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentation-de-quelques-exemples">Présentation de quelques exemples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-1">Exemple 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-2">Exemple 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-3">Exemple 3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cours NSI 1ere</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Eléments d’interaction dans une page web</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Chap_XV_Elements_d-interaction_dans_une_page_web.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="elements-dinteraction-dans-une-page-web">
+<h1>Eléments d’interaction dans une page web<a class="headerlink" href="#elements-dinteraction-dans-une-page-web" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="analyse-dune-page-web">
+<h2>Analyse d’une page web<a class="headerlink" href="#analyse-dune-page-web" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="les-composants-graphiques-permettant-linteraction-avec-lutilisateur">
+<h3>Les composants graphiques permettant l’interaction avec l’utilisateur<a class="headerlink" href="#les-composants-graphiques-permettant-linteraction-avec-lutilisateur" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Dans une page web, des <strong>éléments</strong> servent à <strong>structurer</strong> la page et à
+fournir sa <strong>sémantique</strong>. Par ailleurs, il existe d’autres éléments qui
+permettent à l’utilisateur d’interagir avec la page.</p>
+<div class="section" id="exercice-dapplication">
+<h4>Exercice d’application<a class="headerlink" href="#exercice-dapplication" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Ouvrir le fichier <code class="docutils literal notranslate"><span class="pre">index1.html</span></code> (<em>dont une copie est fournie
+ci-dessous</em>) avec un éditeur de code (<code class="docutils literal notranslate"><span class="pre">Visual</span> <span class="pre">Studio</span> <span class="pre">Code</span></code> par
+exemple) et avec un navigateur (<code class="docutils literal notranslate"><span class="pre">Chrome</span></code> par exemple). Réaliser un
+classement des éléments HTML situés dans le corps de la page en deux
+groupes: ceux qui structurent et ceux qui permettent l’interaction avec
+l’utilisateur.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>IHM sur le web en NSI<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+        <span class="nt">span</span><span class="p">:</span><span class="nd">hover</span> <span class="p">{</span>
+            <span class="k">color</span><span class="p">:</span> <span class="kc">royalblue</span><span class="p">;</span>
+            <span class="k">font-size</span><span class="p">:</span> <span class="mi">200</span><span class="kt">%</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Identification<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;nom&quot;</span><span class="p">&gt;</span>Votre Nom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;nom&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;nom&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;prenom&quot;</span><span class="p">&gt;</span>Votre prénom<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;prenom&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;prenom&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;mdp&quot;</span><span class="p">&gt;</span>Mot de passe<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;mdp&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;mdp&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Valider&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Les ressources<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    Le site incontournable pour l&#39;étudiant ayant un parcours <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Web<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> dans son cursus est le site
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>MDN  web docs<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>. il s&#39;agit d&#39;une communauté ouverte de développeurs et rédacteurs
+    qui créent des ressources afin de rendre le <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Web<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> meilleur. <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://developer.mozilla.org/fr/docs/Apprendre&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Adresse du site<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Son dernier logo<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../img/logo-MDN.png&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;logo de la mdn&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Les langages<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Les trois langages à connaître sont:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>CSS<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Javascript<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;langage&quot;</span><span class="p">&gt;</span>Sélectionner votre niveau dans ces trois langages<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;listlangages&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;langages&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;debutant&quot;</span><span class="p">&gt;</span>Débutant<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;inter&quot;</span><span class="p">&gt;</span>Intermédiaire<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;expert&quot;</span><span class="p">&gt;</span>Expert<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="quels-evenements-sont-associes-aux-composants-graphiques">
+<h3>Quels événements sont associés aux composants graphiques?<a class="headerlink" href="#quels-evenements-sont-associes-aux-composants-graphiques" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="decouvrir-les-attributs-devenements">
+<h4>Découvrir les attributs d’événements<a class="headerlink" href="#decouvrir-les-attributs-devenements" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Ouvrir le fichier <code class="docutils literal notranslate"><span class="pre">evenement.html</span></code> dans le navigateur <code class="docutils literal notranslate"><span class="pre">Chrome</span></code>.
+Ouvrir également la console de <em>développement web</em> du navigateur avec la
+<strong>touche F12</strong>. Adopter une disposition proche de celle-ci:</p>
+<p><img alt="chrome" src="_images/image_chrome.png" /></p>
+<ol class="arabic simple">
+<li><p>Quel élément de la page permet d’interagir avec l’utilisateur ?</p></li>
+<li><p>Lister tous les attributs de cet élément. Sont-ils tous liés à la description de la structure de la page?</p></li>
+<li><p>Quel événement provoque un changement dans la page ?</p></li>
+<li><p>Cet événement est lié à quel attribut?</p></li>
+</ol>
+</div>
+<div class="section" id="quappelle-t-on-evenement-et-comment-est-il-lie-a-une-page-web">
+<h4>Qu’appelle-t-on événement et comment est-il lié à une page web?<a class="headerlink" href="#quappelle-t-on-evenement-et-comment-est-il-lie-a-une-page-web" title="Lien permanent vers ce titre">¶</a></h4>
+<p>On appelle <strong>événement</strong> une action de l’utilisateur ou d’un composant
+du navigateur. Les événements associés à des balises HTML sont nombreux.
+Voici quelques exemples:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 34%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Dénomination de l’événement
+(event en anglais)</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Domaine
+d’utilisation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>onclick</p></td>
+<td><p>Clic du bouton gauche</p></td>
+<td><p>Pointage
+souris</p></td>
+</tr>
+<tr class="row-odd"><td><p>oninput</p></td>
+<td><p>Modification de champ
+d’un formulaire</p></td>
+<td><p>Formulaire</p></td>
+</tr>
+<tr class="row-even"><td><p>onload</p></td>
+<td><p>Chargement complet
+d’une page</p></td>
+<td><p>Traitement
+des pages web</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">Ils sont liés aux éléments d’une page web en tant qu’<strong>attribut</strong>.
+Les attributs d’événements portent un nom préfixé par <code class="docutils literal notranslate"><span class="pre">on</span></code>. La
+syntaxe habituelle est:</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">&lt;element</span> <span class="pre">on....=&quot;action()&quot;&gt;&lt;/element&gt;</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">on....</span></code> est l’événement et <code class="docutils literal notranslate"><span class="pre">action()</span></code> est une fonction qui traite
+l’événement (voir paragraphe suivant).</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On trouvera sur le site <a class="reference external" href="https://www.w3schools.com/tags/ref_eventattributes.asp">W3Schools.com</a> une liste exhaustive des attributs d’événements.</p>
+</div>
+</div>
+<div class="section" id="id1">
+<h4>Exercice d’application<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="line-block">
+<div class="line">Compléter le fichier <code class="docutils literal notranslate"><span class="pre">exercice.html</span></code> de manière à ce que:</div>
+</div>
+<ul class="simple">
+<li><p>le lien soit actif (adresse du site: <a class="reference external" href="https://www.w3schools.com/">https://www.w3schools.com/</a>)</p></li>
+<li><p>lors d’un clic sur le lien, cette action entraine l’ouverture d’un popup (<em>fenêtre surgissante</em>) qui indique ‘Très bon choix !’.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>L’ouverture d’un popup se fait avec la méthode <code class="docutils literal notranslate"><span class="pre">alert()</span></code> à qui on passe le texte à afficher.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="comment-modifier-le-traitement-des-evenements">
+<h2>Comment modifier le traitement des événements?<a class="headerlink" href="#comment-modifier-le-traitement-des-evenements" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="le-langage-utilise">
+<h3>Le langage utilisé<a class="headerlink" href="#le-langage-utilise" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Le troisième langage incontournable du web est incontestablement
+<strong>Javascript</strong> (<em>autre dénomination ECMAScript</em>). Il est utilisé pour
+implémenter l’interactivité dans les pages web. Le programme de première
+NSI ne prévoit pas une étude approfondie de ce langage, aussi les
+curieux pourront visiter les excellentes adresses suivantes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript">Openclassrooms</a> (<em>en français</em>);</p></li>
+<li><p><a class="reference external" href="https://www.w3schools.com/js/default.asp">W3Schools</a> (<em>en anglais</em>).</p></li>
+</ul>
+</div>
+<div class="section" id="presentation-de-quelques-exemples">
+<h3>Présentation de quelques exemples<a class="headerlink" href="#presentation-de-quelques-exemples" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="exemple-1">
+<h4>Exemple 1<a class="headerlink" href="#exemple-1" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Dans ce premier exemple simple, on souhaite afficher la date et l’heure
+si l’utilisateur clique sur le bouton.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple 1<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Pour afficher la date et l&#39;heure, cliquer sur le bouton<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;alert(&#39;Nous sommes le : &#39;+ Date())&quot;</span><span class="p">&gt;</span>Quelle heure est-il?<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Ici l’événement traité est le clic (<em>du bouton gauche</em>) de la souris
+sur le bouton. Lorsque cet événement se produit, la fonction <code class="docutils literal notranslate"><span class="pre">alert</span></code>
+qui permet d’afficher un message dans une fenêtre de type <em>popup</em>. Le
+message est concaténé ici avec l’objet <code class="docutils literal notranslate"><span class="pre">Date</span></code> de Javascript.</div>
+<div class="line">Les fonctions de traitement d’événements peuvent être beaucoup plus
+longue que dans notre exemple, <strong>on évitera de passer tout le code
+dans l’attribut de l’élément comme dans cet exemple et on privilégiera
+une des méthodes ci-après</strong>.</div>
+</div>
+</div>
+<div class="section" id="exemple-2">
+<h4>Exemple 2<a class="headerlink" href="#exemple-2" title="Lien permanent vers ce titre">¶</a></h4>
+<p>On reprend le même exemple mais en déportant le traitement de l’événement <code class="docutils literal notranslate"><span class="pre">onclick</span></code> dans une fonction définie dans un élément <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code>.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exemple 2<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Cliquer sur le bouton pour afficher la date et l&#39;heure.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;displayDate()&quot;</span><span class="p">&gt;</span>Quelle heure est-il?<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+        <span class="kd">function</span> <span class="nx">displayDate</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Nous sommes le: &#39;</span> <span class="o">+</span> <span class="nb">Date</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<p><strong>A retenir</strong></p>
+<div class="line-block">
+<div class="line">En Javascript une façon de déclarer une fonction est d’utiliser le mot
+clé <code class="docutils literal notranslate"><span class="pre">function</span></code> suivi d’un nom et d’éventuels paramètres entre
+parenthèses.</div>
+<div class="line">On place le script plutôt en fin de page laissant au navigateur le
+temps de charger tous les éléments de la page. Cette façon de procéder
+est acceptable.</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h5>Exercice d’application<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="line-block">
+<div class="line">Modifier l’élément <code class="docutils literal notranslate"><span class="pre">p</span></code> approprié de la page
+<code class="docutils literal notranslate"><span class="pre">ex_app_exemple_2.html</span></code> afin que le texte du paragraphe 1 passe en
+rouge lorsque l’utilisateur clique dessus.</div>
+<div class="line">Un extrait de la documentation sur les attributs événementiels est
+donné ci-après:</div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Attribute</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>onclick</p></td>
+<td><p>script</p></td>
+<td><p>Fires on a mouse click on the element</p></td>
+</tr>
+<tr class="row-odd"><td><p>ondblclick</p></td>
+<td><p>script</p></td>
+<td><p>Fires on a mouse double-click on the element</p></td>
+</tr>
+<tr class="row-even"><td><p>onmousedown</p></td>
+<td><p>script</p></td>
+<td><p>Fires when a mouse button is pressed down on an</p></td>
+</tr>
+<tr class="row-odd"><td><p>onmousemove</p></td>
+<td><p>script</p></td>
+<td><p>Fires when the mouse pointer is moving while it is</p></td>
+</tr>
+<tr class="row-even"><td><p>onmouseout</p></td>
+<td><p>script</p></td>
+<td><p>Fires when the mouse pointer moves out of an</p></td>
+</tr>
+<tr class="row-odd"><td><p>onmouseover</p></td>
+<td><p>script</p></td>
+<td><p>Fires when the mouse pointer moves over an element</p></td>
+</tr>
+<tr class="row-even"><td><p>onmouseup</p></td>
+<td><p>script</p></td>
+<td><p>Fires when a mouse button is released over an
+element</p></td>
+</tr>
+<tr class="row-odd"><td><p>onwheel</p></td>
+<td><p>script</p></td>
+<td><p>Fires when the mouse wheel rolls up or down over an
+element</p></td>
+</tr>
+</tbody>
+</table>
+<p>Contenu du fichier <code class="docutils literal notranslate"><span class="pre">ex_app_exemple_2.html</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;fr&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Exercice d&#39;application - exemple 2<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para1&quot;</span><span class="p">&gt;</span>Double-cliquer sur ce paragraphe pour changer la couleur.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;para2&quot;</span><span class="p">&gt;</span>
+        L&#39;exercice <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+        La fonction &#39;dblClic()&#39; doit être appelée lorsque l&#39;utilisateur double clique sur le paragraphe identifié par &quot;para1&quot;
+        Cette fonction modifie la couleur du texte de ce paragraphe.
+    <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">dblClic</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;para1&quot;</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="exemple-3">
+<h4>Exemple 3<a class="headerlink" href="#exemple-3" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Une bonne pratique à adopter est de déporter le code javascript dans un
+fichier externe. Analysons le code HTML puis Javascript de la page
+<code class="docutils literal notranslate"><span class="pre">evenement.html</span></code> rencontrée plus haut.</p>
+<div class="section" id="le-code-html">
+<h5>Le code HTML<a class="headerlink" href="#le-code-html" title="Lien permanent vers ce titre">¶</a></h5>
+<p>Une partie du code HTML de l’élément <code class="docutils literal notranslate"><span class="pre">body</span></code> a été reproduit
+ci-dessous.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+            .......
+            <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;boutonSolution&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;afficheMasque()&quot;</span><span class="p">&gt;</span>Afficher solution<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;solution1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Ce code affiche l&#39;image &#39;papi-rene.jpg&#39;<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>L&#39;image se trouve dans le sous-dossier &#39;images&#39; situé dans le dossier courant.<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Il y a un événement associé à un clic sur le lien (une redirection vers &#39;rene.html&#39;)<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/script.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Un bouton est présent. Il est identifié par <code class="docutils literal notranslate"><span class="pre">id=&quot;boutonSolution&quot;</span></code>.
+L’attribut d’événement <code class="docutils literal notranslate"><span class="pre">onclick</span></code> est associé à l’exécution d’une
+fonction <code class="docutils literal notranslate"><span class="pre">afficheMasque()</span></code>. Cette fonction n’est pas définie dans le
+corps du document HTML. Elle est présente dans le fichier <code class="docutils literal notranslate"><span class="pre">script.js</span></code>
+du dossier <code class="docutils literal notranslate"><span class="pre">js</span></code>.</p>
+<p><strong>Il est préférable de placer la définition des fonctions liées au
+traitement des événements dans un fichier externe, d’extension ‘.js’. Ce
+fichier sera référencé dans le document HTML par l’attribut src de la
+balise</strong> <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code>.</p>
+</div>
+<div class="section" id="le-code-javascript">
+<h5>Le code Javascript<a class="headerlink" href="#le-code-javascript" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">const</span> <span class="nx">afficheMasque</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// On utilise la propriété CSS visibility pour rendre visible ou pour masquer un élément</span>
+
+    <span class="kd">let</span> <span class="nx">sol</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;solution1&quot;</span><span class="p">)</span><span class="c1">//sélection du bloc html contenant la solution</span>
+    <span class="kr">const</span> <span class="nx">etatAffichage</span> <span class="o">=</span> <span class="nx">getComputedStyle</span><span class="p">(</span><span class="nx">sol</span><span class="p">,</span> <span class="kc">null</span><span class="p">)</span><span class="c1">//détermination de sa propriété visible ou caché</span>
+
+    <span class="kd">let</span> <span class="nx">btn</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;boutonSolution&quot;</span><span class="p">)</span>
+    <span class="c1">//sélection de l&#39;élément bouton</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">etatAffichage</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">==</span> <span class="s2">&quot;hidden&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="cm">/*</span>
+<span class="cm">        Si le bloc solution est caché, un clic le rendra visible;</span>
+<span class="cm">        On change aussi le texte du bouton.</span>
+<span class="cm">        */</span>
+        <span class="nx">sol</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s2">&quot;visible&quot;</span><span class="p">;</span>
+        <span class="nx">btn</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Cacher solution&quot;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="cm">/*</span>
+<span class="cm">        Si le bloc solution est visible, un clic le rendra caché;</span>
+<span class="cm">        On change aussi le texte du bouton.</span>
+<span class="cm">        */</span>
+        <span class="nx">sol</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">visibility</span> <span class="o">=</span> <span class="s2">&quot;hidden&quot;</span><span class="p">;</span>
+        <span class="nx">btn</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Afficher solution&quot;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">En Javascript, les blocs d’instructions sont délimités par les
+accolades <code class="docutils literal notranslate"><span class="pre">{</span></code> et <code class="docutils literal notranslate"><span class="pre">}</span></code>. L’indentation n’est significative comme en
+python, cependant elle améliore la lisibilité du code. Les
+commentaires sont signalés par <code class="docutils literal notranslate"><span class="pre">//</span></code> ou la paire <code class="docutils literal notranslate"><span class="pre">/*</span></code>, <code class="docutils literal notranslate"><span class="pre">*/</span></code> selon
+qu’ils tiennent sur une ligne ou plusieurs lignes. Les mots clés
+<code class="docutils literal notranslate"><span class="pre">const</span></code> et <code class="docutils literal notranslate"><span class="pre">let</span></code> permettent de déclarer des variables. Une
+variable déclarée avec <code class="docutils literal notranslate"><span class="pre">const</span></code> ne pourra plus être modifiée par la
+suite.</div>
+<div class="line">Javascript est utilisé ici pour modifier les propriétés CSS du bloc
+<code class="docutils literal notranslate"><span class="pre">div</span></code> contenant la solution: <code class="docutils literal notranslate"><span class="pre">visibility</span> <span class="pre">=</span> <span class="pre">&quot;visible&quot;</span></code> ou
+<code class="docutils literal notranslate"><span class="pre">visibility</span> <span class="pre">=</span> <span class="pre">&quot;hidden&quot;</span></code>.</div>
+</div>
+</div>
+<div class="section" id="exercice-dapplication-1">
+<span id="id3"></span><h5>Exercice d’application<a class="headerlink" href="#exercice-dapplication-1" title="Lien permanent vers ce titre">¶</a></h5>
+<div class="line-block">
+<div class="line">On souhaiterait modifier légèrement le code <code class="docutils literal notranslate"><span class="pre">script.js</span></code> de manière à
+ce que même si l’utilisateur clique sur ‘Afficher solution’ celle-ci
+soit de nouveau cachée automatiquement au bout de 5 secondes.</div>
+<div class="line">On utilisera la méthode javascript <code class="docutils literal notranslate"><span class="pre">setTimeout</span></code> à qui on passera
+deux arguments: la fonction qui <em>cachera</em> le code à nouveau et le
+temps (<em>en millisecondes</em>) au bout duquel cette fonction sera
+exécutée. Typiquement, cette fonction sera appelée avec la syntaxe
+suivante:</div>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span> <span class="p">(){</span>
+            <span class="p">.....................;</span>
+            <span class="p">.....................;</span>
+            <span class="p">},</span> <span class="mi">5000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On peut trouver des exemples sur <a class="reference external" href="https://developer.mozilla.org/fr/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout">le site
+MDN</a></p>
+<div class="section" id="en-resume">
+<h6><strong>En résumé</strong><a class="headerlink" href="#en-resume" title="Lien permanent vers ce titre">¶</a></h6>
+<p>Les principaux éléments d’interaction d’une page web sont:</p>
+<ul class="simple">
+<li><p>les styles CSS;</p></li>
+<li><p>des éléments graphiques HTML comme des boutons, associés à des fonctions de traitements d’événements par le biais de leurs attributs.</p></li>
+</ul>
+<p>Les fonctions de traitements des événements sont codées en javascript.
+On déportera les codes javascript dans un fichier externe. Dans les cas
+simples, il s’agira de:</p>
+<ul class="simple">
+<li><p>sélectionner un élément HTMl avec une méthode appropriée;</p></li>
+<li><p>modifier une propriété CSS de cet élément.</p></li>
+</ul>
+<ol class="upperalpha simple" start="2">
+<li><p>DARID <img alt="logo" src="_images/licence.png" /></p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Cours de spécialité NSI - niveau première" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Bruno DARID
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
