@@ -1,0 +1,42 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode1/Encodage_texte
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=26e8b8f5b8e22a4a1185f173eed67aced1bd2105ec447b47
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-5836-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=26e8b8f5b8e22a4a1185f173eed67aced1bd2105ec447b47
+[NotebookApp | WARNING] Notebook EncodageTexte.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 5a44f68f-5638-40d7-8834-3a55a974c5d9
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 5a44f68f-5638-40d7-8834-3a55a974c5d9
+[NotebookApp | INFO] Saving file at /EncodageTexte.ipynb
+[NotebookApp | WARNING] Notebook EncodageTexte.ipynb is not trusted
+[NotebookApp | INFO] Starting buffering for 5a44f68f-5638-40d7-8834-3a55a974c5d9:dc2f5cfb18da49dfa9fe5666f7235599
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/data1/NSI/Cours/Periode1/Encodage_texte
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://localhost:8888/?token=a13f0b67d2ce7796c365181e77535adfcb27423c2b559e31
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-6988-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/?token=a13f0b67d2ce7796c365181e77535adfcb27423c2b559e31
+[NotebookApp | INFO] Creating new notebook in 
+[NotebookApp | INFO] Kernel started: 70c7b2d7-c23e-4129-9a86-aff591f5e130
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 70c7b2d7-c23e-4129-9a86-aff591f5e130
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Saving file at /Untitled.ipynb
+[NotebookApp | INFO] Starting buffering for 70c7b2d7-c23e-4129-9a86-aff591f5e130:933494e65009476a806cc7da94de0052
