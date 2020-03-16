@@ -1,0 +1,17 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Rep\IeC {\`e}res historiques}{1}{section.1}
+\contentsline {section}{\numberline {2}Le langage Python}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Les entr\IeC {\'e}es/sorties}{2}{subsection.2.2}
+\contentsline {section}{\numberline {3}Les instructions simples}{2}{section.3}
+\contentsline {section}{\numberline {4}Les instructions compos\IeC {\'e}es}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}La s\IeC {\'e}quence}{3}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Le test}{3}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Le test simple}{3}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Le test avec alternative}{4}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}La boucle}{5}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}La boucle conditionnelle, \emph {non born\IeC {\'e}e}}{5}{subsubsection.4.3.1}
+\contentsline {paragraph}{N\IeC {\'e}cessit\IeC {\'e}}{5}{section*.3}
+\contentsline {subsubsection}{\numberline {4.3.2}Syntaxe}{6}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Danger li\IeC {\'e} \IeC {\`a} l'utilisation des boucles conditionnelles}{7}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}La boucle inconditionnelle ou \emph {born\IeC {\'e}e}}{7}{subsubsection.4.3.4}
