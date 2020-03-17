@@ -1,0 +1,74 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /media/pop/DATA/NSI_preparation/Chap_XVII_transmission_de_données_dans_un_reseau
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://127.0.0.1:8888/?token=5d3f2e16595ceaf7b77b994ff9b37abc8c77b2828a849853
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    To access the notebook, open this file in a browser:
+        file:///run/user/1000/jupyter/nbserver-7299-open.html
+    Or copy and paste one of these URLs:
+        http://127.0.0.1:8888/?token=5d3f2e16595ceaf7b77b994ff9b37abc8c77b2828a849853
+[NotebookApp | INFO] Kernel started: b210564a-edb7-4407-9535-57f7a60f8c44
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel b210564a-edb7-4407-9535-57f7a60f8c44
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Introduction%20au%20r%C3%A9seau.html (127.0.0.1) 3.26ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 2.95ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 3.32ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 3.38ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 3.86ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Simulation%20r%C3%A9seau.html (127.0.0.1) 3.16ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 14.00ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 16.58ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 1.85ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 1.83ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Protocoles%20TCP%20et%20IP.html (127.0.0.1) 3.56ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 2.09ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 13.68ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 3.13ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 12.86ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Protocoles%20TCP%20et%20IP.html (127.0.0.1) 2.71ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 6.32ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 3.91ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 5.90ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 5.68ms
+[NotebookApp | INFO] 302 GET /notebooks/web/Le%20mod%C3%A8le%20TCP_IP.html (127.0.0.1) 2.75ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 12.60ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 8.03ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 3.62ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 3.63ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Simulation%20r%C3%A9seau2.html (127.0.0.1) 6.19ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 5.65ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 5.61ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 1.46ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 1.68ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] 302 GET /notebooks/web/Protocole%20du%20bit%20altern%C3%A9.html (127.0.0.1) 3.55ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.woff (127.0.0.1) 4.56ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.woff (127.0.0.1) 3.13ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-regular.ttf (127.0.0.1) 6.27ms
+[NotebookApp | INFO] 302 GET /files/web/fonts/lato/lato-bold.ttf (127.0.0.1) 12.33ms
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
+[NotebookApp | INFO] Saving file at /Chap_XVII_Transmission_donnees_reseau.ipynb
