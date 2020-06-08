@@ -1,0 +1,10 @@
+- file: intro
+
+- header: Agorithmes de recherche
+- file: algo/recherche_seq
+- file: algo/recherche_dico_v2
+
+- header: Algorithme de tris
+- file: algo/tri_insertion_v2
+- file: algo/tri_selection
+- file: algo/complexite

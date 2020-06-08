@@ -1,0 +1,8 @@
+# Book settings
+title: Algorithmique
+author: Bruno DARID
+logo: 'img/logo_LBO.jpg'
+
+#latex:
+#  latex_documents:
+#    targetname: book.tex
